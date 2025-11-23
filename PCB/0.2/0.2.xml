@@ -1,0 +1,2333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/martinsivolella/Desktop/work/2023/upwk/tomr/RPH1/design/Raspberry_Pi_HAT_RS485/PCB/V6/uw-rs485_hat-V6.kicad_sch</source>
+    <date>Thu 04 Jan 2024 04:15:48 PM -03</date>
+    <tool>Eeschema 7.0.9-1.fc39</tool>
+    <textvar name="boardName">3-in-1 RS485 adapter  board</textvar>
+    <textvar name="coverName">Cover</textvar>
+    <textvar name="indexName">Index</textvar>
+    <textvar name="powerBDName">Power block diagram</textvar>
+    <textvar name="projectName">3-in-1 RS485 adapter project</textvar>
+    <textvar name="schTopName">Schematic top level</textvar>
+    <textvar name="signalBDName">Signal block diagram</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>3-in-1 RS485 adapter  board - Cover</title>
+        <company/>
+        <rev>V6</rev>
+        <date>2024-01-04</date>
+        <source>uw-rs485_hat-V6.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/index/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/">
+      <title_block>
+        <title>3-in-1 RS485 adapter  board - Index</title>
+        <company/>
+        <rev>V6</rev>
+        <date>2024-01-04</date>
+        <source>index.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/index/PowerBD/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/3932ca5d-b3c2-447d-bb12-a2b8dbdde072/">
+      <title_block>
+        <title>3-in-1 RS485 adapter  board - Power block diagram</title>
+        <company/>
+        <rev>V6</rev>
+        <date>2024-01-04</date>
+        <source>PowerBD.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/index/signalBD/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/c3b485fe-0f1e-46fb-b3ff-8782ddd819b9/">
+      <title_block>
+        <title>3-in-1 RS485 adapter  board - Signal block diagram</title>
+        <company/>
+        <rev>V6</rev>
+        <date>2024-01-04</date>
+        <source>signalBD.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/">
+      <title_block>
+        <title>3-in-1 RS485 adapter  board - Schematic top level</title>
+        <company/>
+        <rev>V6</rev>
+        <date>2024-01-04</date>
+        <source>schTop.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>22pF/50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">50V 22pF C0G ±5% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="Digikey">1276-1023-1-ND</field>
+        <field name="LCSC">C1653</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="PartNumber">CL10C220JB8NNNC</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">5%</field>
+      </fields>
+      <libsource lib="Celebi" part="capacitor" description=""/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="PartNumber" value="CL10C220JB8NNNC"/>
+      <property name="Digikey" value="1276-1023-1-ND"/>
+      <property name="LCSC" value="C1653"/>
+      <property name="Description" value="50V 22pF C0G ±5% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000061672ebd</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="Digikey">1276-6854-1-ND</field>
+        <field name="LCSC">C307348</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="PartNumber">CL10B104KB8WPNC</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">10%</field>
+      </fields>
+      <libsource lib="Celebi" part="capacitor" description=""/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="PartNumber" value="CL10B104KB8WPNC"/>
+      <property name="Digikey" value="1276-6854-1-ND"/>
+      <property name="LCSC" value="C307348"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000061672eae</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>10uF/16V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Description">16V 10uF X7R ±10% 0805  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="Digikey">1276-2872-1-ND</field>
+        <field name="LCSC">C95841</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="PartNumber">CL21B106KOQNNNE</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">10%</field>
+      </fields>
+      <libsource lib="Celebi" part="capacitor" description=""/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="PartNumber" value="CL21B106KOQNNNE"/>
+      <property name="Digikey" value="1276-2872-1-ND"/>
+      <property name="LCSC" value="C95841"/>
+      <property name="Description" value="16V 10uF X7R ±10% 0805  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000060f150fe</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="Digikey">1276-6854-1-ND</field>
+        <field name="LCSC">C307348</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="PartNumber">CL10B104KB8WPNC</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">10%</field>
+      </fields>
+      <libsource lib="Celebi" part="capacitor" description=""/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="PartNumber" value="CL10B104KB8WPNC"/>
+      <property name="Digikey" value="1276-6854-1-ND"/>
+      <property name="LCSC" value="C307348"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000060f7b5ff</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>10uF/16V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="Description">16V 10uF X7R ±10% 0805  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="Digikey">1276-2872-1-ND</field>
+        <field name="LCSC">C95841</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="PartNumber">CL21B106KOQNNNE</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">10%</field>
+      </fields>
+      <libsource lib="Celebi" part="capacitor" description=""/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="PartNumber" value="CL21B106KOQNNNE"/>
+      <property name="Digikey" value="1276-2872-1-ND"/>
+      <property name="LCSC" value="C95841"/>
+      <property name="Description" value="16V 10uF X7R ±10% 0805  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000060f7b60f</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="Digikey">1276-6854-1-ND</field>
+        <field name="LCSC">C307348</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="PartNumber">CL10B104KB8WPNC</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">10%</field>
+      </fields>
+      <libsource lib="Celebi" part="capacitor" description=""/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="PartNumber" value="CL10B104KB8WPNC"/>
+      <property name="Digikey" value="1276-6854-1-ND"/>
+      <property name="LCSC" value="C307348"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-00005d2adfbc</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="Digikey">1276-6854-1-ND</field>
+        <field name="LCSC">C307348</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="PartNumber">CL10B104KB8WPNC</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">10%</field>
+      </fields>
+      <libsource lib="Celebi" part="capacitor" description=""/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="PartNumber" value="CL10B104KB8WPNC"/>
+      <property name="Digikey" value="1276-6854-1-ND"/>
+      <property name="LCSC" value="C307348"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000060ec58f4</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="Digikey">1276-6854-1-ND</field>
+        <field name="LCSC">C307348</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="PartNumber">CL10B104KB8WPNC</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">10%</field>
+      </fields>
+      <libsource lib="Celebi" part="capacitor" description=""/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="PartNumber" value="CL10B104KB8WPNC"/>
+      <property name="Digikey" value="1276-6854-1-ND"/>
+      <property name="LCSC" value="C307348"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-0000655fcb07</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="Digikey">1276-6854-1-ND</field>
+        <field name="LCSC">C307348</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="PartNumber">CL10B104KB8WPNC</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">10%</field>
+      </fields>
+      <libsource lib="Celebi" part="capacitor" description=""/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="PartNumber" value="CL10B104KB8WPNC"/>
+      <property name="Digikey" value="1276-6854-1-ND"/>
+      <property name="LCSC" value="C307348"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>4868f1e4-a1fc-4128-a8df-64759b6fdeab</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="Digikey">1276-6854-1-ND</field>
+        <field name="LCSC">C307348</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="PartNumber">CL10B104KB8WPNC</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">10%</field>
+      </fields>
+      <libsource lib="Celebi" part="capacitor" description=""/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="PartNumber" value="CL10B104KB8WPNC"/>
+      <property name="Digikey" value="1276-6854-1-ND"/>
+      <property name="LCSC" value="C307348"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>27f0d777-554f-44c0-9f5c-34e3909686b4</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>1nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_TDK-C1608C0G1H102JT000N_C342541.pdf</datasheet>
+      <fields>
+        <field name="Description">50V 1nF C0G ±5% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="Digikey">---</field>
+        <field name="LCSC">C342541</field>
+        <field name="Manufacturer">TDK</field>
+        <field name="PartNumber">C1608C0G1H102JT000N</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">5%</field>
+      </fields>
+      <libsource lib="Celebi" part="capacitor" description=""/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="TDK"/>
+      <property name="PartNumber" value="C1608C0G1H102JT000N"/>
+      <property name="Digikey" value="---"/>
+      <property name="LCSC" value="C342541"/>
+      <property name="Description" value="50V 1nF C0G ±5% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>29f37827-43a2-45af-90ea-88f895c8a46f</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>100nF/50V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="Digikey">1276-6854-1-ND</field>
+        <field name="LCSC">C307348</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="PartNumber">CL10B104KB8WPNC</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">10%</field>
+      </fields>
+      <libsource lib="Celebi" part="capacitor" description=""/>
+      <property name="Tolerance" value="10%"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="PartNumber" value="CL10B104KB8WPNC"/>
+      <property name="Digikey" value="1276-6854-1-ND"/>
+      <property name="LCSC" value="C307348"/>
+      <property name="Description" value="50V 100nF X7R ±10% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>ba93e235-7e23-4d9d-8f01-fc149ec79834</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>TVS_5V</value>
+      <footprint>Celebi:SOT23-6L</footprint>
+      <fields>
+        <field name="Description">SOT-23-6  ESD Protection Devices ROHS</field>
+        <field name="Digikey">!1727-2751-1-ND</field>
+        <field name="LCSC">C558417</field>
+        <field name="Manufacturer">Tech_Public</field>
+        <field name="PartNumber">TPIP4220CZ6</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Celebi" part="824015" description=""/>
+      <property name="Tolerance" value="_"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Tech_Public"/>
+      <property name="PartNumber" value="TPIP4220CZ6"/>
+      <property name="Digikey" value="!1727-2751-1-ND"/>
+      <property name="LCSC" value="C558417"/>
+      <property name="Description" value="SOT-23-6  ESD Protection Devices ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000061672e6b</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>CUS08F30-H3F</value>
+      <footprint>Celebi:SOD323</footprint>
+      <fields>
+        <field name="Description">30V 220mV@10mA 800mA SOD-323  Schottky Barrier Diodes (SBD) ROHS</field>
+        <field name="Digikey">CUS08F30H3FCT-ND</field>
+        <field name="LCSC">C150183</field>
+        <field name="Manufacturer">Toshiba</field>
+        <field name="PartNumber">CUS08F30-H3F</field>
+        <field name="Power">0.8A</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Celebi" part="Diode-Schottky" description=""/>
+      <property name="Tolerance" value="_"/>
+      <property name="Power" value="0.8A"/>
+      <property name="Manufacturer" value="Toshiba"/>
+      <property name="PartNumber" value="CUS08F30-H3F"/>
+      <property name="Digikey" value="CUS08F30H3FCT-ND"/>
+      <property name="LCSC" value="C150183"/>
+      <property name="Description" value="30V 220mV@10mA 800mA SOD-323  Schottky Barrier Diodes (SBD) ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000060f13d4b</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>SM712</value>
+      <footprint>Celebi:SOT23-3</footprint>
+      <fields>
+        <field name="Description">SOT-23  ESD Protection Devices ROHS</field>
+        <field name="Digikey">!F6450CT-ND</field>
+        <field name="LCSC">C293966</field>
+        <field name="Manufacturer">DOWO</field>
+        <field name="PartNumber">SM712</field>
+        <field name="Power">400W</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Celebi" part="SM712" description=""/>
+      <property name="Tolerance" value="_"/>
+      <property name="Power" value="400W"/>
+      <property name="Manufacturer" value="DOWO"/>
+      <property name="PartNumber" value="SM712"/>
+      <property name="Digikey" value="!F6450CT-ND"/>
+      <property name="LCSC" value="C293966"/>
+      <property name="Description" value="SOT-23  ESD Protection Devices ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-0000601aa6f9</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>green</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">199mcd 无色透明透镜 -40℃~+85℃ 520nm~535nm Emerald 120° 110mW 0603  Light Emitting Diodes (LED) ROHS</field>
+        <field name="Digikey">-----</field>
+        <field name="LCSC">C72043</field>
+        <field name="Manufacturer">Everlight Elec</field>
+        <field name="PartNumber">19-217/GHC-YR1S2/3T</field>
+        <field name="Power">20mA</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Device" part="LED_Filled" description="Light emitting diode, filled shape"/>
+      <property name="Digikey" value="-----"/>
+      <property name="LCSC" value="C72043"/>
+      <property name="Manufacturer" value="Everlight Elec"/>
+      <property name="PartNumber" value="19-217/GHC-YR1S2/3T"/>
+      <property name="Power" value="20mA"/>
+      <property name="Tolerance" value="_"/>
+      <property name="Description" value="199mcd 无色透明透镜 -40℃~+85℃ 520nm~535nm Emerald 120° 110mW 0603  Light Emitting Diodes (LED) ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode, filled shape"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>9b088c12-d33e-47d0-ac5e-ba40314a9e68</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>yellow</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">无色透明透镜 -40℃~+85℃ 585.5nm~591.5nm Yellow 120° 60mW 0603 Light Emitting Diodes (LED) ROHS</field>
+        <field name="Digikey">----</field>
+        <field name="LCSC">C72038</field>
+        <field name="Manufacturer">Everlight Elec</field>
+        <field name="PartNumber">19-213/Y2C-CQ2R2L/3T(CY)</field>
+        <field name="Power">20mA</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Device" part="LED_Filled" description="Light emitting diode, filled shape"/>
+      <property name="Digikey" value="----"/>
+      <property name="LCSC" value="C72038"/>
+      <property name="Manufacturer" value="Everlight Elec"/>
+      <property name="PartNumber" value="19-213/Y2C-CQ2R2L/3T(CY)"/>
+      <property name="Power" value="20mA"/>
+      <property name="Tolerance" value="_"/>
+      <property name="Description" value="无色透明透镜 -40℃~+85℃ 585.5nm~591.5nm Yellow 120° 60mW 0603 Light Emitting Diodes (LED) ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode, filled shape"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>7eff7c6b-ad8c-4691-9a09-f00a9aeab05d</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>red</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">-40℃~+85℃ Red 0603 Light Emitting Diodes (LED) ROHS</field>
+        <field name="Digikey">-----</field>
+        <field name="LCSC">C2286</field>
+        <field name="Manufacturer">Hubei KENTO Elec</field>
+        <field name="PartNumber">KT-0603R</field>
+        <field name="Power">20mA</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Device" part="LED_Filled" description="Light emitting diode, filled shape"/>
+      <property name="Digikey" value="-----"/>
+      <property name="LCSC" value="C2286"/>
+      <property name="Manufacturer" value="Hubei KENTO Elec"/>
+      <property name="PartNumber" value="KT-0603R"/>
+      <property name="Power" value="20mA"/>
+      <property name="Tolerance" value="_"/>
+      <property name="Description" value="-40℃~+85℃ Red 0603 Light Emitting Diodes (LED) ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <property name="ki_description" value="Light emitting diode, filled shape"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>b73689e7-5371-4100-9d1f-508b8afdc3eb</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>USB-Micro</value>
+      <footprint>Celebi:usb-MicroXNJ</footprint>
+      <fields>
+        <field name="Description">1A USB 2.0 1 Surface Mount 5 Female -20℃~+85℃ Micro-B SMD  USB Connectors ROHS</field>
+        <field name="Digikey">!732-5961-1-ND</field>
+        <field name="LCSC">C404969</field>
+        <field name="Manufacturer">Shou_Han</field>
+        <field name="PartNumber">MicroXNJ</field>
+        <field name="Power">1.8A</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Celebi" part="USB-Micro" description=""/>
+      <property name="Tolerance" value="_"/>
+      <property name="Power" value="1.8A"/>
+      <property name="Manufacturer" value="Shou_Han"/>
+      <property name="PartNumber" value="MicroXNJ"/>
+      <property name="Digikey" value="!732-5961-1-ND"/>
+      <property name="LCSC" value="C404969"/>
+      <property name="Description" value="1A USB 2.0 1 Surface Mount 5 Female -20℃~+85℃ Micro-B SMD  USB Connectors ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-00006189f77b</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>TSM-108-01-T-SH-A-P-TR</value>
+      <footprint>conn:SAMTEC_TSM-108-01-T-SH-A-P-TR_hole1.5mm</footprint>
+      <libsource lib="Connector" part="Conn_01x08_Pin" description="Generic connector, single row, 01x08, script generated"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x08, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>124be00b-7c4b-44a1-ac37-f5e21129a574</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Raspberry-Pi_2x5-Pin_Header</value>
+      <footprint>rs485RPihat:con-WR-PHD-61031021821</footprint>
+      <fields>
+        <field name="Description">2.54mm 2.54mm 双排 Gold Brass 2x5P 10 SMD,P=2.54mm  Female Headers ROHS</field>
+        <field name="Digikey">_</field>
+        <field name="LCSC">C261072</field>
+        <field name="Manufacturer">Boomele</field>
+        <field name="PartNumber">C261072</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Celebi" part="Raspberry-Pi4_Reverse_10P" description=""/>
+      <property name="Tolerance" value="_"/>
+      <property name="Power" value="_"/>
+      <property name="Manufacturer" value="Boomele"/>
+      <property name="PartNumber" value="C261072"/>
+      <property name="Digikey" value="_"/>
+      <property name="LCSC" value="C261072"/>
+      <property name="Description" value="2.54mm 2.54mm 双排 Gold Brass 2x5P 10 SMD,P=2.54mm  Female Headers ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000060ea0c9e</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x04</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Description">Straight 2.54mm 6mm -40℃~+105℃ 3mm 4 2.54mm Plugin Black Brass 1x4P Plugin,P=2.54mm  Pin Headers ROHS</field>
+        <field name="Digikey">_</field>
+        <field name="LCSC">C124378</field>
+        <field name="Manufacturer">Ckmtw</field>
+        <field name="PartNumber">B-2100S04P-A110</field>
+        <field name="Power">3A</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Celebi" part="Conn_01x04" description=""/>
+      <property name="Tolerance" value="_"/>
+      <property name="Power" value="3A"/>
+      <property name="Manufacturer" value="Ckmtw"/>
+      <property name="PartNumber" value="B-2100S04P-A110"/>
+      <property name="Digikey" value="_"/>
+      <property name="LCSC" value="C124378"/>
+      <property name="Description" value="Straight 2.54mm 6mm -40℃~+105℃ 3mm 4 2.54mm Plugin Black Brass 1x4P Plugin,P=2.54mm  Pin Headers ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000060e9a81a</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>USB_C_Receptacle</value>
+      <footprint>Connector_USB:USB_C_Receptacle_Palconn_UTC16-G</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <fields>
+        <field name="Description">5A 1 Surface Mount 16 Female -25℃~+85℃ Type-C SMD USB Connectors ROHS</field>
+        <field name="LCSC">C2765186</field>
+      </fields>
+      <libsource lib="USB" part="USB_C_Receptacle" description="USB Full-Featured Type-C Receptacle connector"/>
+      <property name="LCSC" value="C2765186"/>
+      <property name="Description" value="5A 1 Surface Mount 16 Female -25℃~+85℃ Type-C SMD USB Connectors ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <property name="ki_description" value="USB Full-Featured Type-C Receptacle connector"/>
+      <property name="ki_keywords" value="usb universal serial bus type-C full-featured"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>b7cc3d0e-1fc8-4cd7-a3c2-1509da6ebf42</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>Bead_300R</value>
+      <footprint>Celebi:SM0603L</footprint>
+      <fields>
+        <field name="Description">180mΩ ±25% 300Ω@100MHz 0603  Ferrite Beads ROHS</field>
+        <field name="Digikey">!732-1592-1-ND</field>
+        <field name="LCSC">C139165</field>
+        <field name="Manufacturer">Guangdong_Fenghua_Advanced_Tech</field>
+        <field name="PartNumber">CBM160808U301T</field>
+        <field name="Power">1.5A</field>
+        <field name="Tolerance">25%</field>
+      </fields>
+      <libsource lib="Celebi" part="inductor" description=""/>
+      <property name="Tolerance" value="25%"/>
+      <property name="Power" value="1.5A"/>
+      <property name="Manufacturer" value="Guangdong_Fenghua_Advanced_Tech"/>
+      <property name="PartNumber" value="CBM160808U301T"/>
+      <property name="Digikey" value="!732-1592-1-ND"/>
+      <property name="LCSC" value="C139165"/>
+      <property name="Description" value="180mΩ ±25% 300Ω@100MHz 0603  Ferrite Beads ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000061672e90</tstamps>
+    </comp>
+    <comp ref="L2">
+      <value>Bead_300R</value>
+      <footprint>Celebi:SM0603L</footprint>
+      <fields>
+        <field name="Description">180mΩ ±25% 300Ω@100MHz 0603  Ferrite Beads ROHS</field>
+        <field name="Digikey">!732-1592-1-ND</field>
+        <field name="LCSC">C139165</field>
+        <field name="Manufacturer">Guangdong_Fenghua_Advanced_Tech</field>
+        <field name="PartNumber">CBM160808U301T</field>
+        <field name="Power">1.5A</field>
+        <field name="Tolerance">25%</field>
+      </fields>
+      <libsource lib="Celebi" part="inductor" description=""/>
+      <property name="Tolerance" value="25%"/>
+      <property name="Power" value="1.5A"/>
+      <property name="Manufacturer" value="Guangdong_Fenghua_Advanced_Tech"/>
+      <property name="PartNumber" value="CBM160808U301T"/>
+      <property name="Digikey" value="!732-1592-1-ND"/>
+      <property name="LCSC" value="C139165"/>
+      <property name="Description" value="180mΩ ±25% 300Ω@100MHz 0603  Ferrite Beads ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000061672e9f</tstamps>
+    </comp>
+    <comp ref="L3">
+      <value>Bead_300R</value>
+      <footprint>Celebi:SM0603L</footprint>
+      <fields>
+        <field name="Description">180mΩ ±25% 300Ω@100MHz 0603  Ferrite Beads ROHS</field>
+        <field name="Digikey">!732-1592-1-ND</field>
+        <field name="LCSC">C139165</field>
+        <field name="Manufacturer">Guangdong_Fenghua_Advanced_Tech</field>
+        <field name="PartNumber">CBM160808U301T</field>
+        <field name="Power">1.5A</field>
+        <field name="Tolerance">25%</field>
+      </fields>
+      <libsource lib="Celebi" part="inductor" description=""/>
+      <property name="Tolerance" value="25%"/>
+      <property name="Power" value="1.5A"/>
+      <property name="Manufacturer" value="Guangdong_Fenghua_Advanced_Tech"/>
+      <property name="PartNumber" value="CBM160808U301T"/>
+      <property name="Digikey" value="!732-1592-1-ND"/>
+      <property name="LCSC" value="C139165"/>
+      <property name="Description" value="180mΩ ±25% 300Ω@100MHz 0603  Ferrite Beads ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-0000601aa6fa</tstamps>
+    </comp>
+    <comp ref="L4">
+      <value>Bead_300R</value>
+      <footprint>Celebi:SM0603L</footprint>
+      <fields>
+        <field name="Description">180mΩ ±25% 300Ω@100MHz 0603  Ferrite Beads ROHS</field>
+        <field name="Digikey">!732-1592-1-ND</field>
+        <field name="LCSC">C139165</field>
+        <field name="Manufacturer">Guangdong_Fenghua_Advanced_Tech</field>
+        <field name="PartNumber">CBM160808U301T</field>
+        <field name="Power">1.5A</field>
+        <field name="Tolerance">25%</field>
+      </fields>
+      <libsource lib="Celebi" part="inductor" description=""/>
+      <property name="Tolerance" value="25%"/>
+      <property name="Power" value="1.5A"/>
+      <property name="Manufacturer" value="Guangdong_Fenghua_Advanced_Tech"/>
+      <property name="PartNumber" value="CBM160808U301T"/>
+      <property name="Digikey" value="!732-1592-1-ND"/>
+      <property name="LCSC" value="C139165"/>
+      <property name="Description" value="180mΩ ±25% 300Ω@100MHz 0603  Ferrite Beads ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-0000601aa6fb</tstamps>
+    </comp>
+    <comp ref="L5">
+      <value>Bead_300R</value>
+      <footprint>Celebi:SM0603L</footprint>
+      <fields>
+        <field name="Description">180mΩ ±25% 300Ω@100MHz 0603  Ferrite Beads ROHS</field>
+        <field name="Digikey">!732-1592-1-ND</field>
+        <field name="LCSC">C139165</field>
+        <field name="Manufacturer">Guangdong_Fenghua_Advanced_Tech</field>
+        <field name="PartNumber">CBM160808U301T</field>
+        <field name="Power">1.5A</field>
+        <field name="Tolerance">25%</field>
+      </fields>
+      <libsource lib="Celebi" part="inductor" description=""/>
+      <property name="Tolerance" value="25%"/>
+      <property name="Power" value="1.5A"/>
+      <property name="Manufacturer" value="Guangdong_Fenghua_Advanced_Tech"/>
+      <property name="PartNumber" value="CBM160808U301T"/>
+      <property name="Digikey" value="!732-1592-1-ND"/>
+      <property name="LCSC" value="C139165"/>
+      <property name="Description" value="180mΩ ±25% 300Ω@100MHz 0603  Ferrite Beads ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-0000612c80a0</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>BSS84AK,215</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_Nexperia-BSS84AK-215_C127273.pdf</datasheet>
+      <fields>
+        <field name="Description">50V 180mA 7.5Ω@10V,100mA P Channel SOT-23(TO-236)  MOSFETs ROHS</field>
+        <field name="Digikey">---</field>
+        <field name="LCSC">C127273</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="PartNumber">BSS84AK,215</field>
+        <field name="Power">50V 180mA</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Device" part="Q_PMOS_GSD" description="P-MOSFET transistor, gate/source/drain"/>
+      <property name="Description" value="50V 180mA 7.5Ω@10V,100mA P Channel SOT-23(TO-236)  MOSFETs ROHS"/>
+      <property name="Digikey" value="---"/>
+      <property name="LCSC" value="C127273"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="PartNumber" value="BSS84AK,215"/>
+      <property name="Power" value="50V 180mA"/>
+      <property name="Tolerance" value="_"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <property name="ki_description" value="P-MOSFET transistor, gate/source/drain"/>
+      <property name="ki_keywords" value="transistor PMOS P-MOS P-MOSFET"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>d338a7dd-e0db-4653-ad90-428c099872c2</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-10.0KHRCT-ND</field>
+        <field name="LCSC">C98220</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">RC0603FR-0710KL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="RC0603FR-0710KL"/>
+      <property name="Digikey" value="311-10.0KHRCT-ND"/>
+      <property name="LCSC" value="C98220"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000060fc110f</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>4k7</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 4.7kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-4.70KHRCT-ND</field>
+        <field name="LCSC">C99782</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">RC0603FR-074K7L</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="RC0603FR-074K7L"/>
+      <property name="Digikey" value="311-4.70KHRCT-ND"/>
+      <property name="LCSC" value="C99782"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 4.7kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-0000610d4d0e</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-10.0KHRCT-ND</field>
+        <field name="LCSC">C98220</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">RC0603FR-0710KL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="RC0603FR-0710KL"/>
+      <property name="Digikey" value="311-10.0KHRCT-ND"/>
+      <property name="LCSC" value="C98220"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-0000601aa6f1</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-10.0KHRCT-ND</field>
+        <field name="LCSC">C98220</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">RC0603FR-0710KL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="RC0603FR-0710KL"/>
+      <property name="Digikey" value="311-10.0KHRCT-ND"/>
+      <property name="LCSC" value="C98220"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-0000601aa6f2</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>220R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2010191935_Ever-Ohms-Tech-CR0603J220RP05Z_C881409.pdf</datasheet>
+      <fields>
+        <field name="Description">100mW ±100ppm/℃ ±5% 220Ω 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">---</field>
+        <field name="LCSC">C881409</field>
+        <field name="Manufacturer">Ever Ohms Tech</field>
+        <field name="PartNumber">CR0603J220RP05Z</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">5%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Ever Ohms Tech"/>
+      <property name="PartNumber" value="CR0603J220RP05Z"/>
+      <property name="Digikey" value="---"/>
+      <property name="LCSC" value="C881409"/>
+      <property name="Description" value="100mW ±100ppm/℃ ±5% 220Ω 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-0000601aa6f8</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-10.0KHRCT-ND</field>
+        <field name="LCSC">C98220</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">RC0603FR-0710KL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="RC0603FR-0710KL"/>
+      <property name="Digikey" value="311-10.0KHRCT-ND"/>
+      <property name="LCSC" value="C98220"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000060eb67e3</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-10.0KHRCT-ND</field>
+        <field name="LCSC">C98220</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">RC0603FR-0710KL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="RC0603FR-0710KL"/>
+      <property name="Digikey" value="311-10.0KHRCT-ND"/>
+      <property name="LCSC" value="C98220"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000060f16119</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-10.0KHRCT-ND</field>
+        <field name="LCSC">C98220</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">RC0603FR-0710KL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="RC0603FR-0710KL"/>
+      <property name="Digikey" value="311-10.0KHRCT-ND"/>
+      <property name="LCSC" value="C98220"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000060f24396</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 1kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-1.00KHRCT-ND</field>
+        <field name="LCSC">C21190</field>
+        <field name="Manufacturer">Uniroyal_Elec</field>
+        <field name="PartNumber">0603WAF1001T5E</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Uniroyal_Elec"/>
+      <property name="PartNumber" value="0603WAF1001T5E"/>
+      <property name="Digikey" value="311-1.00KHRCT-ND"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 1kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000068da49d1</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 1kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-1.00KHRCT-ND</field>
+        <field name="LCSC">C21190</field>
+        <field name="Manufacturer">Uniroyal_Elec</field>
+        <field name="PartNumber">0603WAF1001T5E</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Uniroyal_Elec"/>
+      <property name="PartNumber" value="0603WAF1001T5E"/>
+      <property name="Digikey" value="311-1.00KHRCT-ND"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 1kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-0000616b7d7c</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 1kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-1.00KHRCT-ND</field>
+        <field name="LCSC">C21190</field>
+        <field name="Manufacturer">Uniroyal_Elec</field>
+        <field name="PartNumber">0603WAF1001T5E</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Uniroyal_Elec"/>
+      <property name="PartNumber" value="0603WAF1001T5E"/>
+      <property name="Digikey" value="311-1.00KHRCT-ND"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 1kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-0000616c8482</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 1kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-1.00KHRCT-ND</field>
+        <field name="LCSC">C21190</field>
+        <field name="Manufacturer">Uniroyal_Elec</field>
+        <field name="PartNumber">0603WAF1001T5E</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Uniroyal_Elec"/>
+      <property name="PartNumber" value="0603WAF1001T5E"/>
+      <property name="Digikey" value="311-1.00KHRCT-ND"/>
+      <property name="LCSC" value="C21190"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 1kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>a7956f74-0f3d-4340-b593-7a47e90459b4</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>560R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_YAGEO-AC0603JR-07560RL_C228211.pdf</datasheet>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±5% 560Ω 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">---</field>
+        <field name="LCSC">C228211</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">AC0603JR-07560RL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">5%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="AC0603JR-07560RL"/>
+      <property name="Digikey" value="---"/>
+      <property name="LCSC" value="C228211"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±5% 560Ω 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>3616e8f3-2815-444e-b416-f400a1c4d9e6</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">62.5mW Thick Film Resistors ±100ppm/℃ ±1% 5.1kΩ 0402  Chip Resistor - Surface Mount ROHS</field>
+        <field name="LCSC">C25905</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value=""/>
+      <property name="LCSC" value="C25905"/>
+      <property name="Description" value="62.5mW Thick Film Resistors ±100ppm/℃ ±1% 5.1kΩ 0402  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>4d770cf5-2570-44ce-82d7-01b22dd0dfa9</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>5.1k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Description">62.5mW Thick Film Resistors ±100ppm/℃ ±1% 5.1kΩ 0402  Chip Resistor - Surface Mount ROHS</field>
+        <field name="LCSC">C25905</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value=""/>
+      <property name="LCSC" value="C25905"/>
+      <property name="Description" value="62.5mW Thick Film Resistors ±100ppm/℃ ±1% 5.1kΩ 0402  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>ae93933d-bd7e-4401-b9d9-e5d7ebc1523c</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-10.0KHRCT-ND</field>
+        <field name="LCSC">C98220</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">RC0603FR-0710KL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="RC0603FR-0710KL"/>
+      <property name="Digikey" value="311-10.0KHRCT-ND"/>
+      <property name="LCSC" value="C98220"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>442fd69f-20af-46a9-84fd-159d8dfdda49</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>560R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_YAGEO-AC0603JR-07560RL_C228211.pdf</datasheet>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±5% 560Ω 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">---</field>
+        <field name="LCSC">C228211</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">AC0603JR-07560RL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">5%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="AC0603JR-07560RL"/>
+      <property name="Digikey" value="---"/>
+      <property name="LCSC" value="C228211"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±5% 560Ω 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>c47acf45-e990-42a0-86bf-0df68725e0a0</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-10.0KHRCT-ND</field>
+        <field name="LCSC">C98220</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">RC0603FR-0710KL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="RC0603FR-0710KL"/>
+      <property name="Digikey" value="311-10.0KHRCT-ND"/>
+      <property name="LCSC" value="C98220"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>d6d33aae-5c81-430c-b0af-d4d55f3626db</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810170226_Vishay-Intertech-MCT06030D2002BP500_C154077.pdf</datasheet>
+      <fields>
+        <field name="Description">100mW Thin Film Resistor ±25ppm/℃ ±0.1% 20kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">---</field>
+        <field name="LCSC">C154077</field>
+        <field name="Manufacturer">Vishay Intertech</field>
+        <field name="PartNumber">MCT06030D2002BP500</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">0.1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="0.1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Vishay Intertech"/>
+      <property name="PartNumber" value="MCT06030D2002BP500"/>
+      <property name="Digikey" value="---"/>
+      <property name="LCSC" value="C154077"/>
+      <property name="Description" value="100mW Thin Film Resistor ±25ppm/℃ ±0.1% 20kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>6a99e195-a5f7-4776-be2a-891ea2ee3f3e</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_LIZ-Elec-CR0603FA4701G_C101062.pdf</datasheet>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 4.7kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">---</field>
+        <field name="LCSC">C101062</field>
+        <field name="Manufacturer">LIZ Elec</field>
+        <field name="PartNumber">CR0603FA4701G</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="LIZ Elec"/>
+      <property name="PartNumber" value="CR0603FA4701G"/>
+      <property name="Digikey" value="---"/>
+      <property name="LCSC" value="C101062"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 4.7kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>b0fc549a-bf2f-405e-bc34-4e3d644a696b</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>560R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_YAGEO-AC0603JR-07560RL_C228211.pdf</datasheet>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±5% 560Ω 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">---</field>
+        <field name="LCSC">C228211</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">AC0603JR-07560RL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">5%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="AC0603JR-07560RL"/>
+      <property name="Digikey" value="---"/>
+      <property name="LCSC" value="C228211"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±5% 560Ω 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>1305c230-a5be-4c76-9470-a109e7f225c1</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>560R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_YAGEO-AC0603JR-07560RL_C228211.pdf</datasheet>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±5% 560Ω 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">---</field>
+        <field name="LCSC">C228211</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">AC0603JR-07560RL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">5%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="AC0603JR-07560RL"/>
+      <property name="Digikey" value="---"/>
+      <property name="LCSC" value="C228211"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±5% 560Ω 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>039b8e52-d6bb-4e99-a937-4c1d8f677d70</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>560R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_YAGEO-AC0603JR-07560RL_C228211.pdf</datasheet>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±5% 560Ω 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">---</field>
+        <field name="LCSC">C228211</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">AC0603JR-07560RL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">5%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="5%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="AC0603JR-07560RL"/>
+      <property name="Digikey" value="---"/>
+      <property name="LCSC" value="C228211"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±5% 560Ω 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>77e54020-89d0-47ed-978e-5fa14bb4e734</tstamps>
+    </comp>
+    <comp ref="R25">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-10.0KHRCT-ND</field>
+        <field name="LCSC">C98220</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">RC0603FR-0710KL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="RC0603FR-0710KL"/>
+      <property name="Digikey" value="311-10.0KHRCT-ND"/>
+      <property name="LCSC" value="C98220"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>967c8b9c-1b15-40ae-bc3d-1fab6c5f072f</tstamps>
+    </comp>
+    <comp ref="R26">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810170226_Vishay-Intertech-MCT06030D2002BP500_C154077.pdf</datasheet>
+      <fields>
+        <field name="Description">100mW Thin Film Resistor ±25ppm/℃ ±0.1% 20kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">---</field>
+        <field name="LCSC">C154077</field>
+        <field name="Manufacturer">Vishay Intertech</field>
+        <field name="PartNumber">MCT06030D2002BP500</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">0.1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="0.1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Vishay Intertech"/>
+      <property name="PartNumber" value="MCT06030D2002BP500"/>
+      <property name="Digikey" value="---"/>
+      <property name="LCSC" value="C154077"/>
+      <property name="Description" value="100mW Thin Film Resistor ±25ppm/℃ ±0.1% 20kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>f553f882-c972-498e-9df5-2fdd8df29872</tstamps>
+    </comp>
+    <comp ref="R27">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Description">100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS</field>
+        <field name="Digikey">311-10.0KHRCT-ND</field>
+        <field name="LCSC">C98220</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="PartNumber">RC0603FR-0710KL</field>
+        <field name="Power">1/10W</field>
+        <field name="Tolerance">1%</field>
+      </fields>
+      <libsource lib="Celebi" part="resistor" description=""/>
+      <property name="Tolerance" value="1%"/>
+      <property name="Power" value="1/10W"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="PartNumber" value="RC0603FR-0710KL"/>
+      <property name="Digikey" value="311-10.0KHRCT-ND"/>
+      <property name="LCSC" value="C98220"/>
+      <property name="Description" value="100mW Thick Film Resistors ±100ppm/℃ ±1% 10kΩ 0603  Chip Resistor - Surface Mount ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>711e0955-5dad-4d8f-8ac4-dcb4eac9cb36</tstamps>
+    </comp>
+    <comp ref="T1">
+      <value>CM_Choke_90R</value>
+      <footprint>Celebi:tr-smd-WE-CNSW_0805</footprint>
+      <fields>
+        <field name="Description">90Ω@100MHz 350mΩ 2 0805  Common Mode Filters ROHS</field>
+        <field name="Digikey">!732-3198-1-ND</field>
+        <field name="LCSC">C54888</field>
+        <field name="Manufacturer">Sunlord</field>
+        <field name="PartNumber">SDCW2012-2-900TF</field>
+        <field name="Power">0.37A</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Celebi" part="744231091" description=""/>
+      <property name="Tolerance" value="_"/>
+      <property name="Power" value="0.37A"/>
+      <property name="Manufacturer" value="Sunlord"/>
+      <property name="PartNumber" value="SDCW2012-2-900TF"/>
+      <property name="Digikey" value="!732-3198-1-ND"/>
+      <property name="LCSC" value="C54888"/>
+      <property name="Description" value="90Ω@100MHz 350mΩ 2 0805  Common Mode Filters ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>00000000-0000-0000-0000-000061672e5c</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>CP2102N-A02-GQFN24R</value>
+      <footprint>Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304140030_SILICON-LABS-CP2102N-A02-GQFN24R_C969151.pdf</datasheet>
+      <fields>
+        <field name="Description">USB转UART UART QFN-24-EP(4x4)  USB ICs ROHS</field>
+        <field name="Digikey">_</field>
+        <field name="LCSC">C969151</field>
+        <field name="Manufacturer">SILICON LABS</field>
+        <field name="PartNumber">CP2102N-A02-GQFN24R</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Interface_USB" part="CP2102N-Axx-xQFN24" description="USB to UART master bridge, QFN-24"/>
+      <property name="Description" value="USB转UART UART QFN-24-EP(4x4)  USB ICs ROHS"/>
+      <property name="Digikey" value="_"/>
+      <property name="LCSC" value="C969151"/>
+      <property name="Manufacturer" value="SILICON LABS"/>
+      <property name="PartNumber" value="CP2102N-A02-GQFN24R"/>
+      <property name="Power" value="_"/>
+      <property name="Tolerance" value="_"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <property name="ki_description" value="USB to UART master bridge, QFN-24"/>
+      <property name="ki_keywords" value="USB UART bridge"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>f667849b-0b99-4ae9-84ee-f99d12aea449</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>LM393DR2G</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <fields>
+        <field name="Description">5mV 0.25uA 2 SOIC-8  Comparators ROHS</field>
+        <field name="Digikey">_</field>
+        <field name="LCSC">C7955</field>
+        <field name="Manufacturer">onsemi</field>
+        <field name="PartNumber">LM393DR2G</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Comparator" part="LM393" description="Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"/>
+      <property name="Digikey" value="_"/>
+      <property name="LCSC" value="C7955"/>
+      <property name="Manufacturer" value="onsemi"/>
+      <property name="PartNumber" value="LM393DR2G"/>
+      <property name="Power" value="_"/>
+      <property name="Tolerance" value="_"/>
+      <property name="Description" value="5mV 0.25uA 2 SOIC-8  Comparators ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <property name="ki_description" value="Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8"/>
+      <property name="ki_keywords" value="cmp open collector"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>9e304fd9-8611-434d-90f4-55b0a81404b3 9625921e-4b2a-4909-b5ab-b124d86b0ae6 8bbc771b-3c83-43e4-9319-f143e5621448</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>SP3485EN</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>http://www.icbase.com/pdf/SPX/SPX00480106.pdf</datasheet>
+      <fields>
+        <field name="Description">transceiver 10Mbps 1/1 SOIC-8  RS-485/RS-422 ICs ROHS</field>
+        <field name="LCSC">C8963</field>
+        <field name="Manufacturer">MaxLinear</field>
+        <field name="PartNumber">SP3485EN-L/TR</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="Interface_UART" part="SP3485EN" description="Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8"/>
+      <property name="LCSC" value="C8963"/>
+      <property name="Description" value="transceiver 10Mbps 1/1 SOIC-8  RS-485/RS-422 ICs ROHS"/>
+      <property name="Manufacturer" value="MaxLinear"/>
+      <property name="PartNumber" value="SP3485EN-L/TR"/>
+      <property name="Power" value="_"/>
+      <property name="Tolerance" value="_"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <property name="ki_description" value="Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8"/>
+      <property name="ki_keywords" value="Low Power Half-Duplex RS-485 Transceiver 10Mbps"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>38584aa2-988d-46de-8254-7374da227f54</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>CD4023BM/TR</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2304111630_HGSEMI-CD4023BM-TR_C910853.pdf</datasheet>
+      <fields>
+        <field name="Description">SOIC-14  Gates ROHS</field>
+        <field name="Digikey">_</field>
+        <field name="LCSC">C910853</field>
+        <field name="Manufacturer">HGSEMI</field>
+        <field name="PartNumber">CD4023BM/TR</field>
+        <field name="Power">_</field>
+        <field name="Tolerance">_</field>
+      </fields>
+      <libsource lib="4xxx" part="4023" description="Triple Nand 3 inputs"/>
+      <property name="Digikey" value="_"/>
+      <property name="LCSC" value="C910853"/>
+      <property name="Manufacturer" value="HGSEMI"/>
+      <property name="PartNumber" value="CD4023BM/TR"/>
+      <property name="Power" value="_"/>
+      <property name="Tolerance" value="_"/>
+      <property name="Description" value="SOIC-14  Gates ROHS"/>
+      <property name="Sheetname" value="schTop"/>
+      <property name="Sheetfile" value="schTop.kicad_sch"/>
+      <property name="ki_description" value="Triple Nand 3 inputs"/>
+      <property name="ki_keywords" value="CMOS Nand3"/>
+      <sheetpath names="/index/schTop/" tstamps="/eef31ba5-994a-4dab-8b67-8b56d6ec3764/51d7b191-4731-4885-91cc-26f33b9ffa53/"/>
+      <tstamps>5a257809-1099-4134-ad77-c02bd07b91a0 4212d3e8-105c-4c35-a4c1-747ece4e142c 9cc318f5-1a1e-4768-a3e4-faa81f67e5b1 09e8835e-98c7-40a4-87ce-be52932518a3</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="4xxx" part="4023">
+      <description>Triple Nand 3 inputs</description>
+      <docs>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</docs>
+      <footprints>
+        <fp>DIP?14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4023</field>
+        <field name="Datasheet">http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="input"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="output"/>
+        <pin num="7" name="VSS" type="power_in"/>
+        <pin num="8" name="" type="input"/>
+        <pin num="9" name="" type="output"/>
+        <pin num="10" name="" type="output"/>
+        <pin num="11" name="" type="input"/>
+        <pin num="12" name="" type="input"/>
+        <pin num="13" name="" type="input"/>
+        <pin num="14" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Celebi" part="744231091">
+      <fields>
+        <field name="Reference">T</field>
+        <field name="Value">Celebi_744231091</field>
+        <field name="Footprint">Celebi:</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Celebi" part="824015">
+      <footprints>
+        <fp>TO220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">Celebi_824015</field>
+        <field name="Footprint">Celebi:SOT23-6L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IO1" type="passive"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="IO2" type="passive"/>
+        <pin num="4" name="IO3" type="passive"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="IO4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Celebi" part="Conn_01x04">
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Celebi_Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Celebi" part="Diode-Schottky">
+      <footprints>
+        <fp>D?</fp>
+        <fp>S*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">Celebi_Diode-Schottky</field>
+        <field name="Footprint">Celebi:</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Celebi" part="Raspberry-Pi4_Reverse_10P">
+      <footprints>
+        <fp>VSSOP8*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Celebi_Raspberry-Pi4_Reverse_10P</field>
+        <field name="Footprint">Celebi:</field>
+      </fields>
+      <pins>
+        <pin num="1" name="5V" type="power_in"/>
+        <pin num="2" name="3.3V" type="power_out"/>
+        <pin num="3" name="5V" type="power_in"/>
+        <pin num="4" name="GPIO_02(SDA1)" type="bidirectional"/>
+        <pin num="5" name="GND" type="bidirectional"/>
+        <pin num="6" name="GPIO_03(SCL1)" type="bidirectional"/>
+        <pin num="7" name="GPIO_14(TXD0)" type="bidirectional"/>
+        <pin num="8" name="GPIO_04(GPIO_GCLK)" type="bidirectional"/>
+        <pin num="9" name="GPIO_15(RXD0)" type="bidirectional"/>
+        <pin num="10" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Celebi" part="SM712">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">Celebi_SM712</field>
+        <field name="Footprint">Celebi:</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Anode" type="passive"/>
+        <pin num="2" name="cathode" type="passive"/>
+        <pin num="3" name="AK" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Celebi" part="USB-Micro">
+      <footprints>
+        <fp>DB9*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Celebi_USB-Micro</field>
+        <field name="Footprint">Celebi</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="passive"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="ID" type="passive"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="CH" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Celebi" part="capacitor">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Celebi_capacitor</field>
+        <field name="Footprint">Celebi:</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Celebi" part="inductor">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">Celebi_inductor</field>
+        <field name="Footprint">Celebi:</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Celebi" part="resistor">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Celebi_resistor</field>
+        <field name="Footprint">Celebi:</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Comparator" part="LM393">
+      <description>Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm393.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SOP*5.28x5.23mm*P1.27mm*</fp>
+        <fp>VSSOP*3.0x3.0mm*P0.65mm*</fp>
+        <fp>TSSOP*4.4x3mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM393</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm393.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="open_collector"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="" type="open_collector"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x08_Pin">
+      <description>Generic connector, single row, 01x08, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED_Filled">
+      <description>Light emitting diode, filled shape</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_Filled</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_PMOS_GSD">
+      <description>P-MOSFET transistor, gate/source/drain</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PMOS_GSD</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Interface_UART" part="SP3485EN">
+      <description>Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8</description>
+      <docs>http://www.icbase.com/pdf/SPX/SPX00480106.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SP3485EN</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet">http://www.icbase.com/pdf/SPX/SPX00480106.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RO" type="output"/>
+        <pin num="2" name="~{RE}" type="input"/>
+        <pin num="3" name="DE" type="input"/>
+        <pin num="4" name="DI" type="input"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="A" type="bidirectional"/>
+        <pin num="7" name="B" type="bidirectional"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Interface_USB" part="CP2102N-Axx-xQFN24">
+      <description>USB to UART master bridge, QFN-24</description>
+      <docs>https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf</docs>
+      <footprints>
+        <fp>QFN*4x4mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CP2102N-Axx-xQFN24</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm</field>
+        <field name="Datasheet">https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~{RI}/CLK" type="bidirectional"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="D+" type="bidirectional"/>
+        <pin num="4" name="D-" type="bidirectional"/>
+        <pin num="5" name="VIO" type="power_in"/>
+        <pin num="6" name="VDD" type="power_in"/>
+        <pin num="7" name="VREGIN" type="power_in"/>
+        <pin num="8" name="VBUS" type="input"/>
+        <pin num="9" name="~{RST}" type="input"/>
+        <pin num="10" name="NC" type="no_connect"/>
+        <pin num="11" name="~{WAKEUP}/GPIO.3" type="bidirectional"/>
+        <pin num="12" name="RS485/GPIO.2" type="bidirectional"/>
+        <pin num="13" name="~{RXT}/GPIO.1" type="bidirectional"/>
+        <pin num="14" name="~{TXT}/GPIO.0" type="bidirectional"/>
+        <pin num="15" name="~{SUSPEND}" type="output"/>
+        <pin num="16" name="NC" type="no_connect"/>
+        <pin num="17" name="SUSPEND" type="output"/>
+        <pin num="18" name="~{CTS}" type="input"/>
+        <pin num="19" name="~{RTS}" type="output"/>
+        <pin num="20" name="RXD" type="input"/>
+        <pin num="21" name="TXD" type="output"/>
+        <pin num="22" name="~{DSR}" type="input"/>
+        <pin num="23" name="~{DTR}" type="output"/>
+        <pin num="24" name="~{DCD}" type="input"/>
+        <pin num="25" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="USB" part="USB_C_Receptacle">
+      <description>USB Full-Featured Type-C Receptacle connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
+      <footprints>
+        <fp>USB*C*Receptacle*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J5</field>
+        <field name="Value">USB_C_Receptacle</field>
+        <field name="Footprint">Connector_USB:USB_C_Receptacle_Palconn_UTC16-G</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="LCSC">C2765186</field>
+        <field name="Description">5A 1 Surface Mount 16 Female -25℃~+85℃ Type-C SMD USB Connectors ROHS</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A4" name="VBUS" type="passive"/>
+        <pin num="A5" name="CC1" type="bidirectional"/>
+        <pin num="A6" name="D+" type="bidirectional"/>
+        <pin num="A7" name="D-" type="bidirectional"/>
+        <pin num="A8" name="SBU1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="bidirectional"/>
+        <pin num="B6" name="D+" type="bidirectional"/>
+        <pin num="B7" name="D-" type="bidirectional"/>
+        <pin num="B8" name="SBU2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="4xxx">
+      <uri>/usr/share/kicad/symbols//4xxx.kicad_sym</uri>
+    </library>
+    <library logical="Comparator">
+      <uri>/usr/share/kicad/symbols//Comparator.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Interface_UART">
+      <uri>/usr/share/kicad/symbols//Interface_UART.kicad_sym</uri>
+    </library>
+    <library logical="Interface_USB">
+      <uri>/usr/share/kicad/symbols//Interface_USB.kicad_sym</uri>
+    </library>
+    <library logical="USB">
+      <uri>/home/martinsivolella/Desktop/work/2023/upwk/tomr/RPH1/design/Raspberry_Pi_HAT_RS485/PCB/V6/lib/sch/USB.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="J2" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="3.3V" pintype="power_out"/>
+      <node ref="J4" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VIO" pintype="power_in"/>
+      <node ref="U1" pin="6" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="V+" pintype="power_in"/>
+      <node ref="U5" pin="8" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U6" pin="11" pintype="input"/>
+      <node ref="U6" pin="14" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U6" pin="3" pintype="input"/>
+      <node ref="U6" pin="4" pintype="input"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="K" pintype="passive"/>
+      <node ref="J2" pin="8" pinfunction="Pin_8" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R27" pin="2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="VREGIN" pintype="power_in"/>
+    </net>
+    <net code="3" name="/index/schTop/A">
+      <node ref="D3" pin="2" pinfunction="cathode" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J2" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="L3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/index/schTop/B">
+      <node ref="D3" pin="1" pinfunction="Anode" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="J2" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="L4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="/index/schTop/RS485A">
+      <node ref="L3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U5" pin="6" pinfunction="A" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/index/schTop/RS485B">
+      <node ref="L4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U5" pin="7" pinfunction="B" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/index/schTop/RXD">
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="RO" pintype="output"/>
+    </net>
+    <net code="8" name="/index/schTop/RXDA">
+      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="/index/schTop/RXDR">
+      <node ref="J3" pin="9" pinfunction="GPIO_15(RXD0)" pintype="bidirectional"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="/index/schTop/RXDU">
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="20" pinfunction="RXD" pintype="input"/>
+    </net>
+    <net code="11" name="/index/schTop/TXD">
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="U5" pin="4" pinfunction="DI" pintype="input"/>
+      <node ref="U6" pin="12" pintype="input"/>
+      <node ref="U6" pin="6" pintype="output"/>
+    </net>
+    <net code="12" name="/index/schTop/TXDA">
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U6" pin="8" pintype="input"/>
+    </net>
+    <net code="13" name="/index/schTop/TXDN">
+      <node ref="R24" pin="2" pintype="passive"/>
+      <node ref="U6" pin="5" pintype="input"/>
+      <node ref="U6" pin="9" pintype="output"/>
+    </net>
+    <net code="14" name="/index/schTop/TXDR">
+      <node ref="J3" pin="7" pinfunction="GPIO_14(TXD0)" pintype="bidirectional"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U6" pin="2" pintype="input"/>
+    </net>
+    <net code="15" name="/index/schTop/TXDU">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="21" pinfunction="TXD" pintype="output"/>
+      <node ref="U6" pin="1" pintype="input"/>
+    </net>
+    <net code="16" name="/index/schTop/TXEN">
+      <node ref="U5" pin="2" pinfunction="~{RE}" pintype="input"/>
+      <node ref="U5" pin="3" pinfunction="DE" pintype="input"/>
+      <node ref="U6" pin="10" pintype="output"/>
+    </net>
+    <net code="17" name="/index/schTop/USB_D+">
+      <node ref="D1" pin="6" pinfunction="IO4" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="D+" pintype="passive"/>
+      <node ref="J5" pin="A6" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="J5" pin="B6" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="T1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="18" name="/index/schTop/USB_D-">
+      <node ref="D1" pin="4" pinfunction="IO3" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="D-" pintype="passive"/>
+      <node ref="J5" pin="A7" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="J5" pin="B7" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="T1" pin="4" pinfunction="4" pintype="passive"/>
+    </net>
+    <net code="19" name="/index/schTop/USB_DM">
+      <node ref="T1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="D-" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="/index/schTop/USB_DP">
+      <node ref="T1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="D+" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/index/schTop/USB_GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="J1" pin="5" pinfunction="GND" pintype="passive"/>
+      <node ref="J5" pin="A1" pinfunction="GND" pintype="passive"/>
+      <node ref="J5" pin="A12" pinfunction="GND" pintype="passive"/>
+      <node ref="J5" pin="B1" pinfunction="GND" pintype="passive"/>
+      <node ref="J5" pin="B12" pinfunction="GND" pintype="passive"/>
+      <node ref="L2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="22" name="/index/schTop/USB_SH">
+      <node ref="J1" pin="6" pinfunction="CH" pintype="passive"/>
+      <node ref="J5" pin="S1" pinfunction="SHIELD" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="23" name="/index/schTop/USB_VCC">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D1" pin="5" pinfunction="VDD" pintype="power_in"/>
+      <node ref="J1" pin="1" pinfunction="VCC" pintype="passive"/>
+      <node ref="J5" pin="A4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J5" pin="A9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J5" pin="B4" pinfunction="VBUS" pintype="passive"/>
+      <node ref="J5" pin="B9" pinfunction="VBUS" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="24" name="/index/schTop/VBUS_div">
+      <node ref="R26" pin="2" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="VBUS" pintype="input"/>
+    </net>
+    <net code="25" name="/index/schTop/~{RST}">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="~{RST}" pintype="input"/>
+    </net>
+    <net code="26" name="GND">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J3" pin="10" pinfunction="GND" pintype="power_in"/>
+      <node ref="J3" pin="5" pinfunction="GND" pintype="bidirectional"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="L2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="L5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+      <node ref="R26" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="25" pinfunction="GND" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="V-" pintype="power_in"/>
+      <node ref="U2" pin="5" pinfunction="+" pintype="input"/>
+      <node ref="U2" pin="6" pinfunction="-" pintype="input"/>
+      <node ref="U5" pin="5" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="7" pinfunction="VSS" pintype="power_in"/>
+    </net>
+    <net code="27" name="Net-(D1-IO1)">
+      <node ref="D1" pin="1" pinfunction="IO1" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="ID" pintype="passive"/>
+    </net>
+    <net code="28" name="Net-(D3-AK)">
+      <node ref="D3" pin="3" pinfunction="AK" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="L5" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="29" name="Net-(D4-A)">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+    </net>
+    <net code="30" name="Net-(D5-A)">
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+    </net>
+    <net code="31" name="Net-(D6-A)">
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+    </net>
+    <net code="32" name="Net-(J5-CC1)">
+      <node ref="J5" pin="A5" pinfunction="CC1" pintype="bidirectional"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+    </net>
+    <net code="33" name="Net-(J5-CC2)">
+      <node ref="J5" pin="B5" pinfunction="CC2" pintype="bidirectional"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="34" name="Net-(Q1-D)">
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="35" name="Net-(Q1-G)">
+      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+    </net>
+    <net code="36" name="Net-(R21-Pad2)">
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="U2" pin="1" pintype="open_collector"/>
+      <node ref="U6" pin="13" pintype="input"/>
+    </net>
+    <net code="37" name="Net-(U2A-+)">
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="38" name="unconnected-(D1-IO2-Pad3)">
+      <node ref="D1" pin="3" pinfunction="IO2" pintype="passive+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(J3-5V-Pad1)">
+      <node ref="J3" pin="1" pinfunction="5V" pintype="power_in+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(J3-5V-Pad3)">
+      <node ref="J3" pin="3" pinfunction="5V" pintype="power_in+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(J3-GPIO_02(SDA1)-Pad4)">
+      <node ref="J3" pin="4" pinfunction="GPIO_02(SDA1)" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(J3-GPIO_03(SCL1)-Pad6)">
+      <node ref="J3" pin="6" pinfunction="GPIO_03(SCL1)" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(J3-GPIO_04(GPIO_GCLK)-Pad8)">
+      <node ref="J3" pin="8" pinfunction="GPIO_04(GPIO_GCLK)" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(J5-SBU1-PadA8)">
+      <node ref="J5" pin="A8" pinfunction="SBU1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(J5-SBU2-PadB8)">
+      <node ref="J5" pin="B8" pinfunction="SBU2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U1-NC-Pad10)">
+      <node ref="U1" pin="10" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U1-NC-Pad16)">
+      <node ref="U1" pin="16" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U1-RS485{slash}GPIO.2-Pad12)">
+      <node ref="U1" pin="12" pinfunction="RS485/GPIO.2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U1-SUSPEND-Pad17)">
+      <node ref="U1" pin="17" pinfunction="SUSPEND" pintype="output+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U1-~{CTS}-Pad18)">
+      <node ref="U1" pin="18" pinfunction="~{CTS}" pintype="input+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U1-~{DCD}-Pad24)">
+      <node ref="U1" pin="24" pinfunction="~{DCD}" pintype="input+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U1-~{DSR}-Pad22)">
+      <node ref="U1" pin="22" pinfunction="~{DSR}" pintype="input+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U1-~{DTR}-Pad23)">
+      <node ref="U1" pin="23" pinfunction="~{DTR}" pintype="output+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U1-~{RI}{slash}CLK-Pad1)">
+      <node ref="U1" pin="1" pinfunction="~{RI}/CLK" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U1-~{RTS}-Pad19)">
+      <node ref="U1" pin="19" pinfunction="~{RTS}" pintype="output+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U1-~{RXT}{slash}GPIO.1-Pad13)">
+      <node ref="U1" pin="13" pinfunction="~{RXT}/GPIO.1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(U1-~{SUSPEND}-Pad15)">
+      <node ref="U1" pin="15" pinfunction="~{SUSPEND}" pintype="output+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U1-~{TXT}{slash}GPIO.0-Pad14)">
+      <node ref="U1" pin="14" pinfunction="~{TXT}/GPIO.0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(U1-~{WAKEUP}{slash}GPIO.3-Pad11)">
+      <node ref="U1" pin="11" pinfunction="~{WAKEUP}/GPIO.3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(U2-Pad7)">
+      <node ref="U2" pin="7" pintype="open_collector+no_connect"/>
+    </net>
+  </nets>
+</export>
