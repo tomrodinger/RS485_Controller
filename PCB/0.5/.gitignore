@@ -1,0 +1,6 @@
+.DS_Store
+
+# Assembly outputs are intentional release artifacts.
+!production/bom.csv
+!production/positions.csv
+!production/designators.csv

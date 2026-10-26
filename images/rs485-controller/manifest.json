@@ -1,0 +1,51 @@
+{
+  "product": "Gearotons RS485 Controller",
+  "source": "Owner-supplied SharePoint photo archive, downloaded 2026-10-26",
+  "processing": "EXIF orientation applied; metadata removed; JPEG and WebP derivatives. Product appearance unchanged.",
+  "images": [
+    {
+      "id": "with-antenna",
+      "alt": "RS485 Controller with included external antenna, angled view",
+      "width": 5000,
+      "height": 4132,
+      "jpeg": "with-antenna.jpg",
+      "webp": "with-antenna.webp",
+      "webp_800": "with-antenna-800.webp",
+      "source_filename": "at an angle_1.jpg",
+      "source_sha256": "2c9574a4a309f2582860ef20d16482e5fe2a9ef5eb8fdc510b16a97402c2874f"
+    },
+    {
+      "id": "component-side",
+      "alt": "RS485 Controller component side showing ESP32-S3, USB-C ports and screw terminal",
+      "width": 2688,
+      "height": 2688,
+      "jpeg": "component-side.jpg",
+      "webp": "component-side.webp",
+      "webp_800": "component-side-800.webp",
+      "source_filename": "board front at an angle_4.jpg",
+      "source_sha256": "94aa819dff1efdb3d58ebfa6cc18671df3135f9040f5a5a205b5d35238a4dd76"
+    },
+    {
+      "id": "label-side",
+      "alt": "RS485 Controller label side showing connector labels and PCB revision",
+      "width": 1522,
+      "height": 1522,
+      "jpeg": "label-side.jpg",
+      "webp": "label-side.webp",
+      "webp_800": "label-side-800.webp",
+      "source_filename": "board back vertical.jpg",
+      "source_sha256": "796db2d04cf4b39c649b2e6781a9d231f3f09f29e2191d862d7c1b6804f80286"
+    },
+    {
+      "id": "ports",
+      "alt": "RS485 Controller component side with both USB-C sockets and motor power terminal",
+      "width": 2486,
+      "height": 2486,
+      "jpeg": "ports.jpg",
+      "webp": "ports.webp",
+      "webp_800": "ports-800.webp",
+      "source_filename": "board front thwartwise_3.jpg",
+      "source_sha256": "cdebc02481925efee16c5b577a48667eb215eef1fe71a76a49985a8f6219ff41"
+    }
+  ]
+}
