@@ -1,8 +1,12 @@
 # Gearotons RS485 Controller
 
-A programmable ESP32-S3 board with a half-duplex RS485 interface for Gearotons servomotors and other RS485 devices. The product includes an external antenna. One unit weighs **11.7 g including the antenna** (owner-supplied measurement).
+A programmable ESP32-S3 board with a half-duplex RS485 interface for Gearotons servomotors and other RS485 devices. The product includes an external antenna. One unit weighs **11.7 g including the antenna**.
 
 ![RS485 Controller with included external antenna](images/rs485-controller/with-antenna.webp)
+
+## Datasheet
+
+[Download the RS485 Controller datasheet v1.0 (PDF)](datasheet/rs485_controller_datasheet_v1.0.pdf). Covers PCB revision 0.5, connector pinouts, two-motor wiring, mechanical dimensions, breakout headers, Arduino setup and the controller schematic.
 
 ## Hardware
 
@@ -30,4 +34,3 @@ Program the ESP32-S3 through J5 using a suitable ESP32-S3 toolchain, such as the
 
 On 2026-10-26, KiCad 9.0.7 error-level DRC with schematic parity reported zero violations, zero unconnected items and zero schematic parity issues. This is a design-file check, not an electrical or thermal qualification of manufactured hardware.
 
-The product datasheet is being prepared separately and will be published after owner review.
