@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "hardware_revision": "0.5",
+  "pages": 13,
+  "pdf_sha256": "4dfcba25a5ceacff20ad8305ac91da044ab4e0c2aef2f2011713c8bd2900cf45",
+  "public_url": "https://raw.githubusercontent.com/tomrodinger/RS485_Controller/main/datasheet/rs485_controller_datasheet_v1.0.pdf",
+  "github_commit": "27ee2e222349cd57c9a223fb262a55f6a45d1a2a",
+  "published_files": [
+    "README.md",
+    "datasheet/rs485_controller_datasheet_v1.0.pdf"
+  ],
+  "public_download_matches_release": true,
+  "draft_and_internal_editorial_text_removed": true,
+  "original_pcb_design_unchanged": true,
+  "circuit_comment_cleanup": "release-schematic-cleanup.json",
+  "verification": "verification-v1.0.json",
+  "renders": "v1.0-pages/render-manifest.json"
+}

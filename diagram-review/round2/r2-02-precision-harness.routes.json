@@ -1,0 +1,531 @@
+{
+  "anchors": {
+    "J1.1": [
+      320.8958,
+      667.3646
+    ],
+    "J1.2": [
+      320.8958,
+      735.0729
+    ],
+    "J3.USB": [
+      313.9896,
+      839.0052
+    ],
+    "J5.USB": [
+      314.1927,
+      1156.9635
+    ],
+    "J2.1": [
+      899.1656,
+      651.1823
+    ],
+    "J2.2": [
+      915.1656,
+      685.5781
+    ],
+    "J2.3": [
+      915.1656,
+      719.974
+    ],
+    "J2.4": [
+      899.1656,
+      754.3698
+    ],
+    "J2.5": [
+      899.1656,
+      788.7656
+    ],
+    "J2.6": [
+      899.1656,
+      823.1615
+    ],
+    "J2.7": [
+      899.1656,
+      857.5573
+    ],
+    "J2.8": [
+      899.1656,
+      891.9531
+    ],
+    "Motor1.1": [
+      1380,
+      1480
+    ],
+    "Motor1.2": [
+      1455,
+      1480
+    ],
+    "Motor1.3": [
+      1555,
+      1480
+    ],
+    "Motor1.4": [
+      1605,
+      1480
+    ],
+    "Motor1.5": [
+      1715,
+      1480
+    ],
+    "Motor1.6": [
+      1765,
+      1480
+    ],
+    "Motor2.1": [
+      2380,
+      1480
+    ],
+    "Motor2.2": [
+      2455,
+      1480
+    ],
+    "Motor2.3": [
+      2555,
+      1480
+    ],
+    "Motor2.4": [
+      2605,
+      1480
+    ],
+    "Motor2.5": [
+      2715,
+      1480
+    ],
+    "Motor2.6": [
+      2765,
+      1480
+    ],
+    "PWR_POS": [
+      1180,
+      330
+    ],
+    "PWR_GND": [
+      1120,
+      410
+    ]
+  },
+  "routes": [
+    {
+      "from": "J1.1",
+      "to": "PWR_POS",
+      "net": "red",
+      "points": [
+        [
+          320.8958,
+          667.3646
+        ],
+        [
+          140,
+          667.3646
+        ],
+        [
+          140,
+          330
+        ],
+        [
+          1180,
+          330
+        ]
+      ],
+      "width": 11
+    },
+    {
+      "from": "J1.2",
+      "to": "PWR_GND",
+      "net": "gnd",
+      "points": [
+        [
+          320.8958,
+          735.0729
+        ],
+        [
+          205,
+          735.0729
+        ],
+        [
+          205,
+          410
+        ],
+        [
+          1120,
+          410
+        ]
+      ],
+      "width": 11
+    },
+    {
+      "from": "PWR_POS",
+      "to": "Motor1.2",
+      "net": "red",
+      "points": [
+        [
+          1180,
+          330
+        ],
+        [
+          1180,
+          330
+        ],
+        [
+          1180,
+          1660
+        ],
+        [
+          1455,
+          1660
+        ],
+        [
+          1455,
+          1480
+        ]
+      ],
+      "width": 11
+    },
+    {
+      "from": "PWR_GND",
+      "to": "Motor1.1",
+      "net": "gnd",
+      "points": [
+        [
+          1120,
+          410
+        ],
+        [
+          1120,
+          410
+        ],
+        [
+          1120,
+          1720
+        ],
+        [
+          1380,
+          1720
+        ],
+        [
+          1380,
+          1480
+        ]
+      ],
+      "width": 11
+    },
+    {
+      "from": "PWR_POS",
+      "to": "Motor2.2",
+      "net": "red",
+      "points": [
+        [
+          1180,
+          330
+        ],
+        [
+          2180,
+          330
+        ],
+        [
+          2180,
+          1660
+        ],
+        [
+          2455,
+          1660
+        ],
+        [
+          2455,
+          1480
+        ]
+      ],
+      "width": 11
+    },
+    {
+      "from": "PWR_GND",
+      "to": "Motor2.1",
+      "net": "gnd",
+      "points": [
+        [
+          1120,
+          410
+        ],
+        [
+          2120,
+          410
+        ],
+        [
+          2120,
+          1720
+        ],
+        [
+          2380,
+          1720
+        ],
+        [
+          2380,
+          1480
+        ]
+      ],
+      "width": 11
+    },
+    {
+      "from": "J2.2",
+      "to": "Motor1.3",
+      "net": "a",
+      "points": [
+        [
+          915.1656,
+          685.5781
+        ],
+        [
+          1010,
+          685.5781
+        ],
+        [
+          1010,
+          1840
+        ],
+        [
+          1555,
+          1840
+        ],
+        [
+          1555,
+          1480
+        ]
+      ],
+      "width": 8
+    },
+    {
+      "from": "J2.3",
+      "to": "Motor1.4",
+      "net": "b",
+      "points": [
+        [
+          915.1656,
+          719.974
+        ],
+        [
+          1070,
+          719.974
+        ],
+        [
+          1070,
+          1900
+        ],
+        [
+          1605,
+          1900
+        ],
+        [
+          1605,
+          1480
+        ]
+      ],
+      "width": 8
+    },
+    {
+      "from": "Motor1.5",
+      "to": "Motor2.3",
+      "net": "a",
+      "points": [
+        [
+          1715,
+          1480
+        ],
+        [
+          1715,
+          2010
+        ],
+        [
+          2555,
+          2010
+        ],
+        [
+          2555,
+          1480
+        ]
+      ],
+      "width": 8
+    },
+    {
+      "from": "Motor1.6",
+      "to": "Motor2.4",
+      "net": "b",
+      "points": [
+        [
+          1765,
+          1480
+        ],
+        [
+          1765,
+          2070
+        ],
+        [
+          2605,
+          2070
+        ],
+        [
+          2605,
+          1480
+        ]
+      ],
+      "width": 8
+    }
+  ],
+  "housings": [
+    {
+      "id": "controller-J2-pair",
+      "contacts": [
+        "J2.2",
+        "J2.3"
+      ],
+      "cavity_count": 2,
+      "shared_shell": true,
+      "isolated_cavities": true,
+      "spare": false,
+      "positions": [
+        [
+          869.1656,
+          685.5781
+        ],
+        [
+          869.1656,
+          719.974
+        ]
+      ]
+    },
+    {
+      "id": "Motor1-pair-1",
+      "contacts": [
+        "Motor1.3",
+        "Motor1.4"
+      ],
+      "cavity_count": 2,
+      "shared_shell": true,
+      "isolated_cavities": true,
+      "spare": false,
+      "positions": [
+        [
+          1555,
+          1440
+        ],
+        [
+          1605,
+          1440
+        ]
+      ]
+    },
+    {
+      "id": "Motor1-pair-2",
+      "contacts": [
+        "Motor1.5",
+        "Motor1.6"
+      ],
+      "cavity_count": 2,
+      "shared_shell": true,
+      "isolated_cavities": true,
+      "spare": false,
+      "positions": [
+        [
+          1715,
+          1440
+        ],
+        [
+          1765,
+          1440
+        ]
+      ]
+    },
+    {
+      "id": "Motor2-pair-1",
+      "contacts": [
+        "Motor2.3",
+        "Motor2.4"
+      ],
+      "cavity_count": 2,
+      "shared_shell": true,
+      "isolated_cavities": true,
+      "spare": false,
+      "positions": [
+        [
+          2555,
+          1440
+        ],
+        [
+          2605,
+          1440
+        ]
+      ]
+    },
+    {
+      "id": "Motor2-pair-2",
+      "contacts": [
+        "Motor2.5",
+        "Motor2.6"
+      ],
+      "cavity_count": 2,
+      "shared_shell": true,
+      "isolated_cavities": true,
+      "spare": true,
+      "positions": [
+        [
+          2715,
+          1440
+        ],
+        [
+          2765,
+          1440
+        ]
+      ]
+    }
+  ],
+  "looms": [
+    {
+      "motor": 1,
+      "plug_color": "white",
+      "plug_contacts": 6,
+      "wire_functions": [
+        "GND",
+        "V+",
+        "A",
+        "B",
+        "A",
+        "B"
+      ],
+      "power_wire_width": 11,
+      "ground_wire_width": 11,
+      "connector_face_numbered": false,
+      "detached_function_key": true,
+      "physical_cavity_order_asserted": false
+    },
+    {
+      "motor": 2,
+      "plug_color": "white",
+      "plug_contacts": 6,
+      "wire_functions": [
+        "GND",
+        "V+",
+        "A",
+        "B",
+        "A",
+        "B"
+      ],
+      "power_wire_width": 11,
+      "ground_wire_width": 11,
+      "connector_face_numbered": false,
+      "detached_function_key": true,
+      "physical_cavity_order_asserted": false
+    }
+  ],
+  "board_instances": [
+    {
+      "geometry": "datasheet/assets/technical-v2/pcb-geometry.json",
+      "asset": "datasheet/assets/technical-v2/board-component-base.svg",
+      "x": 280,
+      "y": 570,
+      "width": 650,
+      "scale": 13.541666666666666,
+      "view": "component_usb_left_j2_right"
+    }
+  ],
+  "notes": "Power parallel; full-width GND; two isolated cavities per black A/B housing; white six-way pigtails; motor internal A/B duplicates common."
+}

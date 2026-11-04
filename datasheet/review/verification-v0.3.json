@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "pdf": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/rs485_controller_datasheet_v0.3_review.pdf",
+  "sha256": "95ccd1b12db3a811c81cb7a4ab7965e258b7765478654f985bebc028bbcd72e1",
+  "pages": 19,
+  "python_removed": true,
+  "selected_source": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/diagram-review/exports/round2-pngs/r2-05-natural-pigtails.png",
+  "selected_image_sha256": "ba834b58bdd73dd26d0c414d41ffb16a222e87ef7315657c63ab0fb0adb9443d",
+  "selected_image_pixels_preserved": true,
+  "connection_page": 5,
+  "installation_page": 16,
+  "arduino_program_page": 17,
+  "m17_installation_steps_exact": [
+    "1. Open Arduino IDE",
+    "2. Go to Sketch \u2192 Include Library \u2192 Manage Libraries",
+    "3. Search for \"Servomotor\"",
+    "4. Find the library called \"Servomotor by Gearotons\" and click Install"
+  ],
+  "m17_screenshot_pixels_preserved": true,
+  "arduino_program_unchanged": true,
+  "all_51_pad_references_present": true,
+  "full_vector_schematic_preserved": true,
+  "earlier_pdfs_preserved": true,
+  "all_pages_bookmarked": true,
+  "out_of_page_text": []
+}

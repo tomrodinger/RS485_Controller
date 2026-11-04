@@ -1,0 +1,6 @@
+Use case: scientific-educational
+Asset type: one isolated motor icon for an engineering connection diagram.
+Create exactly ONE Gearotons M17 smart servomotor based closely on the reference photograph. Transparent background. No wires, no labels, no words, no diagram.
+Visual style: premium vector-like industrial illustration, shallow isometric view, crisp simplified geometry, clean flat fills with only restrained two-tone shading. Deliberately diagrammatic, not a photograph or 3D beauty render. Charcoal ribbed motor body, pale silver square top plate with four mounting holes, short upright steel shaft, white SIX-contact connector on the lower near-facing side at the rear end of the motor. Do not put electrical terminals on the shaft face.
+The connector must be a small faithful white six-position shrouded socket, not four multicolour pads. All six positions may be visible, but don't number them or attach wires. Later exact connection artwork will use a detached electrical function key rather than assign face geometry.
+Centered full motor, no ground plane, no background, no typography, no watermark, no cropping. Keep the motor proportional and realistically recognisable while using refined service-manual cartoon styling.

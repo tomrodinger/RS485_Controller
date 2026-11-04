@@ -1,0 +1,15 @@
+{
+  "candidate_count": 5,
+  "all_pass": true,
+  "checks": [
+    "10 expected electrical routes per drawing",
+    "5 shared black two-cavity shells per drawing",
+    "all shell contacts isolated",
+    "11 px red and ground conductors",
+    "no extra J2 ground wire",
+    "motor cavity order never asserted",
+    "one spare Motor 2 pair"
+  ],
+  "visual_review": "Inspected wide and portrait layouts; fixed source cable, motor-heading, spare-note and harness-note collisions.",
+  "natural_pigtail_revision": "Closed rear face with a shared opaque cable boot; no colored lead is mapped to a plug cavity."
+}

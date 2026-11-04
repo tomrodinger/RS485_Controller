@@ -1,0 +1,210 @@
+{
+  "version": "0.2",
+  "date": "27 October 2026",
+  "output": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/rs485_controller_datasheet_v0.2_review.pdf",
+  "sha256": "2b571bf1382fb3425aab6988852499da3d844c4eb2218f348bc11ce4e3cd1bb8",
+  "pages": [
+    {
+      "page": 1,
+      "title": "RS485 Controller",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 2,
+      "title": "Electrical & power",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 3,
+      "title": "Power, programming & status",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 4,
+      "title": "Connector pinout & controls",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 5,
+      "title": "Connect two servomotors",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 6,
+      "title": "Detailed PCB dimensions",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 7,
+      "title": "Find every expansion pad",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 8,
+      "title": "Pad region A",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 9,
+      "title": "Pad region B",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 10,
+      "title": "Pad region C",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 11,
+      "title": "Pad region D",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 12,
+      "title": "Pad region E",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 13,
+      "title": "Expansion pad net reference",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 14,
+      "title": "Getting started",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 15,
+      "title": "Python: basic motor control",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 16,
+      "title": "Arduino: basic motor control",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 17,
+      "title": "Controller schematic & resources",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 18,
+      "title": "Full controller schematic",
+      "size_points": [
+        1190.5511811023623,
+        841.8897637795277
+      ]
+    }
+  ],
+  "vector_figures": [
+    {
+      "page": 3,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/technical-v2/connector-locator.pdf",
+      "sha256": "f2c40b2cc5e1687a8cd4117238d63b67d052f1dc6984c082f14cc19ff1e9ca25"
+    },
+    {
+      "page": 6,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/technical-v2/mechanical-dimensions.pdf",
+      "sha256": "7307a2633839d050c23ec2888a4369b738be7a384bcec6a9b8a0b2b62a175ee0"
+    },
+    {
+      "page": 7,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/technical-v2/gpio-overview.pdf",
+      "sha256": "25259c27d26a8c51d2e81006cebcdb64f9f2d9aadcacc9569d3e1dddd46d84aa"
+    },
+    {
+      "page": 8,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/technical-v2/gpio-detail-a.pdf",
+      "sha256": "b4e610a280ae764b03bca25affb5ebb8d8ad5aae055ea5975b62f9dd0f3997a3"
+    },
+    {
+      "page": 9,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/technical-v2/gpio-detail-b.pdf",
+      "sha256": "83e8dc39fa7d7f9fe6cb6a3f5970659a1112a1debade311258babfe100777da0"
+    },
+    {
+      "page": 10,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/technical-v2/gpio-detail-c.pdf",
+      "sha256": "2e09a837fb1744610e451e367aab9e52e5373ae93bad34af4f6ca06fbda6dbc6"
+    },
+    {
+      "page": 11,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/technical-v2/gpio-detail-d.pdf",
+      "sha256": "cd1b066947402b66105acc944c06edb572b344788c3774d1a1b757841e60549a"
+    },
+    {
+      "page": 12,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/technical-v2/gpio-detail-e.pdf",
+      "sha256": "a8e96e6c99c7a0bac6bc31e668263ecf0cea5b1a5ad1cc46f43c924f312ec4d4"
+    },
+    {
+      "page": 18,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/PCB/0.5/schematic/0.5-index-schTop.pdf",
+      "sha256": "758f2c36d60bb5a5f2791e664161804895850cf46098232ab78dcc718596d35e"
+    }
+  ],
+  "interim_placeholders": [],
+  "connection_illustration": null,
+  "excluded_prior_ai_image": "datasheet/assets/two-motor-connection-ai.png",
+  "canonical_example_sha256": {
+    "Python": "ec240faa613e6613153e55eaaf098b7909545c34805279d920466872948d6eee",
+    "Arduino": "2a74cafd80206560d793a1f410b75643dfc0cf481090fd29da22fa47bb43dad5"
+  },
+  "espressif_datasheet_link": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf",
+  "schematic_source_sha256": "758f2c36d60bb5a5f2791e664161804895850cf46098232ab78dcc718596d35e",
+  "preserved_v0.1_sha256": "a3488a39e7657a81829150b57fb1c7de15f934e53bb22f7f7a2dafb0dddc9643",
+  "technical_geometry_sha256": "21d8f58c54683d1ca814253b98bc4b1a1358e5374b2196ed53a3e88bd5958839"
+}

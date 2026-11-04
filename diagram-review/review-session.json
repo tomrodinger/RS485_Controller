@@ -1,0 +1,121 @@
+{
+  "started_at_utc": "2026-10-26T11:42:14Z",
+  "status": "complete: six PNG candidates and private feedback gallery ready for owner review",
+  "site": {
+    "project_id": "appgprj_6adf3d35bc9081918dbbf9957d7e9fb8",
+    "url": "https://gearotons-rs485-wiring-review.lovelymelon513.chatgpt.site",
+    "audience": "owner-private",
+    "source_commit": "2f7c6a7b6159ab2ef91f847600533d67bf213a58",
+    "saved_version_id": "appgprj_6adf3d35bc9081918dbbf9957d7e9fb8~appgver_a840d8354a1081918e1164263b8b00d6",
+    "deployment_id": "appgdep_6adf4a0be35081919f1380465c246a18",
+    "deployment_status": "succeeded",
+    "d1_binding": "DB",
+    "feedback_table": "diagram_feedback"
+  },
+  "candidates": [
+    {
+      "id": "electrical-map",
+      "title": "Electrical map",
+      "style": "Precise circuit map",
+      "description": "A direct electrical map with explicit power returns, the shared ground reference, and internal motor A/B links. Functions are shown independently of connector-face geometry.",
+      "image": "assets/electrical-map.png",
+      "width": 2400,
+      "height": 1440,
+      "revision": "r1",
+      "reviewStatus": "Checked schematic \u00b7 owner review",
+      "sha256": "4e4316907f813c283c1fd0c01c025b383dc909deab06ac4b541e8a16bec1c990"
+    },
+    {
+      "id": "photo-guide",
+      "title": "Photo-guided map",
+      "style": "Real board + electrical map",
+      "description": "A port locator made from the actual controller photograph beside the electrical map. Use full-screen zoom to inspect the smaller connection details.",
+      "image": "assets/photo-guide.png",
+      "width": 2400,
+      "height": 1440,
+      "revision": "r1",
+      "reviewStatus": "Checked schematic \u00b7 owner review",
+      "sha256": "5d3cef45349aa13d94c562a9d749feb82486c0321a2b271e1a54085da1ae23bd"
+    },
+    {
+      "id": "two-step",
+      "title": "Power first, then data",
+      "style": "Guided two-stage wiring",
+      "description": "First understand motor power and common return; then inspect the RS485 daisy-chain with completed power shown in gray. Perform all wiring with power off.",
+      "image": "assets/two-step.png",
+      "width": 2000,
+      "height": 2200,
+      "revision": "r1",
+      "reviewStatus": "Checked schematic \u00b7 owner review",
+      "sha256": "905b87285917b12cab5502e9dd62c92fc418f50cd99fd1cb7b20bdcb5904a3b9"
+    },
+    {
+      "id": "connector-landmarks",
+      "title": "Connector landmarks",
+      "style": "Service-manual illustration",
+      "description": "A simplified component-side controller drawing with the correct J1/J2/J3/J5 placement and exactly eight J2 contacts. Motor pigtail functions are detached keys, not connector-face pin positions.",
+      "image": "assets/connector-landmarks.png",
+      "width": 2600,
+      "height": 1600,
+      "revision": "r1",
+      "reviewStatus": "Checked schematic \u00b7 owner review",
+      "sha256": "b67237f85d2bfe199f1de72ee9d9e30dc25bd6ef03f8e9e11eef7a16281f8f64"
+    },
+    {
+      "id": "natural-illustration",
+      "title": "Natural-material illustration",
+      "style": "AI motor art + exact wiring",
+      "description": "Natural black-and-silver motor artwork with precisely drawn connections and larger labels. The isolated motor art has no electrical wire endpoints; the dashed keys define pigtail functions.",
+      "image": "assets/natural-illustration.png",
+      "width": 2600,
+      "height": 1600,
+      "revision": "r1",
+      "reviewStatus": "Checked schematic \u00b7 owner review",
+      "sha256": "372898d45e04cd2fca3627c83e29935b7398727d8fdcfb0325a473518bff0841"
+    },
+    {
+      "id": "stylized-illustration",
+      "title": "Restrained cartoon illustration",
+      "style": "Stylized motor art + exact wiring",
+      "description": "A more diagrammatic motor treatment paired with the same checked wiring. Compare its small-size clarity against the natural-material version. The function keys are separate from connector faces.",
+      "image": "assets/stylized-illustration.png",
+      "width": 2600,
+      "height": 1600,
+      "revision": "r1",
+      "reviewStatus": "Checked schematic \u00b7 owner review",
+      "sha256": "b89df7a1bb9699149341791d98ac95e9c3005ce6f3b168dc9f52b9e3d7f92e2d"
+    }
+  ],
+  "image_generation": {
+    "mode": "built-in image_gen",
+    "full_diagram_attempt": "candidates/ai-flat-technical-v1.png \u2014 rejected by both reviewers",
+    "selected_generated_art": [
+      "working/motor-asset-v1.png",
+      "working/motor-asset-stylized-v1.png"
+    ],
+    "prompts": [
+      "prompts/01-flat-technical.txt",
+      "prompts/02-motor-asset.txt",
+      "prompts/03-stylized-motor-asset.txt"
+    ]
+  },
+  "verification": {
+    "api_sync_viewer_unit_tests_passed": 18,
+    "browser_workflow_checks_passed": 13,
+    "expanded_viewer_checks_passed": 3,
+    "route_validation": "all required paths and source-derived net classes passed; coverage limits are documented",
+    "hosted_feedback_migration": "diagram_feedback table confirmed through native Sites tools",
+    "hosted_feedback_readability": "native read_database_table_rows succeeded; initially empty",
+    "datasheet_and_hardware_sha256": "matched prior verification record; unchanged",
+    "touch_control_polish": "44-pixel zoom/navigation/Open PNG/Close targets; focused browser checks passed and final private deployment succeeded",
+    "local_preview": "stopped after successful private deployment",
+    "latest_hosted_feedback_read": "succeeded; no owner reviews submitted yet"
+  },
+  "feedback_retrieval": {
+    "overview_tool": "mcp__codex_apps__sites_read_database_overview",
+    "rows_tool": "mcp__codex_apps__sites_read_database_table_rows",
+    "instructions": "Use the exact project_id above, binding_name DB, table_name diagram_feedback from the native overview. Read ratings/comments when the owner asks for revisions; never publish user IDs."
+  },
+  "finished_at_utc": "2026-10-26T12:42:33Z",
+  "elapsed_seconds": 3619
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "numbered_pad_net_matches": 338,
+  "through_hole_pad_count": 43,
+  "gpio_count": 36,
+  "ground_count": 4,
+  "pd_control_count": 3,
+  "dimensions_mm": [
+    36.88,
+    48.889999999999986
+  ],
+  "corner_fitted_radii_mm": [
+    1.5000005864927752,
+    1.5000005864923773,
+    1.5000005864935924,
+    1.5000005864927752
+  ],
+  "all_landmarks_on_component_B_Cu": true
+}

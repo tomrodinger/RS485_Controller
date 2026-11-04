@@ -1,0 +1,26 @@
+{
+  "source": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/PCB/0.5/schematic/0.5-index-schTop.pdf",
+  "source_sha256": "758f2c36d60bb5a5f2791e664161804895850cf46098232ab78dcc718596d35e",
+  "output": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/release-v1.0/controller-schematic.pdf",
+  "sha256": "fe8f5dc8e6191d0e675fa315e917b10094e38e2a56bcb5f4b65db2ca86286c81",
+  "removed_comment": "Later change this 47pF capacitor to 56pF, because this it what the datasheet recommends",
+  "redaction_boxes": [
+    [
+      256.9999938964844,
+      135.07987365722656,
+      397.09992065429685,
+      144.01663818359376
+    ],
+    [
+      256.9999938964844,
+      141.9252716064453,
+      411.7255615234375,
+      150.8620361328125
+    ]
+  ],
+  "circuit_text_and_values_preserved": true,
+  "changed_pixels_outside_comment": 0,
+  "changed_circuit_ink_pixels": 0,
+  "source_file_unchanged": true,
+  "output_vector_paths": 36640
+}

@@ -1,0 +1,45 @@
+{
+  "started_at_utc": "2026-10-27T07:23:37Z",
+  "finished_at_utc": "2026-10-27 08:30:14 UTC",
+  "status": "complete: five new PNG variations, updated private gallery, local v0.2 datasheet ready for owner review",
+  "elapsed_seconds": 3997,
+  "site": {
+    "id": "appgdep_6ae06022a4e48191a8baa8ba2e6fd484",
+    "project_id": "appgprj_6adf3d35bc9081918dbbf9957d7e9fb8",
+    "title": "RS485 Controller — Diagram Review",
+    "version_id": "appgprj_6adf3d35bc9081918dbbf9957d7e9fb8~appgver_34b57c6644d08191bca0407ebf28b0a4",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://gearotons-rs485-wiring-review.lovelymelon513.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6adf3d35bc9081918dbbf9957d7e9fb8",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-27T08:26:39.591730+00:00",
+    "audience": "owner-private",
+    "source_commit": "9aaf98d04907540a09e6b17345a3de8645c17c3c"
+  },
+  "gallery_evidence": "reviews/qa/round2-gallery-assets.json",
+  "route_evidence": "reviews/qa/round2-route-results.json",
+  "browser_evidence": "reviews/qa/round2-browser-results.json",
+  "datasheet": {
+    "path": "../datasheet/rs485_controller_datasheet_v0.2_review.pdf",
+    "pages": 18,
+    "sha256": "2b571bf1382fb3425aab6988852499da3d844c4eb2218f348bc11ce4e3cd1bb8",
+    "public_github_push": false,
+    "wiring_illustration_embedded": false,
+    "verification": "../datasheet/review/verification-v0.2.json"
+  },
+  "review": {
+    "five_candidates_viewed_individually": true,
+    "all_18_pdf_pages_viewed_individually": true,
+    "independent_review": "../datasheet/review/geometry-v2/round2-independent-review.txt",
+    "critical_finding_resolved": "Natural pigtail now uses a shared opaque rear boot; it does not assign wire colors to visible motor plug cavities.",
+    "limitations": [
+      "Motor mating-face pin order remains unverified and is deliberately not specified by these illustrations.",
+      "Illustrations show electrical pairing; compatible connector mating hardware must match actual cables.",
+      "No physical electrical bench test or new mass measurement was performed."
+    ]
+  }
+}

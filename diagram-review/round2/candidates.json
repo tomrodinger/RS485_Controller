@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "r2-01-photo-harness",
+    "title": "Photo harness map",
+    "description": "Actual controller photograph with detached motor function keys.",
+    "png": "r2-01-photo-harness.png",
+    "svg": "r2-01-photo-harness.svg",
+    "routes": "r2-01-photo-harness.routes.json",
+    "validated": true
+  },
+  {
+    "slug": "r2-02-precision-harness",
+    "title": "Illustrated component panels",
+    "description": "Geometry-derived controller and natural motor artwork in pale panels.",
+    "png": "r2-02-precision-harness.png",
+    "svg": "r2-02-precision-harness.svg",
+    "routes": "r2-02-precision-harness.routes.json",
+    "validated": true
+  },
+  {
+    "slug": "r2-03-photo-field-guide",
+    "title": "Photo field guide",
+    "description": "Portrait guide with controller pin explanations and a full motor circuit.",
+    "png": "r2-03-photo-field-guide.png",
+    "svg": "r2-03-photo-field-guide.svg",
+    "routes": "r2-03-photo-field-guide.routes.json",
+    "validated": true
+  },
+  {
+    "slug": "r2-04-illustrated-field-guide",
+    "title": "Illustrated field guide",
+    "description": "Portrait geometry-derived controller guide and paired harness map.",
+    "png": "r2-04-illustrated-field-guide.png",
+    "svg": "r2-04-illustrated-field-guide.svg",
+    "routes": "r2-04-illustrated-field-guide.routes.json",
+    "validated": true
+  },
+  {
+    "slug": "r2-05-natural-pigtails",
+    "title": "Natural pigtail illustration",
+    "description": "Curved wiring, closed rear plug faces with shared wire bundles, and paired black housings.",
+    "png": "r2-05-natural-pigtails.png",
+    "svg": "r2-05-natural-pigtails.svg",
+    "routes": "r2-05-natural-pigtails.routes.json",
+    "validated": true
+  }
+]

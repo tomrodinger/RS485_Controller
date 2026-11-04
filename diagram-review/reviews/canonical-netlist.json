@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-26",
+  "scope": "Canonical two-M17-motor topology for controller PCB0.5; independent of renderer geometry.",
+  "endpoint_format": "DEVICE.CONNECTOR.NUMBER",
+  "source_evidence": [
+    {
+      "id": "CONTROLLER_PCB",
+      "path": "PCB/0.5/0.5.kicad_pcb",
+      "sha256": "74f0c14af491cdc2dd51b3f2ae992f859322efcabfb7be3f86f3d275b53dbb4a",
+      "extracted_contact_nets": {
+        "J1.1": "+20V",
+        "J1.2": "GND",
+        "J2.1": "GND",
+        "J2.2": "/index/schTop/RS485A",
+        "J2.3": "/index/schTop/RS485B",
+        "J2.4": "GND",
+        "J2.5": "/index/schTop/RS485A",
+        "J2.6": "/index/schTop/RS485B",
+        "J2.7": "+3.3V",
+        "J2.8": "+5V"
+      }
+    },
+    {
+      "id": "MOTOR_PCB",
+      "path": "../Servomotor/PCB/Servomotor3/1.5/1.5.kicad_pcb",
+      "sha256": "71e7aff342d872170d3282134140740b9ca382bb18bdd49512838c1379a2dd30",
+      "extracted_contact_nets": {
+        "J4.1": "GND",
+        "J4.2": "+24V",
+        "J4.3": "/index/schTop/RS485_A",
+        "J4.4": "/index/schTop/RS485_B",
+        "J4.5": "/index/schTop/RS485_A",
+        "J4.6": "/index/schTop/RS485_B"
+      }
+    },
+    {
+      "id": "MOTOR_PIGTAIL_DOC",
+      "path": "../Servomotor/API_documentation/autogeneration/hardware_setup.md",
+      "sha256": "7825d1f36aefdd31f4fea1bedb6f4bccf2e78171acbebd3e1bfe214002484829",
+      "lines": "14-29",
+      "establishes": "Six-wire GND/V+/A/B/A/B pigtail; duplicate A/B contacts internally common; parallel power; shared ground."
+    }
+  ],
+  "net_classes": {
+    "MOTOR_VPLUS": [
+      "CONTROLLER.J1.1",
+      "MOTOR1.J4.2",
+      "MOTOR2.J4.2"
+    ],
+    "COMMON_GND": [
+      "CONTROLLER.J1.2",
+      "CONTROLLER.J2.1",
+      "CONTROLLER.J2.4",
+      "MOTOR1.J4.1",
+      "MOTOR2.J4.1"
+    ],
+    "RS485_A": [
+      "CONTROLLER.J2.2",
+      "CONTROLLER.J2.5",
+      "MOTOR1.J4.3",
+      "MOTOR1.J4.5",
+      "MOTOR2.J4.3",
+      "MOTOR2.J4.5"
+    ],
+    "RS485_B": [
+      "CONTROLLER.J2.3",
+      "CONTROLLER.J2.6",
+      "MOTOR1.J4.4",
+      "MOTOR1.J4.6",
+      "MOTOR2.J4.4",
+      "MOTOR2.J4.6"
+    ],
+    "AUX_3V3": [
+      "CONTROLLER.J2.7"
+    ],
+    "AUX_5V": [
+      "CONTROLLER.J2.8"
+    ]
+  },
+  "onboard_same_net_groups": [
+    [
+      "CONTROLLER.J1.2",
+      "CONTROLLER.J2.1",
+      "CONTROLLER.J2.4"
+    ],
+    [
+      "CONTROLLER.J2.2",
+      "CONTROLLER.J2.5"
+    ],
+    [
+      "CONTROLLER.J2.3",
+      "CONTROLLER.J2.6"
+    ],
+    [
+      "MOTOR1.J4.3",
+      "MOTOR1.J4.5"
+    ],
+    [
+      "MOTOR1.J4.4",
+      "MOTOR1.J4.6"
+    ],
+    [
+      "MOTOR2.J4.3",
+      "MOTOR2.J4.5"
+    ],
+    [
+      "MOTOR2.J4.4",
+      "MOTOR2.J4.6"
+    ]
+  ],
+  "required_external_wire_paths": [
+    [
+      "CONTROLLER.J1.1",
+      "MOTOR1.J4.2"
+    ],
+    [
+      "CONTROLLER.J1.1",
+      "MOTOR2.J4.2"
+    ],
+    [
+      "CONTROLLER.J1.2",
+      "MOTOR1.J4.1"
+    ],
+    [
+      "CONTROLLER.J1.2",
+      "MOTOR2.J4.1"
+    ],
+    [
+      "CONTROLLER.J2.2",
+      "MOTOR1.J4.3"
+    ],
+    [
+      "CONTROLLER.J2.3",
+      "MOTOR1.J4.4"
+    ],
+    [
+      "MOTOR1.J4.5",
+      "MOTOR2.J4.3"
+    ],
+    [
+      "MOTOR1.J4.6",
+      "MOTOR2.J4.4"
+    ]
+  ],
+  "path_semantics": "Each required external wire path must exist through actual drawn conductors and any depicted distribution splice nodes, excluding internal motor/controller same-net links. The full graph additionally includes onboard_same_net_groups. A path is not necessarily one uninterrupted wire; proper power-distribution splices are allowed.",
+  "forbidden_connectivity": {
+    "different_net_classes_must_remain_disjoint": true,
+    "motor_power_must_not_reach": [
+      "AUX_3V3",
+      "AUX_5V",
+      "RS485_A",
+      "RS485_B"
+    ],
+    "spare_motor2_contacts_must_have_no_external_termination": [
+      "MOTOR2.J4.5",
+      "MOTOR2.J4.6"
+    ],
+    "spare_insulation": "Each spare is separately insulated; these contacts remain internally connected to their respective A or B bus."
+  },
+  "allowed_variations": {
+    "controller_bus_group_alternative": {
+      "CONTROLLER.J2.2": "CONTROLLER.J2.5",
+      "CONTROLLER.J2.3": "CONTROLLER.J2.6"
+    },
+    "optional_external_ground_reference_from": [
+      "CONTROLLER.J2.1",
+      "CONTROLLER.J2.4"
+    ],
+    "optional_ground_reference_to": "COMMON_GND power-distribution return; never sole motor-current return.",
+    "power_splices": "Separate positive and ground nodes/blocks; do not use one internally common connector for both rails."
+  },
+  "physical_constraints": {
+    "controller_j1": "Actual 2-way screw terminal; each wire enters its proper wire aperture, never a screw head or expansion pad.",
+    "controller_j2": "Actual 8-position header, correct selected view; use plausible mating female contacts.",
+    "motor": "Actual side/rear six-contact housing with seated mating plug; exactly one GND, one V+, and two A/B pairs leave each plug.",
+    "unverified": "Motor mating-face left/right orientation is not established; electrical pad sequence does not authorize numbering a realistic face.",
+    "power_behavior": "J1 is direct J3 VBUS; nominal 20 V only after successful negotiation with a 20 V-capable source.",
+    "motor_supply_range_volts": [
+      12,
+      24
+    ],
+    "current_rating": "Controller continuous motor pass-through current remains unestablished.",
+    "color_map": {
+      "MOTOR_VPLUS": "red",
+      "COMMON_GND": "black",
+      "RS485_A": "green",
+      "RS485_B": "blue"
+    }
+  },
+  "usb_connections": {
+    "required": "20 V-capable USB-C PD source to CONTROLLER.J3",
+    "optional": "Laptop USB data cable to CONTROLLER.J5",
+    "forbidden": "J5 programming power as motor supply; PD source into J5 as the motor-power input."
+  },
+  "validation_warning": "Connectivity alone cannot prove visible physical anchors. Compare per-terminal attachments, contact count, cable endpoints, junction dots, and crossing gaps against the image."
+}

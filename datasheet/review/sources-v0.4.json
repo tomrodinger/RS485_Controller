@@ -1,0 +1,66 @@
+{
+  "revision": "0.4",
+  "date": "2026-11-03",
+  "pages": 13,
+  "changes": [
+    "Broken-out PCB corner replaces oval-looking inset",
+    "Curved coloured dashed component locator leaders",
+    "J2 functions replace numeric drawing labels",
+    "Computer USB data connection to J5 PROG added",
+    "One large rear/label-side breakout diagram with all51 signals; solder-required notice",
+    "Five regional enlargements and separate lookup page removed"
+  ],
+  "hardware_source": {
+    "path": "PCB/0.5/0.5.kicad_pcb",
+    "sha256": "74f0c14af491cdc2dd51b3f2ae992f859322efcabfb7be3f86f3d275b53dbb4a"
+  },
+  "checked_geometry": {
+    "path": "datasheet/assets/technical-v4/pcb-geometry.json",
+    "sha256": "21d8f58c54683d1ca814253b98bc4b1a1358e5374b2196ed53a3e88bd5958839"
+  },
+  "original_owner_selected_art_preserved": {
+    "path": "diagram-review/exports/round2-pngs/r2-05-natural-pigtails.png",
+    "sha256": "ba834b58bdd73dd26d0c414d41ffb16a222e87ef7315657c63ab0fb0adb9443d"
+  },
+  "technical_figures": [
+    {
+      "path": "datasheet/assets/technical-v4/breakout-headers.pdf",
+      "sha256": "093da51afcafb4e6220ff58ae090829248e5021d15f7ebda1e5fab0c8ab59def"
+    },
+    {
+      "path": "datasheet/assets/technical-v4/connector-locator.pdf",
+      "sha256": "55ea5e93b1ed3b1c64605fd6a3025ef78c851128f77e09ee3619b4ac091dae28"
+    },
+    {
+      "path": "datasheet/assets/technical-v4/mechanical-dimensions.pdf",
+      "sha256": "18fb46cd86ba568f4fb6afd3794aac8c8c2c8503e6c4954424c5b75264062a6c"
+    }
+  ],
+  "wiring_illustration": {
+    "path": "datasheet/assets/connection-v0.4/two-motor-connection-v0.4.pdf",
+    "sha256": "8af20ceb9939793d23cf5b8677c549c5bfbb55bd3d5ebebae209f01210208b53"
+  },
+  "mechanical_geometry_mm": {
+    "board": [
+      36.88,
+      48.89
+    ],
+    "hole_diameter": 1.5,
+    "hole_edge_inset_centre": 1.5,
+    "corner_radius": 1.5
+  },
+  "view_transform": "Rear/label side: u=x\u221236.65, v=y\u2212103. Component side: u=x\u221236.65, v=151.89\u2212y.",
+  "pad_label_verification": "verification-v0.4.json",
+  "text_overlap_check": "geometry-v4/label-legibility-check.json",
+  "visual_review": {
+    "changed_pages_individually_reviewed": [
+      3,
+      5,
+      7,
+      8
+    ],
+    "full_contact_sheet_reviewed": true
+  },
+  "public_github_push": false,
+  "previous_pdf_editions_preserved": true
+}

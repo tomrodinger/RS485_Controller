@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "pdf": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/rs485_controller_datasheet_v1.0.pdf",
+  "sha256": "4dfcba25a5ceacff20ad8305ac91da044ab4e0c2aef2f2011713c8bd2900cf45",
+  "pages": 13,
+  "all_51_physical_pad_labels_match_checked_geometry": true,
+  "j2_signal_order_from_pcb_nets": [
+    "GND",
+    "A",
+    "B",
+    "GND",
+    "A",
+    "B",
+    "3.3V",
+    "5V"
+  ],
+  "numeric_header_labels_removed": true,
+  "computer_usb_target": "J5 USB-C PROG",
+  "svg_usb_route_matches_declared_endpoints": true,
+  "electrical_routes": {
+    "candidate": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/connection-v0.4/two-motor-connection-v0.4.routes.json",
+    "svg": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/connection-v0.4/two-motor-connection-v0.4.svg",
+    "passed": true,
+    "route_count": 10,
+    "required_path_count": 8,
+    "verified_source_hashes": 3,
+    "selected_controller_j2_contacts": [
+      "CONTROLLER.J2.2",
+      "CONTROLLER.J2.3"
+    ],
+    "errors": [],
+    "warnings": [],
+    "coverage": [
+      "Checked: independent source snapshots, actual contact net classes, external paths, internal A/B equivalence, four disjoint nets, route endpoints, SVG polyline geometry or constrained rounded-path bends, colours and widths.",
+      "Not machine-checked: USB mechanical cable, insulation caps on omitted spare stubs, detached functional-key/body geometry, physical contact count or mating-face orientation, raster visibility/occlusion, crossing halos/junction dots, actual-size readability.",
+      "Motor2 spare contacts are internally on their A/B nets; absence of an external route does not prove their caps are drawn correctly."
+    ]
+  },
+  "single_breakout_page": 8,
+  "breakout_view": "Rear / label side F.Cu",
+  "headers_marked_unpopulated": true,
+  "broken_out_corner_present": true,
+  "python_absent": true,
+  "arduino_listing_unchanged": true,
+  "m17_installation_image_preserved": true,
+  "public_release_text_clean": true,
+  "schematic_editorial_note_removed": true,
+  "circuit_marks_preserved_outside_comment": true,
+  "unspecified_product_ratings_retained": true,
+  "schematic_vectors_preserved": true,
+  "earlier_pdfs_preserved": true,
+  "out_of_page_text": []
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "results": [
+    "Five new candidates precede six preserved originals",
+    "All eleven full-resolution PNGs decode at their declared dimensions",
+    "New candidate stars/comments round-trip through account database and reload",
+    "New natural illustration expands and closes correctly",
+    "New natural and original natural can be compared together",
+    "Mobile gallery has no horizontal overflow",
+    "New PNG ZIP downloads successfully"
+  ],
+  "errors": []
+}

@@ -1,0 +1,18 @@
+{
+  "pdf": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/rs485_controller_datasheet_v0.2_review.pdf",
+  "sha256": "2b571bf1382fb3425aab6988852499da3d844c4eb2218f348bc11ce4e3cd1bb8",
+  "pages": 18,
+  "v0.1_preserved": true,
+  "canonical_example_pages": {
+    "Python": 15,
+    "Arduino": 16
+  },
+  "canonical_program_tokens_match": true,
+  "canonical_snapshot_hashes_match": true,
+  "official_espressif_link_present": true,
+  "schematic_vector_paths": 37326,
+  "source_schematic_vector_paths": 37324,
+  "appendix_landscape": true,
+  "interim_build": false,
+  "checked_pad_references": 51
+}

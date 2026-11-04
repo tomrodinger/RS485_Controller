@@ -1,0 +1,154 @@
+{
+  "version": "0.4",
+  "date": "3 November 2026",
+  "output": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/rs485_controller_datasheet_v0.4_review.pdf",
+  "sha256": "5d79bacdf43fd809f5c94216e42635d9231a6a65de1ac93ef3311650d2a31393",
+  "pages": [
+    {
+      "page": 1,
+      "title": "RS485 Controller",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 2,
+      "title": "Electrical & power",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 3,
+      "title": "Power, programming & status",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 4,
+      "title": "Connector pinout & controls",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 5,
+      "title": "Two-motor connection diagram",
+      "size_points": [
+        1190.5511811023623,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 6,
+      "title": "Connect two servomotors",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 7,
+      "title": "Detailed PCB dimensions",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 8,
+      "title": "Breakout headers \u2014 solder required",
+      "size_points": [
+        841.8897637795277,
+        1190.5511811023623
+      ]
+    },
+    {
+      "page": 9,
+      "title": "Getting started",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 10,
+      "title": "Install the Arduino library",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 11,
+      "title": "Arduino: basic motor control",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 12,
+      "title": "Controller schematic & resources",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
+    },
+    {
+      "page": 13,
+      "title": "Full controller schematic",
+      "size_points": [
+        1190.5511811023623,
+        841.8897637795277
+      ]
+    }
+  ],
+  "vector_figures": [
+    {
+      "page": 3,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/technical-v4/connector-locator.pdf",
+      "sha256": "55ea5e93b1ed3b1c64605fd6a3025ef78c851128f77e09ee3619b4ac091dae28"
+    },
+    {
+      "page": 5,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/connection-v0.4/two-motor-connection-v0.4.pdf",
+      "sha256": "8af20ceb9939793d23cf5b8677c549c5bfbb55bd3d5ebebae209f01210208b53"
+    },
+    {
+      "page": 7,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/technical-v4/mechanical-dimensions.pdf",
+      "sha256": "18fb46cd86ba568f4fb6afd3794aac8c8c2c8503e6c4954424c5b75264062a6c"
+    },
+    {
+      "page": 8,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/technical-v4/breakout-headers.pdf",
+      "sha256": "093da51afcafb4e6220ff58ae090829248e5021d15f7ebda1e5fab0c8ab59def"
+    },
+    {
+      "page": 13,
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/PCB/0.5/schematic/0.5-index-schTop.pdf",
+      "sha256": "758f2c36d60bb5a5f2791e664161804895850cf46098232ab78dcc718596d35e"
+    }
+  ],
+  "interim_placeholders": [],
+  "connection_illustration": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/connection-v0.4/two-motor-connection-v0.4.pdf",
+  "connection_illustration_sha256": "8af20ceb9939793d23cf5b8677c549c5bfbb55bd3d5ebebae209f01210208b53",
+  "arduino_installation_image_sha256": "cab490b9ca710b1d8527555b85a42157c68831bbac13be4f097aa13263d88fae",
+  "python_example_included": false,
+  "excluded_prior_ai_image": "datasheet/assets/two-motor-connection-ai.png",
+  "canonical_example_sha256": {
+    "Arduino": "2a74cafd80206560d793a1f410b75643dfc0cf481090fd29da22fa47bb43dad5"
+  },
+  "espressif_datasheet_link": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf",
+  "schematic_source_sha256": "758f2c36d60bb5a5f2791e664161804895850cf46098232ab78dcc718596d35e",
+  "preserved_v0.1_sha256": "a3488a39e7657a81829150b57fb1c7de15f934e53bb22f7f7a2dafb0dddc9643",
+  "technical_geometry_sha256": "21d8f58c54683d1ca814253b98bc4b1a1358e5374b2196ed53a3e88bd5958839",
+  "breakout_label_manifest_sha256": "b00bae8112c6a83c74eb4d98b82d9d7d40a1be7d86351da8d3117c65293edba7",
+  "breakout_detail_pages_removed": true
+}

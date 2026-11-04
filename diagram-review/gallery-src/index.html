@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14211b">
+  <title>Wiring diagram review · Gearotons</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to diagram review</a>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Gearotons review home"><span class="brand-mark" aria-hidden="true">G</span><span>GEAROTONS<span class="brand-sub">ENGINEERING / DESIGN REVIEW</span></span></a>
+    <div class="header-actions"><span id="save-status" class="save-status" role="status" aria-live="polite">Loading feedback…</span><button id="export" class="button dark-button">Export feedback <span aria-hidden="true">↗</span></button><button id="import" class="button quiet-dark">Import JSON</button><input id="import-file" type="file" accept="application/json,.json" hidden></div>
+  </header>
+  <main id="main">
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">RS485 CONTROLLER · VISUAL REVIEW</p><h1 id="page-title">Make every connection clear.</h1><p class="intro-copy">Explore the wiring diagrams. Inspect the details, rate each direction, and leave notes for the next revision.</p></div>
+      <div class="progress-block"><div class="progress-numbers"><strong id="review-count">0</strong><span>/ <span id="total-count">0</span> reviewed</span></div><div class="progress-track" role="progressbar" aria-label="Candidates reviewed" aria-valuemin="0" aria-valuemax="0" aria-valuenow="0"><span id="progress-fill"></span></div><span class="progress-caption">Your feedback shapes the final diagram.</span></div>
+    </section>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <section class="workspace" aria-label="Diagram inspection">
+      <div class="workspace-top"><div class="view-tabs" role="group" aria-label="Review view"><button id="single-view" class="tab active" aria-pressed="true">Inspect</button><button id="compare-view" class="tab" aria-pressed="false">Compare <span id="compare-count" class="count-pill">0 / 2</span></button></div><p class="workspace-hint">Scroll the gallery below to choose a diagram.</p></div>
+      <div id="empty-state" class="empty-state" hidden><span class="empty-symbol" aria-hidden="true">⌁</span><h2>Ready for the next connection.</h2><p>Diagram candidates will appear here when the image manifest is added.</p></div>
+      <div id="single-panel" class="inspection-panel" hidden>
+        <div class="image-column"><div class="candidate-heading"><div><p id="selected-style" class="eyebrow"></p><h2 id="selected-title"></h2></div><div class="candidate-position"><button id="previous" class="icon-button" aria-label="Previous candidate">←</button><span id="position"></span><button id="next" class="icon-button" aria-label="Next candidate">→</button></div></div><div id="main-viewer" class="viewer"></div></div>
+        <aside class="feedback-panel" aria-label="Candidate feedback"><div class="feedback-heading"><span class="eyebrow">YOUR REVIEW</span><span id="selected-status" class="status-chip"></span></div><h3>How well does it work?</h3><p class="muted">Rate clarity, layout, and ease of following the wiring.</p><fieldset class="star-field"><legend class="sr-only">Candidate rating</legend><div id="rating-stars" class="stars"></div></fieldset><div class="rating-caption"><span id="rating-label">Not rated yet</span><button id="clear-rating" class="text-button">Clear</button></div><label for="comment">Notes for the next revision</label><textarea id="comment" rows="7" maxlength="100000" placeholder="What works? What needs to change? Call out labels, routing, color, or missing details…"></textarea><p class="field-help">Saved automatically in this browser. Export feedback to share it.</p><div id="revision-warning" class="revision-warning" hidden></div><dl class="candidate-details"><div><dt>Style</dt><dd id="detail-style"></dd></div><div><dt>Revision</dt><dd id="detail-revision"></dd></div><div><dt>Resolution</dt><dd id="detail-resolution"></dd></div></dl><p id="selected-description" class="description"></p><button id="add-compare" class="button compare-add">Add to comparison <span aria-hidden="true">＋</span></button></aside>
+      </div>
+      <div id="compare-panel" class="compare-panel" hidden><div class="compare-intro"><p>Two directions, one decision. Zoom and pan each image independently.</p><button id="clear-compare" class="text-button">Clear comparison</button></div><div id="compare-grid" class="compare-grid"></div></div>
+    </section>
+    <section class="gallery-section" aria-labelledby="gallery-title"><div class="section-heading"><div><p class="eyebrow">THE DIRECTIONS</p><h2 id="gallery-title">All candidates <span id="gallery-count" class="gallery-count">0</span></h2></div><div class="gallery-tools"><label class="search-wrap"><span class="sr-only">Search candidates</span><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a direction…"></label><label class="filter-wrap"><span class="sr-only">Filter by rating</span><select id="rating-filter"><option value="all">All ratings</option><option value="unreviewed">Not reviewed</option><option value="reviewed">Reviewed</option><option value="favorites">Favorites · 4–5 stars</option><option value="5">5 stars</option><option value="4">4 stars</option><option value="3">3 stars</option><option value="2">2 stars</option><option value="1">1 star</option></select></label></div></div><div id="gallery" class="gallery-grid"></div><p id="no-results" class="no-results" hidden>No candidates match this view. Try another rating or search.</p></section>
+    <footer><span>GEAROTONS <span class="footer-separator">/</span> Connection by design.</span><span>Feedback stays in this browser until you export it.</span></footer>
+  </main>
+</body>
+</html>

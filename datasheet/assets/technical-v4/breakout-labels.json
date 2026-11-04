@@ -1,0 +1,971 @@
+[
+  {
+    "reference": "TP1",
+    "signal": "GPIO1",
+    "shared_function": null,
+    "position_mm": [
+      26.14,
+      25.120000000000005
+    ],
+    "marker_xy": [
+      1044.2,
+      923.6000000000001
+    ],
+    "label_xy": [
+      1044.2,
+      990.6000000000001
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP2",
+    "signal": "GPIO2",
+    "shared_function": null,
+    "position_mm": [
+      26.14,
+      22.58
+    ],
+    "marker_xy": [
+      1044.2,
+      847.4
+    ],
+    "label_xy": [
+      1044.2,
+      808.4
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP3",
+    "signal": "GPIO3",
+    "shared_function": null,
+    "position_mm": [
+      23.6,
+      25.120000000000005
+    ],
+    "marker_xy": [
+      968.0,
+      923.6000000000001
+    ],
+    "label_xy": [
+      968.0,
+      990.6000000000001
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP4",
+    "signal": "GPIO43",
+    "shared_function": "UART0 TX",
+    "position_mm": [
+      26.509999999999998,
+      1.5600000000000023
+    ],
+    "marker_xy": [
+      1055.3,
+      216.80000000000007
+    ],
+    "label_xy": [
+      1055.3,
+      159.80000000000007
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP5",
+    "signal": "GPIO44",
+    "shared_function": "UART0 RX",
+    "position_mm": [
+      26.509999999999998,
+      4.099999999999994
+    ],
+    "marker_xy": [
+      1055.3,
+      292.99999999999983
+    ],
+    "label_xy": [
+      1055.3,
+      355.99999999999983
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP6",
+    "signal": "GPIO6",
+    "shared_function": null,
+    "position_mm": [
+      21.060000000000002,
+      25.120000000000005
+    ],
+    "marker_xy": [
+      891.8000000000001,
+      923.6000000000001
+    ],
+    "label_xy": [
+      891.8000000000001,
+      990.6000000000001
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP7",
+    "signal": "GND",
+    "shared_function": null,
+    "position_mm": [
+      31.71,
+      44.876000000000005
+    ],
+    "marker_xy": [
+      1211.3000000000002,
+      1516.2800000000002
+    ],
+    "label_xy": [
+      1260.3000000000002,
+      1522.2800000000002
+    ],
+    "anchor": "start",
+    "through_hole": false
+  },
+  {
+    "reference": "TP8",
+    "signal": "RS485 A",
+    "shared_function": null,
+    "position_mm": [
+      31.71,
+      42.337425999999994
+    ],
+    "marker_xy": [
+      1211.3000000000002,
+      1440.1227799999997
+    ],
+    "label_xy": [
+      1260.3000000000002,
+      1446.1227799999997
+    ],
+    "anchor": "start",
+    "through_hole": false
+  },
+  {
+    "reference": "TP9",
+    "signal": "RS485 B",
+    "shared_function": null,
+    "position_mm": [
+      31.71,
+      39.798855
+    ],
+    "marker_xy": [
+      1211.3000000000002,
+      1363.96565
+    ],
+    "label_xy": [
+      1260.3000000000002,
+      1369.96565
+    ],
+    "anchor": "start",
+    "through_hole": false
+  },
+  {
+    "reference": "TP10",
+    "signal": "GND",
+    "shared_function": null,
+    "position_mm": [
+      31.71,
+      37.26028400000001
+    ],
+    "marker_xy": [
+      1211.3000000000002,
+      1287.8085200000005
+    ],
+    "label_xy": [
+      1260.3000000000002,
+      1293.8085200000005
+    ],
+    "anchor": "start",
+    "through_hole": false
+  },
+  {
+    "reference": "TP11",
+    "signal": "RS485 A",
+    "shared_function": null,
+    "position_mm": [
+      31.71,
+      34.721712999999994
+    ],
+    "marker_xy": [
+      1211.3000000000002,
+      1211.6513899999998
+    ],
+    "label_xy": [
+      1260.3000000000002,
+      1217.6513899999998
+    ],
+    "anchor": "start",
+    "through_hole": false
+  },
+  {
+    "reference": "TP12",
+    "signal": "RS485 B",
+    "shared_function": null,
+    "position_mm": [
+      31.71,
+      32.183142000000004
+    ],
+    "marker_xy": [
+      1211.3000000000002,
+      1135.4942600000002
+    ],
+    "label_xy": [
+      1260.3000000000002,
+      1141.4942600000002
+    ],
+    "anchor": "start",
+    "through_hole": false
+  },
+  {
+    "reference": "TP13",
+    "signal": "+3.3V",
+    "shared_function": null,
+    "position_mm": [
+      31.71,
+      29.644571000000013
+    ],
+    "marker_xy": [
+      1211.3000000000002,
+      1059.3371300000003
+    ],
+    "label_xy": [
+      1260.3000000000002,
+      1065.3371300000003
+    ],
+    "anchor": "start",
+    "through_hole": false
+  },
+  {
+    "reference": "TP14",
+    "signal": "+5V",
+    "shared_function": null,
+    "position_mm": [
+      31.71,
+      27.105999999999995
+    ],
+    "marker_xy": [
+      1211.3000000000002,
+      983.1799999999998
+    ],
+    "label_xy": [
+      1260.3000000000002,
+      989.1799999999998
+    ],
+    "anchor": "start",
+    "through_hole": false
+  },
+  {
+    "reference": "TP15",
+    "signal": "GPIO7",
+    "shared_function": null,
+    "position_mm": [
+      18.520000000000003,
+      25.120000000000005
+    ],
+    "marker_xy": [
+      815.6000000000001,
+      923.6000000000001
+    ],
+    "label_xy": [
+      815.6000000000001,
+      990.6000000000001
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP16",
+    "signal": "GPIO8",
+    "shared_function": null,
+    "position_mm": [
+      18.520000000000003,
+      22.586608
+    ],
+    "marker_xy": [
+      815.6000000000001,
+      847.5982399999999
+    ],
+    "label_xy": [
+      815.6000000000001,
+      808.5982399999999
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP17",
+    "signal": "GPIO9",
+    "shared_function": null,
+    "position_mm": [
+      15.980000000000004,
+      25.120000000000005
+    ],
+    "marker_xy": [
+      739.4000000000001,
+      923.6000000000001
+    ],
+    "label_xy": [
+      739.4000000000001,
+      990.6000000000001
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP18",
+    "signal": "GPIO10",
+    "shared_function": null,
+    "position_mm": [
+      15.980000000000004,
+      22.586608
+    ],
+    "marker_xy": [
+      739.4000000000001,
+      847.5982399999999
+    ],
+    "label_xy": [
+      739.4000000000001,
+      808.5982399999999
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP19",
+    "signal": "GPIO11",
+    "shared_function": null,
+    "position_mm": [
+      13.440000000000005,
+      25.120000000000005
+    ],
+    "marker_xy": [
+      663.2000000000002,
+      923.6000000000001
+    ],
+    "label_xy": [
+      663.2000000000002,
+      990.6000000000001
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP20",
+    "signal": "GPIO12",
+    "shared_function": null,
+    "position_mm": [
+      13.440000000000005,
+      22.586608
+    ],
+    "marker_xy": [
+      663.2000000000002,
+      847.5982399999999
+    ],
+    "label_xy": [
+      663.2000000000002,
+      808.5982399999999
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP21",
+    "signal": "GPIO13",
+    "shared_function": null,
+    "position_mm": [
+      11.810000000000002,
+      19.200000000000003
+    ],
+    "marker_xy": [
+      614.3000000000001,
+      746.0000000000001
+    ],
+    "label_xy": [
+      574.3000000000001,
+      749.0000000000001
+    ],
+    "anchor": "end",
+    "through_hole": true
+  },
+  {
+    "reference": "TP22",
+    "signal": "GPIO14",
+    "shared_function": null,
+    "position_mm": [
+      14.350000000000001,
+      19.200000000000003
+    ],
+    "marker_xy": [
+      690.5,
+      746.0000000000001
+    ],
+    "label_xy": [
+      730.5,
+      749.0000000000001
+    ],
+    "anchor": "start",
+    "through_hole": true
+  },
+  {
+    "reference": "TP23",
+    "signal": "GPIO15",
+    "shared_function": null,
+    "position_mm": [
+      11.810000000000002,
+      16.659999999999997
+    ],
+    "marker_xy": [
+      614.3000000000001,
+      669.8
+    ],
+    "label_xy": [
+      574.3000000000001,
+      672.8
+    ],
+    "anchor": "end",
+    "through_hole": true
+  },
+  {
+    "reference": "TP24",
+    "signal": "GPIO16",
+    "shared_function": null,
+    "position_mm": [
+      14.350000000000001,
+      16.659999999999997
+    ],
+    "marker_xy": [
+      690.5,
+      669.8
+    ],
+    "label_xy": [
+      730.5,
+      672.8
+    ],
+    "anchor": "start",
+    "through_hole": true
+  },
+  {
+    "reference": "TP25",
+    "signal": "GPIO17",
+    "shared_function": null,
+    "position_mm": [
+      11.810000000000002,
+      14.120000000000005
+    ],
+    "marker_xy": [
+      614.3000000000001,
+      593.6000000000001
+    ],
+    "label_xy": [
+      574.3000000000001,
+      596.6000000000001
+    ],
+    "anchor": "end",
+    "through_hole": true
+  },
+  {
+    "reference": "TP26",
+    "signal": "GPIO18",
+    "shared_function": null,
+    "position_mm": [
+      14.350000000000001,
+      14.120000000000005
+    ],
+    "marker_xy": [
+      690.5,
+      593.6000000000001
+    ],
+    "label_xy": [
+      730.5,
+      596.6000000000001
+    ],
+    "anchor": "start",
+    "through_hole": true
+  },
+  {
+    "reference": "TP27",
+    "signal": "GPIO21",
+    "shared_function": null,
+    "position_mm": [
+      14.350000000000001,
+      11.579999999999998
+    ],
+    "marker_xy": [
+      690.5,
+      517.4
+    ],
+    "label_xy": [
+      730.5,
+      520.4
+    ],
+    "anchor": "start",
+    "through_hole": true
+  },
+  {
+    "reference": "TP28",
+    "signal": "GPIO26",
+    "shared_function": null,
+    "position_mm": [
+      11.810000000000002,
+      11.579999999999998
+    ],
+    "marker_xy": [
+      614.3000000000001,
+      517.4
+    ],
+    "label_xy": [
+      574.3000000000001,
+      520.4
+    ],
+    "anchor": "end",
+    "through_hole": true
+  },
+  {
+    "reference": "TP29",
+    "signal": "GPIO33",
+    "shared_function": null,
+    "position_mm": [
+      11.810000000000002,
+      9.040000000000006
+    ],
+    "marker_xy": [
+      614.3000000000001,
+      441.20000000000016
+    ],
+    "label_xy": [
+      574.3000000000001,
+      444.20000000000016
+    ],
+    "anchor": "end",
+    "through_hole": true
+  },
+  {
+    "reference": "TP30",
+    "signal": "GPIO34",
+    "shared_function": null,
+    "position_mm": [
+      14.350000000000001,
+      6.5
+    ],
+    "marker_xy": [
+      690.5,
+      365.0
+    ],
+    "label_xy": [
+      730.5,
+      399.0
+    ],
+    "anchor": "start",
+    "through_hole": true
+  },
+  {
+    "reference": "TP31",
+    "signal": "GPIO35",
+    "shared_function": null,
+    "position_mm": [
+      16.35,
+      4.099999999999994
+    ],
+    "marker_xy": [
+      750.5,
+      292.99999999999983
+    ],
+    "label_xy": [
+      759.5,
+      355.99999999999983
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP32",
+    "signal": "GPIO36",
+    "shared_function": null,
+    "position_mm": [
+      16.35,
+      1.5600000000000023
+    ],
+    "marker_xy": [
+      750.5,
+      216.80000000000007
+    ],
+    "label_xy": [
+      750.5,
+      159.80000000000007
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP33",
+    "signal": "GPIO37",
+    "shared_function": null,
+    "position_mm": [
+      18.89,
+      1.5600000000000023
+    ],
+    "marker_xy": [
+      826.7,
+      216.80000000000007
+    ],
+    "label_xy": [
+      826.7,
+      159.80000000000007
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP34",
+    "signal": "GPIO38",
+    "shared_function": null,
+    "position_mm": [
+      18.89,
+      4.099999999999994
+    ],
+    "marker_xy": [
+      826.7,
+      292.99999999999983
+    ],
+    "label_xy": [
+      826.7,
+      355.99999999999983
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP35",
+    "signal": "GPIO39",
+    "shared_function": null,
+    "position_mm": [
+      21.43,
+      1.5600000000000023
+    ],
+    "marker_xy": [
+      902.9,
+      216.80000000000007
+    ],
+    "label_xy": [
+      902.9,
+      159.80000000000007
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP36",
+    "signal": "GPIO40",
+    "shared_function": null,
+    "position_mm": [
+      21.43,
+      4.099999999999994
+    ],
+    "marker_xy": [
+      902.9,
+      292.99999999999983
+    ],
+    "label_xy": [
+      902.9,
+      355.99999999999983
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP37",
+    "signal": "GPIO41",
+    "shared_function": null,
+    "position_mm": [
+      23.97,
+      1.5600000000000023
+    ],
+    "marker_xy": [
+      979.0999999999999,
+      216.80000000000007
+    ],
+    "label_xy": [
+      979.0999999999999,
+      159.80000000000007
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP38",
+    "signal": "GPIO42",
+    "shared_function": null,
+    "position_mm": [
+      23.97,
+      4.099999999999994
+    ],
+    "marker_xy": [
+      979.0999999999999,
+      292.99999999999983
+    ],
+    "label_xy": [
+      979.0999999999999,
+      355.99999999999983
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP39",
+    "signal": "GPIO45",
+    "shared_function": null,
+    "position_mm": [
+      29.050000000000004,
+      1.5600000000000023
+    ],
+    "marker_xy": [
+      1131.5,
+      216.80000000000007
+    ],
+    "label_xy": [
+      1131.5,
+      159.80000000000007
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP40",
+    "signal": "GPIO46",
+    "shared_function": null,
+    "position_mm": [
+      29.050000000000004,
+      4.099999999999994
+    ],
+    "marker_xy": [
+      1131.5,
+      292.99999999999983
+    ],
+    "label_xy": [
+      1131.5,
+      355.99999999999983
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP41",
+    "signal": "GPIO47",
+    "shared_function": null,
+    "position_mm": [
+      14.350000000000001,
+      9.040000000000006
+    ],
+    "marker_xy": [
+      690.5,
+      441.20000000000016
+    ],
+    "label_xy": [
+      730.5,
+      444.20000000000016
+    ],
+    "anchor": "start",
+    "through_hole": true
+  },
+  {
+    "reference": "TP42",
+    "signal": "GPIO48",
+    "shared_function": null,
+    "position_mm": [
+      11.810000000000002,
+      6.5
+    ],
+    "marker_xy": [
+      614.3000000000001,
+      365.0
+    ],
+    "label_xy": [
+      574.3000000000001,
+      368.0
+    ],
+    "anchor": "end",
+    "through_hole": true
+  },
+  {
+    "reference": "TP43",
+    "signal": "PD_PG",
+    "shared_function": null,
+    "position_mm": [
+      12.137500000000003,
+      35.25749999999999
+    ],
+    "marker_xy": [
+      624.1250000000001,
+      1227.725
+    ],
+    "label_xy": [
+      624.1250000000001,
+      1276.725
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP44",
+    "signal": "PD_VDD",
+    "shared_function": null,
+    "position_mm": [
+      13.61,
+      28.939999999999998
+    ],
+    "marker_xy": [
+      668.3,
+      1038.1999999999998
+    ],
+    "label_xy": [
+      668.3,
+      1087.1999999999998
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP45",
+    "signal": "GPIO4",
+    "shared_function": "RS485 TX",
+    "position_mm": [
+      23.6,
+      22.586608
+    ],
+    "marker_xy": [
+      968.0,
+      847.5982399999999
+    ],
+    "label_xy": [
+      968.0,
+      808.5982399999999
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP46",
+    "signal": "GPIO5",
+    "shared_function": "RS485 RX",
+    "position_mm": [
+      21.060000000000002,
+      22.586608
+    ],
+    "marker_xy": [
+      891.8000000000001,
+      847.5982399999999
+    ],
+    "label_xy": [
+      891.8000000000001,
+      808.5982399999999
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP47",
+    "signal": "PD_CFG",
+    "shared_function": null,
+    "position_mm": [
+      9.560000000000002,
+      28.939999999999998
+    ],
+    "marker_xy": [
+      546.8000000000001,
+      1038.1999999999998
+    ],
+    "label_xy": [
+      546.8000000000001,
+      1087.1999999999998
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP48",
+    "signal": "GND",
+    "shared_function": null,
+    "position_mm": [
+      13.810000000000002,
+      1.5600000000000023
+    ],
+    "marker_xy": [
+      674.3000000000001,
+      216.80000000000007
+    ],
+    "label_xy": [
+      674.3000000000001,
+      159.80000000000007
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP49",
+    "signal": "GND",
+    "shared_function": null,
+    "position_mm": [
+      13.810000000000002,
+      4.099999999999994
+    ],
+    "marker_xy": [
+      674.3000000000001,
+      292.99999999999983
+    ],
+    "label_xy": [
+      631.3000000000001,
+      321.99999999999983
+    ],
+    "anchor": "end",
+    "through_hole": true
+  },
+  {
+    "reference": "TP50",
+    "signal": "GND",
+    "shared_function": null,
+    "position_mm": [
+      31.589999999999996,
+      4.099999999999994
+    ],
+    "marker_xy": [
+      1207.6999999999998,
+      292.99999999999983
+    ],
+    "label_xy": [
+      1207.6999999999998,
+      355.99999999999983
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  },
+  {
+    "reference": "TP51",
+    "signal": "GND",
+    "shared_function": null,
+    "position_mm": [
+      31.589999999999996,
+      1.5600000000000023
+    ],
+    "marker_xy": [
+      1207.6999999999998,
+      216.80000000000007
+    ],
+    "label_xy": [
+      1207.6999999999998,
+      159.80000000000007
+    ],
+    "anchor": "middle",
+    "through_hole": true
+  }
+]

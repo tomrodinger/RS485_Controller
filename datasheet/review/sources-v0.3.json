@@ -1,0 +1,45 @@
+{
+  "revision": "0.3",
+  "date": "2026-11-03",
+  "changes": [
+    "Removed Python example and host-Python setup",
+    "Added Arduino IDE installation instructions and original M17 screenshot",
+    "Embedded exact owner-selected PNG on landscape page5"
+  ],
+  "selection": {
+    "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/diagram-review/exports/round2-pngs/r2-05-natural-pigtails.png",
+    "sha256": "ba834b58bdd73dd26d0c414d41ffb16a222e87ef7315657c63ab0fb0adb9443d",
+    "directory_image_count": 1,
+    "copied_asset": {
+      "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/selected-v0.3/two-motor-connection.png",
+      "sha256": "ba834b58bdd73dd26d0c414d41ffb16a222e87ef7315657c63ab0fb0adb9443d"
+    },
+    "reason": "Only image remaining in owner-pruned exports/round2-pngs directory"
+  },
+  "arduino_installation": {
+    "source_pdf": {
+      "path": "/Users/tom/Documents/Move_the_Needle/Servomotor/servomotor_datasheets/datasheet_latest_en.pdf",
+      "sha256": "41c10c3a8f47a1fc13adefe5ce276b6bc270301e7e26679711f2bc93bf72b617"
+    },
+    "instructions_source": {
+      "path": "/Users/tom/Documents/Move_the_Needle/Servomotor/servomotor_datasheets/arduino_library.py",
+      "sha256": "1abb5d287b8366436468cc8632a2634528d635b2667dbaa2855cc294f292c04f"
+    },
+    "screenshot_source": {
+      "path": "/Users/tom/Documents/Move_the_Needle/Servomotor/servomotor_datasheets/arduino_library_installation.png",
+      "sha256": "cab490b9ca710b1d8527555b85a42157c68831bbac13be4f097aa13263d88fae"
+    },
+    "instruction_page": 11,
+    "note": "Original screenshot shows Tools menu and ESP32C3; caption distinguishes ESP32-S3 target."
+  },
+  "arduino_program": "Preserved unchanged v1.10 snapshot; see example-provenance-v0.2.json",
+  "earlier_editions_preserved": true,
+  "public_github_push": false,
+  "verification": "verification-v0.3.json",
+  "rendered_pages": 19,
+  "visual_review": [
+    "Changed pages5,15,16,17 individually inspected",
+    "Full19-page contact sheet reviewed",
+    "All page text bounds checked"
+  ]
+}

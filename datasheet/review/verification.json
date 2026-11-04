@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-26",
+  "design_checks": {
+    "result": "pass",
+    "count": 392,
+    "description": "Fresh root-schematic netlist, all numbered PCB pads, connector pins, PD configuration and DNP state, outline and mounting geometry."
+  },
+  "kicad_drc": {
+    "version": "9.0.7",
+    "severity": "error",
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0
+  },
+  "firmware_compilation": {
+    "esp32_arduino_core": "3.3.3",
+    "servomotor_library": "0.10.1",
+    "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc",
+    "motor_control_demo.cpp": "pass",
+    "ball_juggling_demo.cpp": "pass",
+    "test_autodetect_and_trapezoid_move.cpp": "pass after adding required forward declaration"
+  },
+  "pdf_review": {
+    "pages": 6,
+    "page_format": "A4 portrait",
+    "all_pages_visually_inspected": true,
+    "image_compression_update_cover_rechecked": true,
+    "overflow_checks": "passed by builder",
+    "physical_testing": "not performed"
+  },
+  "sha256": {
+    "PCB/0.5/0.5.kicad_pcb": "74f0c14af491cdc2dd51b3f2ae992f859322efcabfb7be3f86f3d275b53dbb4a",
+    "PCB/0.5/schTop.kicad_sch": "bb6377523158c9948adf3585d42602246a6fdc7330190a89f870b129e6b02ab6",
+    "PCB/0.5/production/bom.csv": "6b85bbf9b9581d8b2501c6226b0aae32d3087847415724f310150f28b59692bf",
+    "datasheet/rs485_controller_datasheet_v0.1_review.pdf": "a3488a39e7657a81829150b57fb1c7de15f934e53bb22f7f7a2dafb0dddc9643",
+    "datasheet/assets/two-motor-connection-ai.png": "8ebcae4624b29a2fcdbbd408a0a26a6627be6a1d25f8c829b9c6b11a98c39df7"
+  },
+  "publication": {
+    "commit": "ec4ad6f69b8118686cfa3072b01a84e20ae843a9",
+    "pushed_branch": "main",
+    "scope": "PCB 0.5, four sets of real product JPEG/WebP images, associated README documentation",
+    "product_datasheet": "local review draft; not published",
+    "firmware_and_unfinished_archive": "remain local pending upload-scope response"
+  }
+}

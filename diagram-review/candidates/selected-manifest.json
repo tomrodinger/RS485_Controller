@@ -1,0 +1,68 @@
+[
+  {
+    "id": "electrical-map",
+    "title": "Electrical map",
+    "style": "Precise circuit map",
+    "description": "A direct electrical map with explicit power returns, the shared ground reference, and internal motor A/B links. Functions are shown independently of connector-face geometry.",
+    "image": "assets/electrical-map.png",
+    "width": 2400,
+    "height": 1440,
+    "revision": "r1",
+    "reviewStatus": "Checked schematic \u00b7 owner review"
+  },
+  {
+    "id": "photo-guide",
+    "title": "Photo-guided map",
+    "style": "Real board + electrical map",
+    "description": "A port locator made from the actual controller photograph beside the electrical map. Use full-screen zoom to inspect the smaller connection details.",
+    "image": "assets/photo-guide.png",
+    "width": 2400,
+    "height": 1440,
+    "revision": "r1",
+    "reviewStatus": "Checked schematic \u00b7 owner review"
+  },
+  {
+    "id": "two-step",
+    "title": "Power first, then data",
+    "style": "Guided two-stage wiring",
+    "description": "First understand motor power and common return; then inspect the RS485 daisy-chain with completed power shown in gray. Perform all wiring with power off.",
+    "image": "assets/two-step.png",
+    "width": 2000,
+    "height": 2200,
+    "revision": "r1",
+    "reviewStatus": "Checked schematic \u00b7 owner review"
+  },
+  {
+    "id": "connector-landmarks",
+    "title": "Connector landmarks",
+    "style": "Service-manual illustration",
+    "description": "A simplified component-side controller drawing with the correct J1/J2/J3/J5 placement and exactly eight J2 contacts. Motor pigtail functions are detached keys, not connector-face pin positions.",
+    "image": "assets/connector-landmarks.png",
+    "width": 2600,
+    "height": 1600,
+    "revision": "r1",
+    "reviewStatus": "Checked schematic \u00b7 owner review"
+  },
+  {
+    "id": "natural-illustration",
+    "title": "Natural-material illustration",
+    "style": "AI motor art + exact wiring",
+    "description": "Natural black-and-silver motor artwork with precisely drawn connections and larger labels. The isolated motor art has no electrical wire endpoints; the dashed keys define pigtail functions.",
+    "image": "assets/natural-illustration.png",
+    "width": 2600,
+    "height": 1600,
+    "revision": "r1",
+    "reviewStatus": "Checked schematic \u00b7 owner review"
+  },
+  {
+    "id": "stylized-illustration",
+    "title": "Restrained cartoon illustration",
+    "style": "Stylized motor art + exact wiring",
+    "description": "A more diagrammatic motor treatment paired with the same checked wiring. Compare its small-size clarity against the natural-material version. The function keys are separate from connector faces.",
+    "image": "assets/stylized-illustration.png",
+    "width": 2600,
+    "height": 1600,
+    "revision": "r1",
+    "reviewStatus": "Checked schematic \u00b7 owner review"
+  }
+]

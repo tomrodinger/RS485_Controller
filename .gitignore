@@ -40,3 +40,23 @@ fp-info-cache
 *.kicad_prl
 
 .DS_Store
+
+# Local Python environments and bytecode
+.venv*/
+__pycache__/
+*.py[cod]
+
+# Regenerable PDF review renders; keep the JSON render manifests
+/datasheet/review/v*-pages/*.png
+/datasheet/review/*-preview.png
+/diagram-review/reviews/qa/*.png
+
+# The gallery has its own already-pushed private Sites repository.
+# Never add its Git database, account feedback database, credentials or caches here.
+/diagram-review/site/
+
+# Generic local application build caches
+node_modules/
+.wrangler/
+.sites-runtime/
+*.tsbuildinfo

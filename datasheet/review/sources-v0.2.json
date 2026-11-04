@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-27",
+  "datasheet_revision": "0.2",
+  "hardware_revision": "0.5",
+  "sources": [
+    {
+      "id": "H1",
+      "source": "PCB/0.5/0.5.kicad_pcb",
+      "supports": [
+        "48.89 x 36.88 mm PCB outline",
+        "1.6 mm nominal thickness",
+        "four 1.5 mm corner cutouts; centers 33.88 x 45.89 mm",
+        "J2 2.54 mm pitch; connector nets"
+      ],
+      "method": "Parsed KiCad S-expressions, checked exact Edge.Cuts, footprint transforms and pad net names."
+    },
+    {
+      "id": "H2",
+      "source": "PCB/0.5/schTop.kicad_sch",
+      "supports": [
+        "ESP32-S3-MINI-1U U7; SP3485EN U5; CH221K U8; TPS54202DDC U9",
+        "J5 5 V input, native USB D-/D+",
+        "J3 PD VBUS directly tied to J1 positive",
+        "J2 pins 1-8 = GND A B GND A B 3.3V 5V",
+        "GPIO4 TX, GPIO5 RX; S1 reset/EN, S2 boot/IO0",
+        "R5 220 ohm across A/B; R1/R3 560 ohm bias",
+        "R27 200k, R31 62k marked DNP"
+      ],
+      "method": "Fresh KiCad 9.0.7 netlist exported from root schematic and compared against PCB pads. BOM cross-check; optional DNP properties explicitly inspected."
+    },
+    {
+      "id": "H3",
+      "source": "PCB/0.5/production/bom.csv",
+      "supports": [
+        "Main assembled components and R27 populated",
+        "R31 excluded from standard BOM"
+      ],
+      "method": "Cross-check against schematic and PCB; not used as sole pinout source."
+    },
+    {
+      "id": "F1",
+      "source": "motor_control_demo/motor_control_demo.cpp",
+      "supports": [
+        "230400 baud 8N1",
+        "GPIO4 TX, GPIO5 RX",
+        "three discovery passes; example capacity48 is a software array limit, not a guaranteed bus capacity"
+      ],
+      "method": "Read source and compiled with ESP32 Arduino core 3.3.3 and Servomotor library 0.10.1."
+    },
+    {
+      "id": "U1",
+      "source": "Owner instruction, 2026-10-26",
+      "supports": [
+        "11.7 g including attached external antenna",
+        "external antenna included in shipment"
+      ],
+      "method": "Owner-supplied measurement and packaging statement. Not independently weighed."
+    },
+    {
+      "id": "M1",
+      "source": "../Servomotor/servomotor_datasheets/datasheet_latest_en.pdf",
+      "supports": [
+        "M17 supply range 12-24 V",
+        "M17 examples use 230400 baud",
+        "Visual reference only: motor specs not copied to controller"
+      ],
+      "method": "Text extracted and checked against specs.py and example code."
+    },
+    {
+      "id": "C1",
+      "source": "datasheets/CH224K.pdf, section5.3",
+      "supports": [
+        "CH221K 200k CFG-to-VDD requests20V"
+      ],
+      "method": "Read manufacturer table; not confused with CH224K resistor table."
+    },
+    {
+      "id": "C2",
+      "source": "https://documentation.espressif.com/esp32-s3-mini-1_mini-1u_datasheet_en.html",
+      "supports": [
+        "Dual-core LX7 up to240MHz",
+        "2.4GHz802.11b/g/n; Bluetooth5 LE",
+        "module pin definitions USB GPIO19/20; 3.3V logic; strapping GPIO0/3/45/46"
+      ],
+      "method": "Official Espressif module documentation checked online 2026-10-26."
+    },
+    {
+      "id": "C3",
+      "source": "https://www.maxlinear.com/ds/sp3485.pdf",
+      "supports": [
+        "3.3V half-duplex RS485 transceiver",
+        "10Mbps component rating not claimed as board rating",
+        "bus A/B polarity"
+      ],
+      "method": "Official manufacturer datasheet checked online. No product-level distance/baud/isolation guarantee inferred."
+    },
+    {
+      "id": "C4",
+      "source": "https://www.ti.com/product/TPS54202",
+      "supports": [
+        "Buck converter identification; device2A rating not treated as motor-current rating"
+      ],
+      "method": "Official manufacturer reference checked online."
+    },
+    {
+      "id": "M2",
+      "source": "../Servomotor/servomotor_datasheets/datasheet_latest_en.pdf",
+      "version": "1.10, Jul. 15, 2026",
+      "sha256": "0815fb04e69cea9a55bf0a5f4978c5d833e13e933f684c2160514224dd574c6c",
+      "supports": [
+        "Exact canonical Python example on PDF page 11",
+        "Exact canonical Arduino example on PDF page 13"
+      ],
+      "method": "Source snapshots recovered from Servomotor commit 2bfca710f68febd80bb758b819c6d12523d7bf25; normalized text compared with published latest English PDF. Original source bytes are retained, with hashes in example-provenance-v0.2.json. The newer Arduino working-tree variant was not substituted."
+    },
+    {
+      "id": "H4",
+      "source": "PCB/0.5/schematic/0.5-index-schTop.pdf",
+      "sha256": "758f2c36d60bb5a5f2791e664161804895850cf46098232ab78dcc718596d35e",
+      "supports": [
+        "Full controller schematic with ESP32-S3-MINI-1U retained as module block"
+      ],
+      "method": "Original single-page landscape PDF composed as vector content into the A3 landscape appendix; no module internals added."
+    },
+    {
+      "id": "C5",
+      "source": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf",
+      "supports": [
+        "Clickable official module datasheet reference"
+      ],
+      "method": "Official Espressif PDF opened and checked on 2026-10-27, module datasheet version 1.7; linked directly from GPIO/resources pages."
+    },
+    {
+      "id": "H5",
+      "source": "datasheet/assets/technical-v2/pcb-geometry.json",
+      "sha256": "21d8f58c54683d1ca814253b98bc4b1a1358e5374b2196ed53a3e88bd5958839",
+      "supports": [
+        "All four connector, two switch and three indicator locations plus module RF socket",
+        "36.88 x 48.89 mm outline; four 1.50 mm holes; 1.50 mm insets and corner radius; 33.88 x 45.89 mm mounting centres",
+        "All 51 TP positions and functions: 43 through-hole and eight SMD service pads"
+      ],
+      "method": "PCB geometry extraction and fresh schematic-netlist comparison: all 338 numbered PCB pads agree. GPIO43/44 module functions verified; viewing-face transforms recorded. See review/geometry-v2 extraction evidence and vector source assets."
+    }
+  ],
+  "not_established": [
+    "assembled height including all protrusions",
+    "current consumption idle/Wi-Fi/BLE/RS485",
+    "continuous motor-power pass-through current",
+    "board temperature/humidity ratings",
+    "board cable length and maximum baud",
+    "EMC/ESD certification and product approvals",
+    "fitted flash/PSRAM SKU and shipped firmware",
+    "physical samples matching current KiCad revision"
+  ],
+  "new_technical_figures": {
+    "directory": "datasheet/assets/technical-v2",
+    "basis": "Checked PCB geometry and connectivity, with fresh-netlist validation and vector-source figures. The PDF builder uses the verified geometry and does not invent physical pad positions."
+  },
+  "excluded_asset": {
+    "path": "datasheet/assets/two-motor-connection-ai.png",
+    "reason": "Prior image not approved for v0.2; builder blocks that original asset hash and omits it by default."
+  }
+}

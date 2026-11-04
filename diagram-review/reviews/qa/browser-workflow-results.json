@@ -1,0 +1,57 @@
+{
+  "results": [
+    {
+      "name": "Unauthenticated feedback is rejected",
+      "status": "pass"
+    },
+    {
+      "name": "Star rating and comment save to D1",
+      "status": "pass"
+    },
+    {
+      "name": "Reload restores exact saved feedback",
+      "status": "pass"
+    },
+    {
+      "name": "A fresh browser context retrieves account feedback",
+      "status": "pass"
+    },
+    {
+      "name": "Rapid edits preserve the latest rating and comment",
+      "status": "pass"
+    },
+    {
+      "name": "Offline edits survive reload and sync on reconnect",
+      "status": "pass"
+    },
+    {
+      "name": "Feedback exports as valid JSON",
+      "status": "pass"
+    },
+    {
+      "name": "Candidate changes isolate comments and ratings",
+      "status": "pass"
+    },
+    {
+      "name": "Filter and search show matching candidates",
+      "status": "pass"
+    },
+    {
+      "name": "Comparison has two independently zoomable images",
+      "status": "pass"
+    },
+    {
+      "name": "Single inspection supports keyboard zoom and full-resolution link",
+      "status": "pass"
+    },
+    {
+      "name": "Mobile layout avoids document horizontal overflow",
+      "status": "pass"
+    },
+    {
+      "name": "Every loaded PNG decodes and no client errors occur",
+      "status": "pass"
+    }
+  ],
+  "errors": []
+}

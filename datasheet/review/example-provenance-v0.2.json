@@ -1,0 +1,33 @@
+{
+  "canonical_document": "/Users/tom/Documents/Move_the_Needle/Servomotor/servomotor_datasheets/datasheet_latest_en.pdf",
+  "canonical_version": "1.10, Jul. 15, 2026",
+  "source_commit": "2bfca710f68febd80bb758b819c6d12523d7bf25",
+  "examples": [
+    {
+      "language": "Python",
+      "snapshot": "datasheet/assets/examples-v0.2/python_library_example.py",
+      "source_path": "python_programs/example_trapezoid_move.py",
+      "sha256": "ec240faa613e6613153e55eaaf098b7909545c34805279d920466872948d6eee",
+      "byte_count": 1276,
+      "lines": 29,
+      "longest_line": 95,
+      "matches_pdf_ignoring_layout_whitespace": true,
+      "source_unmodified": true
+    },
+    {
+      "language": "Arduino",
+      "snapshot": "datasheet/assets/examples-v0.2/arduino_library_example.cpp",
+      "source_path": "Arduino_library/example_trapezoid_move.cpp",
+      "sha256": "2a74cafd80206560d793a1f410b75643dfc0cf481090fd29da22fa47bb43dad5",
+      "byte_count": 1773,
+      "lines": 48,
+      "longest_line": 96,
+      "matches_pdf_ignoring_layout_whitespace": true,
+      "source_unmodified": true
+    }
+  ],
+  "canonical_pdf_sha256": {
+    "datasheet_latest_en.pdf": "0815fb04e69cea9a55bf0a5f4978c5d833e13e933f684c2160514224dd574c6c",
+    "datasheet_v1.10_en.pdf": "0815fb04e69cea9a55bf0a5f4978c5d833e13e933f684c2160514224dd574c6c"
+  }
+}

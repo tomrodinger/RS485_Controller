@@ -1,0 +1,8 @@
+{
+  "results": [
+    "Desktop expand, native dialog, keyboard zoom, Escape, focus restoration, unchanged feedback",
+    "Mobile expanded view fits viewport and closes",
+    "All-six-PNG download succeeds"
+  ],
+  "errors": []
+}

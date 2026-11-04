@@ -1,0 +1,65 @@
+{
+  "original_six_assets_preserved": true,
+  "new_candidates": [
+    {
+      "id": "r2-05-natural-pigtails",
+      "title": "Natural pigtail illustration",
+      "style": "Round 2 \u00b7 natural illustration",
+      "description": "Curved wiring, closed rear plug faces with shared wire bundles, and paired black housings.",
+      "image": "assets/r2-05-natural-pigtails.png",
+      "width": 3200,
+      "height": 2400,
+      "revision": "r2",
+      "reviewStatus": "New variation \u00b7 owner review",
+      "sha256": "ba834b58bdd73dd26d0c414d41ffb16a222e87ef7315657c63ab0fb0adb9443d"
+    },
+    {
+      "id": "r2-01-photo-harness",
+      "title": "Photo harness map",
+      "style": "Round 2 \u00b7 natural illustration",
+      "description": "Actual controller photograph with detached motor function keys.",
+      "image": "assets/r2-01-photo-harness.png",
+      "width": 3200,
+      "height": 2400,
+      "revision": "r2",
+      "reviewStatus": "New variation \u00b7 owner review",
+      "sha256": "05f851aaacde90269e3b7b7d6705b266123169effb28f08f06f4abbe277ec541"
+    },
+    {
+      "id": "r2-02-precision-harness",
+      "title": "Illustrated component panels",
+      "style": "Round 2 \u00b7 natural illustration",
+      "description": "Geometry-derived controller and natural motor artwork in pale panels.",
+      "image": "assets/r2-02-precision-harness.png",
+      "width": 3200,
+      "height": 2400,
+      "revision": "r2",
+      "reviewStatus": "New variation \u00b7 owner review",
+      "sha256": "bbb2d09e40622259a6292d8623038fc724ef7751bbcada6b062229ad8f2356c6"
+    },
+    {
+      "id": "r2-03-photo-field-guide",
+      "title": "Photo field guide",
+      "style": "Round 2 \u00b7 natural illustration",
+      "description": "Portrait guide with controller pin explanations and a full motor circuit.",
+      "image": "assets/r2-03-photo-field-guide.png",
+      "width": 2400,
+      "height": 3000,
+      "revision": "r2",
+      "reviewStatus": "New variation \u00b7 owner review",
+      "sha256": "17f4d7d36e29a3f008e9330de688e7e0f0977fac091459442309e6f25f0d3fb9"
+    },
+    {
+      "id": "r2-04-illustrated-field-guide",
+      "title": "Illustrated field guide",
+      "style": "Round 2 \u00b7 natural illustration",
+      "description": "Portrait geometry-derived controller guide and paired harness map.",
+      "image": "assets/r2-04-illustrated-field-guide.png",
+      "width": 2400,
+      "height": 3000,
+      "revision": "r2",
+      "reviewStatus": "New variation \u00b7 owner review",
+      "sha256": "707571440c2c809b6f31d94de7848dcfd87c9deb667277bcb301427b062b73b2"
+    }
+  ]
+}

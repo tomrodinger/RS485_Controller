@@ -1,0 +1,168 @@
+{
+  "pdf": "datasheet/rs485_controller_datasheet_v0.2_review.pdf",
+  "pdf_sha256": "2b571bf1382fb3425aab6988852499da3d844c4eb2218f348bc11ce4e3cd1bb8",
+  "pages": [
+    {
+      "page": 1,
+      "png": "datasheet/review/v0.2-pages/page-01.png",
+      "sha256": "6a9cf04c1195299babcd4a095924c7e2b526faf59bfac2db1062667fcd7b53f4",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 2,
+      "png": "datasheet/review/v0.2-pages/page-02.png",
+      "sha256": "24d4ecece1f7101a7b51e26ff838b262cc6b2356fc30b6aeb616f7c0efc0ca9e",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 3,
+      "png": "datasheet/review/v0.2-pages/page-03.png",
+      "sha256": "4d590819a2649c2b75a1928f275ebe4264f6046a04b4d1da99232d6074b786b5",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 4,
+      "png": "datasheet/review/v0.2-pages/page-04.png",
+      "sha256": "4f7c41f89d3b6138c87579514fed71748c3294ace1c49f2964054d5d14167286",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 5,
+      "png": "datasheet/review/v0.2-pages/page-05.png",
+      "sha256": "47bf2fe364e884ec2b3db6b9381ae2761c38da2e48f061b046d1afe20b2489f3",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 6,
+      "png": "datasheet/review/v0.2-pages/page-06.png",
+      "sha256": "49ffcd309fee39bbdcbcbe2508f12e17a3dc0d41e1442b5b94eea4c6553deade",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 7,
+      "png": "datasheet/review/v0.2-pages/page-07.png",
+      "sha256": "4f4f714f81d23b82f601e43278c031930a51ee08385c3bf55bd1387e7b05a670",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 8,
+      "png": "datasheet/review/v0.2-pages/page-08.png",
+      "sha256": "726e717b3ca966c837b44a0f4eacd9af3a47141398d85d71db1caf84f3e682ab",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 9,
+      "png": "datasheet/review/v0.2-pages/page-09.png",
+      "sha256": "78fe9d90338b4b7a74388ae89b8a19bf247b13022681f09f0a50d35528899741",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 10,
+      "png": "datasheet/review/v0.2-pages/page-10.png",
+      "sha256": "c33c877cc1d72310a1391ea337e8530c08f26e7b63339b51918ad0c19037c750",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 11,
+      "png": "datasheet/review/v0.2-pages/page-11.png",
+      "sha256": "9e52d07fb785ad662ac735e441b9d242942cf17de7f52efbfb526ac72f67260e",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 12,
+      "png": "datasheet/review/v0.2-pages/page-12.png",
+      "sha256": "6143026abb72745b94009d9f731c6e219429f9bfa1b3bfa6a7863d9b234c9d0a",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 13,
+      "png": "datasheet/review/v0.2-pages/page-13.png",
+      "sha256": "c11aafef4b3b9838031fe95d317ee3debe7b3a067b4606e77d59bb6efed31986",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 14,
+      "png": "datasheet/review/v0.2-pages/page-14.png",
+      "sha256": "b5ec09ca3e79dc7c10dc55d0b12659e6710293cd823dd74738e51258153b35d4",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 15,
+      "png": "datasheet/review/v0.2-pages/page-15.png",
+      "sha256": "d333aeffd2248791c0723f9e1cec3b29ab00fef7f83b1bb368391426d16cf682",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 16,
+      "png": "datasheet/review/v0.2-pages/page-16.png",
+      "sha256": "226ac9c12f1ca82bb69b97afa0a6935c824e5c2a02116c2b0d36bed3d15d53fe",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 17,
+      "png": "datasheet/review/v0.2-pages/page-17.png",
+      "sha256": "61f74dc3753ab526d1fc808116643c7ba3d6b12e4b317f1f213d3a5278677587",
+      "pixels": [
+        953,
+        1348
+      ]
+    },
+    {
+      "page": 18,
+      "png": "datasheet/review/v0.2-pages/page-18.png",
+      "sha256": "e7f385608da6989e8264c25d5f44fbf8604d9ec7a2027161d652329e14509316",
+      "pixels": [
+        1905,
+        1348
+      ]
+    }
+  ]
+}

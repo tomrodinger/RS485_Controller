@@ -1,0 +1,137 @@
+[
+  {
+    "candidate": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/diagram-review/round2/r2-01-photo-harness.routes.json",
+    "svg": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/diagram-review/round2/r2-01-photo-harness.svg",
+    "passed": true,
+    "route_count": 10,
+    "required_path_count": 8,
+    "verified_source_hashes": 3,
+    "selected_controller_j2_contacts": [
+      "CONTROLLER.J2.2",
+      "CONTROLLER.J2.3"
+    ],
+    "errors": [],
+    "warnings": [],
+    "coverage": [
+      "Checked: independent source snapshots, actual contact net classes, external paths, internal A/B equivalence, four disjoint nets, route endpoints, SVG polyline geometry or constrained rounded-path bends, colours and widths.",
+      "Not machine-checked: USB mechanical cable, insulation caps on omitted spare stubs, detached functional-key/body geometry, physical contact count or mating-face orientation, raster visibility/occlusion, crossing halos/junction dots, actual-size readability.",
+      "Motor2 spare contacts are internally on their A/B nets; absence of an external route does not prove their caps are drawn correctly."
+    ],
+    "harness_checks": {
+      "one_two_cavity_shell_per_motor_pair": true,
+      "power_and_ground_route_widths": [
+        11.0
+      ],
+      "white_six_way_plugs": 2,
+      "physical_geometry_requires_visual_review": true
+    }
+  },
+  {
+    "candidate": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/diagram-review/round2/r2-02-precision-harness.routes.json",
+    "svg": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/diagram-review/round2/r2-02-precision-harness.svg",
+    "passed": true,
+    "route_count": 10,
+    "required_path_count": 8,
+    "verified_source_hashes": 3,
+    "selected_controller_j2_contacts": [
+      "CONTROLLER.J2.2",
+      "CONTROLLER.J2.3"
+    ],
+    "errors": [],
+    "warnings": [],
+    "coverage": [
+      "Checked: independent source snapshots, actual contact net classes, external paths, internal A/B equivalence, four disjoint nets, route endpoints, SVG polyline geometry or constrained rounded-path bends, colours and widths.",
+      "Not machine-checked: USB mechanical cable, insulation caps on omitted spare stubs, detached functional-key/body geometry, physical contact count or mating-face orientation, raster visibility/occlusion, crossing halos/junction dots, actual-size readability.",
+      "Motor2 spare contacts are internally on their A/B nets; absence of an external route does not prove their caps are drawn correctly."
+    ],
+    "harness_checks": {
+      "one_two_cavity_shell_per_motor_pair": true,
+      "power_and_ground_route_widths": [
+        11.0
+      ],
+      "white_six_way_plugs": 2,
+      "physical_geometry_requires_visual_review": true
+    }
+  },
+  {
+    "candidate": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/diagram-review/round2/r2-03-photo-field-guide.routes.json",
+    "svg": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/diagram-review/round2/r2-03-photo-field-guide.svg",
+    "passed": true,
+    "route_count": 10,
+    "required_path_count": 8,
+    "verified_source_hashes": 3,
+    "selected_controller_j2_contacts": [
+      "CONTROLLER.J2.2",
+      "CONTROLLER.J2.3"
+    ],
+    "errors": [],
+    "warnings": [],
+    "coverage": [
+      "Checked: independent source snapshots, actual contact net classes, external paths, internal A/B equivalence, four disjoint nets, route endpoints, SVG polyline geometry or constrained rounded-path bends, colours and widths.",
+      "Not machine-checked: USB mechanical cable, insulation caps on omitted spare stubs, detached functional-key/body geometry, physical contact count or mating-face orientation, raster visibility/occlusion, crossing halos/junction dots, actual-size readability.",
+      "Motor2 spare contacts are internally on their A/B nets; absence of an external route does not prove their caps are drawn correctly."
+    ],
+    "harness_checks": {
+      "one_two_cavity_shell_per_motor_pair": true,
+      "power_and_ground_route_widths": [
+        11.0
+      ],
+      "white_six_way_plugs": 2,
+      "physical_geometry_requires_visual_review": true
+    }
+  },
+  {
+    "candidate": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/diagram-review/round2/r2-04-illustrated-field-guide.routes.json",
+    "svg": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/diagram-review/round2/r2-04-illustrated-field-guide.svg",
+    "passed": true,
+    "route_count": 10,
+    "required_path_count": 8,
+    "verified_source_hashes": 3,
+    "selected_controller_j2_contacts": [
+      "CONTROLLER.J2.2",
+      "CONTROLLER.J2.3"
+    ],
+    "errors": [],
+    "warnings": [],
+    "coverage": [
+      "Checked: independent source snapshots, actual contact net classes, external paths, internal A/B equivalence, four disjoint nets, route endpoints, SVG polyline geometry or constrained rounded-path bends, colours and widths.",
+      "Not machine-checked: USB mechanical cable, insulation caps on omitted spare stubs, detached functional-key/body geometry, physical contact count or mating-face orientation, raster visibility/occlusion, crossing halos/junction dots, actual-size readability.",
+      "Motor2 spare contacts are internally on their A/B nets; absence of an external route does not prove their caps are drawn correctly."
+    ],
+    "harness_checks": {
+      "one_two_cavity_shell_per_motor_pair": true,
+      "power_and_ground_route_widths": [
+        11.0
+      ],
+      "white_six_way_plugs": 2,
+      "physical_geometry_requires_visual_review": true
+    }
+  },
+  {
+    "candidate": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/diagram-review/round2/r2-05-natural-pigtails.routes.json",
+    "svg": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/diagram-review/round2/r2-05-natural-pigtails.svg",
+    "passed": true,
+    "route_count": 10,
+    "required_path_count": 8,
+    "verified_source_hashes": 3,
+    "selected_controller_j2_contacts": [
+      "CONTROLLER.J2.2",
+      "CONTROLLER.J2.3"
+    ],
+    "errors": [],
+    "warnings": [],
+    "coverage": [
+      "Checked: independent source snapshots, actual contact net classes, external paths, internal A/B equivalence, four disjoint nets, route endpoints, SVG polyline geometry or constrained rounded-path bends, colours and widths.",
+      "Not machine-checked: USB mechanical cable, insulation caps on omitted spare stubs, detached functional-key/body geometry, physical contact count or mating-face orientation, raster visibility/occlusion, crossing halos/junction dots, actual-size readability.",
+      "Motor2 spare contacts are internally on their A/B nets; absence of an external route does not prove their caps are drawn correctly."
+    ],
+    "harness_checks": {
+      "one_two_cavity_shell_per_motor_pair": true,
+      "power_and_ground_route_widths": [
+        11.0
+      ],
+      "white_six_way_plugs": 2,
+      "physical_geometry_requires_visual_review": true
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "candidate": "diagram-review/candidates/p06-illustrated-natural-v2.routes.json",
+    "svg": "diagram-review/candidates/p06-illustrated-natural-v2.svg",
+    "passed": true,
+    "route_count": 11,
+    "required_path_count": 8,
+    "verified_source_hashes": 3,
+    "selected_controller_j2_contacts": [
+      "CONTROLLER.J2.1",
+      "CONTROLLER.J2.2",
+      "CONTROLLER.J2.3"
+    ],
+    "errors": [],
+    "warnings": [],
+    "coverage": [
+      "Checked: independent source snapshots, actual contact net classes, external paths, internal A/B equivalence, four disjoint nets, route endpoints, exact SVG polylines/colours/widths.",
+      "Not machine-checked: USB mechanical cable, insulation caps on omitted spare stubs, detached functional-key/body geometry, physical contact count or mating-face orientation, raster visibility/occlusion, crossing halos/junction dots, actual-size readability.",
+      "Motor2 spare contacts are internally on their A/B nets; absence of an external route does not prove their caps are drawn correctly."
+    ]
+  },
+  {
+    "candidate": "diagram-review/candidates/p07-illustrated-stylized-v2.routes.json",
+    "svg": "diagram-review/candidates/p07-illustrated-stylized-v2.svg",
+    "passed": true,
+    "route_count": 11,
+    "required_path_count": 8,
+    "verified_source_hashes": 3,
+    "selected_controller_j2_contacts": [
+      "CONTROLLER.J2.1",
+      "CONTROLLER.J2.2",
+      "CONTROLLER.J2.3"
+    ],
+    "errors": [],
+    "warnings": [],
+    "coverage": [
+      "Checked: independent source snapshots, actual contact net classes, external paths, internal A/B equivalence, four disjoint nets, route endpoints, exact SVG polylines/colours/widths.",
+      "Not machine-checked: USB mechanical cable, insulation caps on omitted spare stubs, detached functional-key/body geometry, physical contact count or mating-face orientation, raster visibility/occlusion, crossing halos/junction dots, actual-size readability.",
+      "Motor2 spare contacts are internally on their A/B nets; absence of an external route does not prove their caps are drawn correctly."
+    ]
+  }
+]
