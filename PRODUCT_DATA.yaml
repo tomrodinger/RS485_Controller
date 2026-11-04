@@ -4,6 +4,10 @@
   versions:
     - version: '0.5'
       type: pcb
+      documentation:
+        python: false
+        arduino: true
+        mcp: false
       description: >-
         A programmable ESP32-S3-MINI-1U controller with a half-duplex RS485
         interface for Gearotons servomotors and other compatible RS485 devices.
