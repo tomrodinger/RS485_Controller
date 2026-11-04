@@ -1,0 +1,22 @@
+# Read automatically by Gearotons product documentation at https://9o.at.
+# Keep the RS2 / 0.5 identity: it is printed in the QR codes on shipped PCBs.
+- product: RS2
+  versions:
+    - version: '0.5'
+      type: pcb
+      description: >-
+        A programmable ESP32-S3-MINI-1U controller with a half-duplex RS485
+        interface for Gearotons servomotors and other compatible RS485 devices.
+        Includes an external antenna. Write your own control application on the
+        ESP32-S3; USB bridging and wireless behavior depend on the firmware you
+        install. The datasheet covers wiring, power, pinouts and Arduino setup.
+      picture:
+        - https://raw.githubusercontent.com/tomrodinger/RS485_Controller/main/images/rs485-controller/with-antenna.webp
+        - https://raw.githubusercontent.com/tomrodinger/RS485_Controller/main/images/rs485-controller/component-side.webp
+        - https://raw.githubusercontent.com/tomrodinger/RS485_Controller/main/images/rs485-controller/ports.webp
+        - https://raw.githubusercontent.com/tomrodinger/RS485_Controller/main/images/rs485-controller/label-side.webp
+      schematic: https://raw.githubusercontent.com/tomrodinger/RS485_Controller/main/PCB/0.5/schematic/0.5-index-schTop.pdf
+      user_manual: https://raw.githubusercontent.com/tomrodinger/RS485_Controller/main/datasheet/rs485_controller_datasheet_v1.0.pdf
+      tutorial: https://github.com/tomrodinger/RS485_Controller#programming
+      github: https://github.com/tomrodinger/RS485_Controller/tree/main/PCB/0.5
+      firmwares: []

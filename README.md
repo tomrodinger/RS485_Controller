@@ -4,6 +4,10 @@ A programmable ESP32-S3 board with a half-duplex RS485 interface for Gearotons s
 
 ![RS485 Controller with included external antenna](images/rs485-controller/with-antenna.webp)
 
+## Documentation
+
+[RS485 Controller hardware 0.5 documentation](https://9o.at/products/rs2/0.5) includes the datasheet, schematic and product photographs. The QR code printed on the PCB resolves to this page. Its content is generated from [`PRODUCT_DATA.yaml`](PRODUCT_DATA.yaml), using the same system as the RS485 Adapter and M17 Servomotor.
+
 ## Datasheet
 
 [Download the RS485 Controller datasheet v1.0 (PDF)](datasheet/rs485_controller_datasheet_v1.0.pdf). Covers PCB revision 0.5, connector pinouts, two-motor wiring, mechanical dimensions, breakout headers, Arduino setup and the controller schematic.
