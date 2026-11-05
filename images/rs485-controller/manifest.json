@@ -1,51 +1,162 @@
 {
   "product": "Gearotons RS485 Controller",
   "source": "Owner-supplied SharePoint photo archive, downloaded 2026-10-26",
-  "processing": "EXIF orientation applied; metadata removed; JPEG and WebP derivatives. Product appearance unchanged.",
+  "processing": "EXIF orientation applied; metadata removed; all four views have AI-assisted background edits. Transparent cutouts for component-side, ports and label-side are composited onto pure white for JPEG/WebP derivatives. The antenna view has a white-background edit with near-white pixels normalized to white.",
   "images": [
     {
       "id": "with-antenna",
       "alt": "RS485 Controller with included external antenna, angled view",
-      "width": 5000,
-      "height": 4132,
+      "width": 1380,
+      "height": 1140,
       "jpeg": "with-antenna.jpg",
       "webp": "with-antenna.webp",
       "webp_800": "with-antenna-800.webp",
       "source_filename": "at an angle_1.jpg",
-      "source_sha256": "2c9574a4a309f2582860ef20d16482e5fe2a9ef5eb8fdc510b16a97402c2874f"
+      "source_sha256": "2c9574a4a309f2582860ef20d16482e5fe2a9ef5eb8fdc510b16a97402c2874f",
+      "background_edit": {
+        "date": "2026-11-04",
+        "tool": "Built-in imagegen",
+        "request": "Replace the gray background with white while preserving the board, connected antenna and cable.",
+        "prompt_file": "with-antenna-background-prompt.txt",
+        "edited_master": "with-antenna-white.png",
+        "source_derivative_dimensions": [
+          5000,
+          4132
+        ],
+        "edited_dimensions": [
+          1380,
+          1140
+        ],
+        "edited_master_sha256": "38f33a036adb9995292688a82a6fc458a807a8b8e6543cbca5648207323486f9",
+        "source_derivative_sha256": "daafae8ede2accd9f9b8b2b85e7c45a3457dbb34c97405063822b6405c34950a",
+        "derivative_sha256": {
+          "with-antenna.jpg": "4621a4dbc7f9ff9291e2300f30fd6b9222b7c12a3a42c7356945f001acdea7cc",
+          "with-antenna.webp": "5486cb3d556a238286da60ab26140c2fa4b63574cd125af7b6804c0200b3e1a5",
+          "with-antenna-800.webp": "60384a03328cc034d5dcc1da09cd8821f083e8c0e00c52c3fca081e8ac6d80b2"
+        },
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     },
     {
       "id": "component-side",
       "alt": "RS485 Controller component side showing ESP32-S3, USB-C ports and screw terminal",
-      "width": 2688,
-      "height": 2688,
+      "width": 1254,
+      "height": 1254,
       "jpeg": "component-side.jpg",
       "webp": "component-side.webp",
       "webp_800": "component-side-800.webp",
       "source_filename": "board front at an angle_4.jpg",
-      "source_sha256": "94aa819dff1efdb3d58ebfa6cc18671df3135f9040f5a5a205b5d35238a4dd76"
+      "source_sha256": "94aa819dff1efdb3d58ebfa6cc18671df3135f9040f5a5a205b5d35238a4dd76",
+      "background_edit": {
+        "date": "2026-11-04",
+        "tool": "Built-in imagegen; ImageMagick white compositing",
+        "request": "Remove gray tabletop and shadows; retain the complete product; composite onto pure white.",
+        "prompt_file": "component-side-background-prompt.txt",
+        "edited_master": "component-side-cutout.png",
+        "master_has_alpha": true,
+        "source_derivative_dimensions": [
+          2688,
+          2688
+        ],
+        "source_derivative_sha256": "a7faee639a495a4d6672e365729397a84e3ce6e18a7dc24832cb977730104b77",
+        "edited_dimensions": [
+          1254,
+          1254
+        ],
+        "edited_master_sha256": "6218bdba5079d87360f59418d23bf7a2bfc5741a95d80f6869782bf60e9f55ef",
+        "derivative_sha256": {
+          "component-side.jpg": "4f035490d19c30dc244d5ae7a86ac28032cd501f650d731b37896ad966a1d9b7",
+          "component-side.webp": "30c8de43b02834cf0d88119af68db99ad5fdb6ad3385030ce604aa6eadef7e2e",
+          "component-side-800.webp": "dda88d596361b8b690519e9bdc2ee4c2fbf1029024ec6b256a6cc5c0616e9ae9"
+        },
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     },
     {
       "id": "label-side",
       "alt": "RS485 Controller label side showing connector labels and PCB revision",
-      "width": 1522,
-      "height": 1522,
+      "width": 1254,
+      "height": 1254,
       "jpeg": "label-side.jpg",
       "webp": "label-side.webp",
       "webp_800": "label-side-800.webp",
       "source_filename": "board back vertical.jpg",
-      "source_sha256": "796db2d04cf4b39c649b2e6781a9d231f3f09f29e2191d862d7c1b6804f80286"
+      "source_sha256": "796db2d04cf4b39c649b2e6781a9d231f3f09f29e2191d862d7c1b6804f80286",
+      "background_edit": {
+        "date": "2026-11-04",
+        "tool": "Built-in imagegen; ImageMagick white compositing",
+        "request": "Remove gray tabletop and shadows; retain the complete product; composite onto pure white.",
+        "prompt_file": "label-side-background-prompt.txt",
+        "edited_master": "label-side-cutout.png",
+        "master_has_alpha": true,
+        "source_derivative_dimensions": [
+          1522,
+          1522
+        ],
+        "source_derivative_sha256": "c9f4fe00efa1dcfb3c0df6a8f4c65985760a059c8d93afd872d1aec37df93404",
+        "edited_dimensions": [
+          1254,
+          1254
+        ],
+        "edited_master_sha256": "e7ce6d9ab01f7a896f07d8f3ecdf20c4b4f77e2b748790398b8b84627dcd22fb",
+        "derivative_sha256": {
+          "label-side.jpg": "bac2fdb436ac51b936b8e7e5e85cd8868ffa825cff0dfaaba74aa2f1787f6f34",
+          "label-side.webp": "2b0d5a0cebd5bf5cbc087cada568c21412aed2633686842fb12dcb98600ba693",
+          "label-side-800.webp": "e918bf2f71bb42e1917c1b1746db0a8a61e815341e9c0f7d9d521eb9e5f4dbdf"
+        },
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     },
     {
       "id": "ports",
       "alt": "RS485 Controller component side with both USB-C sockets and motor power terminal",
-      "width": 2486,
-      "height": 2486,
+      "width": 1254,
+      "height": 1254,
       "jpeg": "ports.jpg",
       "webp": "ports.webp",
       "webp_800": "ports-800.webp",
       "source_filename": "board front thwartwise_3.jpg",
-      "source_sha256": "cdebc02481925efee16c5b577a48667eb215eef1fe71a76a49985a8f6219ff41"
+      "source_sha256": "cdebc02481925efee16c5b577a48667eb215eef1fe71a76a49985a8f6219ff41",
+      "background_edit": {
+        "date": "2026-11-04",
+        "tool": "Built-in imagegen; ImageMagick white compositing",
+        "request": "Remove gray tabletop and shadows; retain the complete product; composite onto pure white.",
+        "prompt_file": "ports-background-prompt.txt",
+        "edited_master": "ports-cutout.png",
+        "master_has_alpha": true,
+        "source_derivative_dimensions": [
+          2486,
+          2486
+        ],
+        "source_derivative_sha256": "d16067925e248a8ed68bb7c4af559be08fd4290683f87a34d5f283134df59dde",
+        "edited_dimensions": [
+          1254,
+          1254
+        ],
+        "edited_master_sha256": "eb779d8c5b5e6541b62205a07bde118088584110fec0ed5a5f9be2531feeb8d6",
+        "derivative_sha256": {
+          "ports.jpg": "df79c36a35263fc78495ea03a98ebd7465cfc23e3fcf7c797e4dc3995da7c628",
+          "ports.webp": "33a2af69a836fd0d0e1a834c14b8f462de1f4536bfa46ca777602b7cc9dc8b58",
+          "ports-800.webp": "08ea470f37b370316472e3e20e8540e7676e7b556921646834433b649d46264b"
+        },
+        "background_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     }
   ]
 }

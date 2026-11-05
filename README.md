@@ -40,7 +40,7 @@ On 2026-10-26, KiCad 9.0.7 error-level DRC with schematic parity reported zero v
 
 ## Maintaining the documentation
 
-The [maintainer handoff](datasheet/README.md#maintainer-handoff--4-november-2026) records the accepted datasheet and diagram decisions, exact release checksum, build/verification commands, original references, private-gallery location and remaining limitations. Read it before continuing work after a context reset.
+The [maintainer handoff](datasheet/README.md#maintainer-handoff--4-november-2026), including its **5 November 2026 context-reset checkpoint**, records the accepted datasheet and diagram decisions, current 14-page PDF checksum, photo-edit sources, corrected pin/power guidance, build/verification commands, publication evidence and remaining limitations. Read it before continuing work after a context reset.
 
 [`diagram-review/README.md`](diagram-review/README.md) preserves the artwork iterations and electrical-review history. [`motor_control_demo/README.md`](motor_control_demo/README.md) explains the separate Arduino examples. The unfinished archive in `PCB/V1_not_completed` is separate from the released PCB 0.5 design.
 

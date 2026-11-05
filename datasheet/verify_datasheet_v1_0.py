@@ -29,6 +29,8 @@ def verify():
     source={p['reference']:p for p in geometry['test_pads']};labels=json.loads((TECH/'breakout-labels.json').read_text())
     assert len(labels)==len(source)==51 and {l['reference'] for l in labels}==set(source)
     drawing=ET.parse(TECH/'breakout-headers.svg').getroot();texts=list(drawing.iter(NS+'text'))
+    aliases={'TP4':('GPIO43','TXD0'),'TP5':('GPIO44','RXD0'),'TP45':('GPIO4','RS485TX'),'TP46':('GPIO5','RS485RX')}
+    pcb=(REPO/'PCB/0.5/0.5.kicad_pcb').read_text()
     for label in labels:
         tp=source[label['reference']]
         assert label['signal']==tp['label'] and label['position_mm']==tp['label_side_mm']
@@ -36,6 +38,24 @@ def verify():
         matches=[t for t in texts if abs(float(t.get('x'))-x)<.0001 and abs(float(t.get('y'))-y)<.0001 and t.text==target and t.get('text-anchor')==label['anchor']]
         assert len(matches)==1,('Missing physical signal label',label['reference'],target)
         u,v=tp['label_side_mm'];assert label['marker_xy']==[260+u*30,170+v*30]
+        assert label['label_background'] is None
+        if label['reference'] in aliases:
+            gpio,alias=aliases[label['reference']]
+            assert label['signal']==gpio and label['pcb_alias']==alias
+            assert f'(gr_text "{alias}"' in pcb
+            ax,ay=label['alias_xy']
+            matching_aliases=[t for t in texts if t.text==alias+'*' and abs(float(t.get('x'))-ax)<.0001 and abs(float(t.get('y'))-ay)<.0001 and t.get('text-anchor')==label['anchor']]
+            assert len(matching_aliases)==1,('Missing PCB alias beside GPIO',gpio,alias)
+            assert matching_aliases[0].get('fill')==matches[0].get('fill')
+        else:assert label['pcb_alias'] is None
+    assert not [r for r in drawing.iter(NS+'rect') if r.get('fill','').lower() in ['white','#fff','#ffffff'] and (r.get('width'),r.get('height'))!=('1600','1850')], 'White label boxes remain'
+    assert source['TP4']['u7_pin_function']=='TXD0' and source['TP5']['u7_pin_function']=='RXD0'
+    assert source['TP45']['net']=='/index/schTop/TX_RS485' and source['TP46']['net']=='/index/schTop/RX_RS485'
+    pd_pads={'TP43':'PG','TP44':'VDD','TP47':'CFG'}
+    for ref,function in pd_pads.items():
+        assert source[ref]['through_hole'] and source[ref]['drill']==['0.9']
+        assert source[ref]['net']==f'Net-(U8-{function})'
+    assert not [r for r in drawing.iter(NS+'rect') if r.get('fill')=='#d9bb75'], 'Gold pad finish remains'
     # Independently map header function names from actual numbered PCB pad nets.
     functions={'GND':'GND','/index/schTop/RS485A':'A','/index/schTop/RS485B':'B','+3.3V':'3.3V','+5V':'5V'}
     pads={int(p['number']):p for p in geometry['footprints']['J2']['pads'] if p['number']}
@@ -58,7 +78,26 @@ def verify():
     assert routes['anchors']['J5.USB']!=routes['anchors']['J3.USB']
     # Ensure all functional text remains vector and on the intended PDF pages.
     pdf=ROOT/'rs485_controller_datasheet_v1.0.pdf';doc=fitz.open(pdf);page_text=[p.get_text() for p in doc];text='\n'.join(page_text)
-    assert len(doc)==13 and len(doc.get_toc())==13
+    assert len(doc)==14 and len(doc.get_toc())==14
+    # Cover hierarchy, one detailed photograph, and the additional views at the end.
+    assert image_present(doc,doc[0],REPO/'images/rs485-controller/component-side.jpg')
+    assert len(doc[0].get_images())==2  # Brand logo and the board-only photograph.
+    assert '11.7 g' not in page_text[0] and '230400 baud' not in page_text[0]
+    assert page_text[0].count('PCB 0.5')==1  # Footer only.
+    assert 'bright LEDs' in page_text[0] and 'red TX' in page_text[0] and 'green RX' in page_text[0]
+    subtitle_spans=[span for block in doc[0].get_text('dict')['blocks'] for line in block.get('lines',[]) for span in line['spans'] if 'ESP32-S3 development board' in span['text']]
+    assert subtitle_spans and all(span['size']>=11 and 'Bold' in span['font'] for span in subtitle_spans)
+    for page in page_text:
+        assert 'Datasheet v1.0' in page and 'DS v1.0' not in page
+    assert 'More views of the controller' in page_text[-1]
+    for name in ['component-side','with-antenna','ports','label-side']:
+        with Image.open(REPO/f'images/rs485-controller/{name}.jpg') as photo:
+            w,h=photo.size
+            for box in [(0,0,24,24),(w-24,0,w,24),(0,h-24,24,h),(w-24,h-24,w,h)]:
+                assert all(low>=253 for low,high in photo.convert('RGB').crop(box).getextrema()),('Photo background is not white',name,box)
+    for name in ['with-antenna','ports','label-side']:
+        assert image_present(doc,doc[-1],REPO/f'images/rs485-controller/{name}.jpg'),name
+    assert '11.7 g including the supplied external antenna' in page_text[-1]
     forbidden=['review draft','owner review','working-tree','source snapshot','example-provenance','canonical','Specification and review basis','Later change','retained unchanged','source sheet:','module retained as a black box']
     for phrase in forbidden:
         assert phrase.lower() not in text.lower(),('Internal editorial text remains',phrase)
@@ -76,13 +115,30 @@ def verify():
     assert 'Broken-out corner' in page_text[6]
     assert 'J5 PROG' in page_text[4] and 'Computer' in page_text[4]
     assert all(p['label'].replace('_',' ') in page_text[7] for p in source.values())
+    for gpio,alias in aliases.values():assert gpio in page_text[7] and alias+'*' in page_text[7]
+    assert 'PCB label aliases:' in page_text[7] and 'final character in TXD0/RXD0 is zero' in page_text[7]
+    assert 'not the differential A/B bus' in page_text[7] and 'not independent spare GPIO' in page_text[7]
+    page_flow=[re.sub(r'\s+',' ',page).strip() for page in page_text]
+    assert 'HASL-finished plated through-hole pads' in page_flow[7]
+    assert not any(phrase in text.lower() for phrase in ['gold rectangular','surface service pads','surface service points','surface pads, not through holes'])
+    assert 'CH221K requests 20 V' in page_flow[1] and '15 V or 12 V' in page_flow[1]
+    assert 'Below 12 V, the motors will likely not work correctly' in page_flow[1]
+    assert 'J5 alone is sufficient to power and program the module' in page_flow[1]
+    assert 'Using a separate motor power supply' in page_flow[5]
+    assert 'external supply positive directly to each motor V+' in page_flow[5]
+    assert 'external supply negative to controller GND' in page_flow[5]
+    assert 'Leave J3 and J1 pin 1 unused' in page_flow[5]
+    assert 'For programming only, connect J5 USB-C PROG to a computer' in page_flow[8]
+    assert 'no motor supply or J3 connection is needed' in page_flow[8]
+    pd_url='https://www.wch-ic.com/downloads/CH224DS1_PDF.html'
+    assert all(any(link.get('uri')==pd_url for link in doc[index].get_links()) for index in [7,11])
     assert image_present(doc,doc[9],ROOT/'assets/arduino-install-v0.3/arduino_library_installation.png')
     provenance=json.loads((ROOT/'review/example-provenance-v0.2.json').read_text());entry=next(e for e in provenance['examples'] if e['language']=='Arduino')
     cpp=REPO/entry['snapshot'];assert sha(cpp)==entry['sha256']
     code=page_text[10].split('// Minimal Arduino example:',1)[1]
     code='// Minimal Arduino example:'+code.split('void loop() {',1)[0]+'void loop() {\n}'
     assert norm(code)==norm(cpp.read_text())
-    with fitz.open(ROOT/'assets/release-v1.0/controller-schematic.pdf') as sch:assert len(doc[-1].get_drawings())>=len(sch[0].get_drawings())
+    with fitz.open(ROOT/'assets/release-v1.0/controller-schematic.pdf') as sch:assert len(doc[12].get_drawings())>=len(sch[0].get_drawings())
     assert any(link.get('uri','').endswith('esp32-s3-mini-1_mini-1u_datasheet_en.pdf') for p in doc for link in p.get_links())
     outside=[]
     for index,p in enumerate(doc,1):
@@ -99,6 +155,10 @@ def verify():
             'breakout_view':'Rear / label side F.Cu','headers_marked_unpopulated':True,'broken_out_corner_present':True,
             'python_absent':True,'arduino_listing_unchanged':True,'m17_installation_image_preserved':True,
             'public_release_text_clean':True,'schematic_editorial_note_removed':True,'circuit_marks_preserved_outside_comment':True,'unspecified_product_ratings_retained':True,'schematic_vectors_preserved':True,'earlier_pdfs_preserved':True,'out_of_page_text':outside}
+    result.update({'cover_single_board_only_photo':True,'esp32_s3_subtitle_enlarged_and_bold':True,'cover_weight_baud_revision_boxes_removed':True,'tx_rx_led_feature_present':True,'expanded_datasheet_footer_on_every_page':True,'additional_product_views_page':14,'measured_mass_retained_as_small_gallery_note':True})
+    result.update({'breakout_gpio_and_pcb_aliases':{gpio:alias for gpio,alias in aliases.values()},'all_breakout_labels_have_no_background_boxes':True,'alias_note_explains_uart0_and_wired_rs485_signals':True})
+    result['all_four_product_photos_have_white_background_corners']=True
+    result.update({'pd_control_pads_confirmed_plated_through_hole':pd_pads,'pd_pad_finish':'HASL (owner-confirmed)','old_gold_surface_pad_description_removed':True,'power_delivery_chip_datasheet_link':pd_url,'pd_20v_request_and_15v_12v_motor_operation_explained':True,'below_12v_motor_limitation_retained':True,'j5_only_programming_explained':True,'separate_motor_supply_requires_common_ground':True,'separate_motor_supply_positive_kept_off_pd_rail':True})
     (ROOT/'review/verification-v1.0.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 
 if __name__=='__main__':verify()

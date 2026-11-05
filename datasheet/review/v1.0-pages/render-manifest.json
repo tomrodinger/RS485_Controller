@@ -1,70 +1,75 @@
 {
-  "pdf_sha256": "4dfcba25a5ceacff20ad8305ac91da044ab4e0c2aef2f2011713c8bd2900cf45",
+  "pdf_sha256": "42f08e750f1c0ad086d90d8fa704f87d13df0b1e064e52e3e3b6f62f9cabcdfe",
   "pages": [
     {
       "page": 1,
       "file": "page-01.png",
-      "sha256": "5f4c3dc52d32bd39a3cbe6715155467b519e3de69e272ce45709fa97202ec2df"
+      "sha256": "384a71ef3d65fffb1030e31ece3368207e9662a9317198ce7e0149a58eb2132d"
     },
     {
       "page": 2,
       "file": "page-02.png",
-      "sha256": "3242c954d0f098fbb1e1b5ac2ce46d77890b5387999bcbf20c87e3484f1b7f2c"
+      "sha256": "c5e545250ece7835141e1c9025d1afdb9bd981bea00924fcc3e540091ed515cb"
     },
     {
       "page": 3,
       "file": "page-03.png",
-      "sha256": "074448809eb686b82177d608e3cb4f052c4c757fdf6eb30417a4218cf47f0801"
+      "sha256": "daa1ee4e632eacff88ae191300796d84c43a2ba807fd5f37fd89739e1775769b"
     },
     {
       "page": 4,
       "file": "page-04.png",
-      "sha256": "4c503c6169910763a444c7cb6e318459447104c763dd2c11e2f3eb8bb24f21fa"
+      "sha256": "654d6dd0b9b151250335f0d4d594f232fd65ab49a6f21cb5e5162e3df6c6e389"
     },
     {
       "page": 5,
       "file": "page-05.png",
-      "sha256": "a772cf6934b2862056e2b14a9fe168b8e0591e087d34335ac5cabf218e0607e9"
+      "sha256": "f1ba6d4b03c0f635fa85ee051ed13bf15133c3e07e9eb6dfd76296d66a6ab813"
     },
     {
       "page": 6,
       "file": "page-06.png",
-      "sha256": "9281989d972d57b0f3336ac4dbeea22918fad404d047e9bb43655aac6043929b"
+      "sha256": "bbe9a3a4d3966c2ae0639fc7c89959c72af5303ce9afe54285cc411f3251cd47"
     },
     {
       "page": 7,
       "file": "page-07.png",
-      "sha256": "1140a98ba6a165d20c8623cb7e705ed1dbb05272852c2fe270d40f7b170bc3f6"
+      "sha256": "1f494801ccdedb42fbf9cc390d11dae9922d9395f6435fb823446a2c68eff85f"
     },
     {
       "page": 8,
       "file": "page-08.png",
-      "sha256": "fc65bde0aa60581e44ac84bc0ffd1108e368ae3f5eb79b095ef699e29be35d2b"
+      "sha256": "e64d1bf347cc36ff9524229e9823b12fca1fee9c3dadce9119cd341dd7ffbc87"
     },
     {
       "page": 9,
       "file": "page-09.png",
-      "sha256": "1b7234ad1c01dacfd9c6cb54a9e60ae07d2ac903241c085d0bc02e82c6731c3c"
+      "sha256": "06f7821180c88395650396ef4b69c54131376fff1032cdf901cc5c9e1442d1b5"
     },
     {
       "page": 10,
       "file": "page-10.png",
-      "sha256": "67f9c1cb3be6a2ef7a1252ea590fcbb9fda1e95ff6aa9be0bd26ef31f182b71c"
+      "sha256": "593d4fb431af9b352bf4527121e86ecedb6d967c2efd9d5dcb597121e2ce88e8"
     },
     {
       "page": 11,
       "file": "page-11.png",
-      "sha256": "2d67aedd6d9a14534c38d5bcf54f8e225d3c3c629797667e954a473a945e1580"
+      "sha256": "70f428f7c7f177707ee558bf063ef38680b785d695c06221871b61cfe57e4850"
     },
     {
       "page": 12,
       "file": "page-12.png",
-      "sha256": "166e0818f231e3769a04a5cdd31542a5953ba22e7290937610334534a7b80391"
+      "sha256": "a6b62d1af412537401dceb8d80d971cbd3cc87b9a0b239a0c558960eb44d0612"
     },
     {
       "page": 13,
       "file": "page-13.png",
-      "sha256": "7a8bc8cbc30d04138ea838c008150f220c4fe9aa70cb0bdcd863138a8de7f876"
+      "sha256": "13ff018ea5d462e718cf4d2b53648b6a1abcf6191b065cf181c560f4742c02c7"
+    },
+    {
+      "page": 14,
+      "file": "page-14.png",
+      "sha256": "17f4cc06e1af25938ec87209d38ba74365559fef391bedaa60cdee81f80e9f90"
     }
   ]
 }

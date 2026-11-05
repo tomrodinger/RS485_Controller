@@ -1,8 +1,8 @@
 {
   "passed": true,
   "pdf": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/rs485_controller_datasheet_v1.0.pdf",
-  "sha256": "4dfcba25a5ceacff20ad8305ac91da044ab4e0c2aef2f2011713c8bd2900cf45",
-  "pages": 13,
+  "sha256": "42f08e750f1c0ad086d90d8fa704f87d13df0b1e064e52e3e3b6f62f9cabcdfe",
+  "pages": 14,
   "all_51_physical_pad_labels_match_checked_geometry": true,
   "j2_signal_order_from_pcb_nets": [
     "GND",
@@ -49,5 +49,34 @@
   "unspecified_product_ratings_retained": true,
   "schematic_vectors_preserved": true,
   "earlier_pdfs_preserved": true,
-  "out_of_page_text": []
+  "out_of_page_text": [],
+  "cover_single_board_only_photo": true,
+  "esp32_s3_subtitle_enlarged_and_bold": true,
+  "cover_weight_baud_revision_boxes_removed": true,
+  "tx_rx_led_feature_present": true,
+  "expanded_datasheet_footer_on_every_page": true,
+  "additional_product_views_page": 14,
+  "measured_mass_retained_as_small_gallery_note": true,
+  "breakout_gpio_and_pcb_aliases": {
+    "GPIO43": "TXD0",
+    "GPIO44": "RXD0",
+    "GPIO4": "RS485TX",
+    "GPIO5": "RS485RX"
+  },
+  "all_breakout_labels_have_no_background_boxes": true,
+  "alias_note_explains_uart0_and_wired_rs485_signals": true,
+  "all_four_product_photos_have_white_background_corners": true,
+  "pd_control_pads_confirmed_plated_through_hole": {
+    "TP43": "PG",
+    "TP44": "VDD",
+    "TP47": "CFG"
+  },
+  "pd_pad_finish": "HASL (owner-confirmed)",
+  "old_gold_surface_pad_description_removed": true,
+  "power_delivery_chip_datasheet_link": "https://www.wch-ic.com/downloads/CH224DS1_PDF.html",
+  "pd_20v_request_and_15v_12v_motor_operation_explained": true,
+  "below_12v_motor_limitation_retained": true,
+  "j5_only_programming_explained": true,
+  "separate_motor_supply_requires_common_ground": true,
+  "separate_motor_supply_positive_kept_off_pd_rail": true
 }

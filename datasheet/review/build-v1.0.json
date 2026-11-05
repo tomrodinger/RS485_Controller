@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "date": "3 November 2026",
+  "date": "4 November 2026",
   "output": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/rs485_controller_datasheet_v1.0.pdf",
-  "sha256": "4dfcba25a5ceacff20ad8305ac91da044ab4e0c2aef2f2011713c8bd2900cf45",
+  "sha256": "42f08e750f1c0ad086d90d8fa704f87d13df0b1e064e52e3e3b6f62f9cabcdfe",
   "pages": [
     {
       "page": 1,
@@ -107,6 +107,14 @@
         1190.5511811023623,
         841.8897637795277
       ]
+    },
+    {
+      "page": 14,
+      "title": "More views of the controller",
+      "size_points": [
+        595.2755905511812,
+        841.8897637795277
+      ]
     }
   ],
   "vector_figures": [
@@ -128,7 +136,7 @@
     {
       "page": 8,
       "path": "/Users/tom/Documents/Move_the_Needle/RS485_Controller_git/datasheet/assets/technical-v4/breakout-headers.pdf",
-      "sha256": "093da51afcafb4e6220ff58ae090829248e5021d15f7ebda1e5fab0c8ab59def"
+      "sha256": "f8c8706fecf0b94e3167b40ded2bed6ec21529854d3b6f2c9ed91e97f801c1e1"
     },
     {
       "page": 13,
@@ -146,9 +154,18 @@
     "Arduino": "2a74cafd80206560d793a1f410b75643dfc0cf481090fd29da22fa47bb43dad5"
   },
   "espressif_datasheet_link": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf",
+  "power_delivery_datasheet_link": "https://www.wch-ic.com/downloads/CH224DS1_PDF.html",
   "schematic_source_sha256": "fe8f5dc8e6191d0e675fa315e917b10094e38e2a56bcb5f4b65db2ca86286c81",
   "preserved_v0.1_sha256": "a3488a39e7657a81829150b57fb1c7de15f934e53bb22f7f7a2dafb0dddc9643",
   "technical_geometry_sha256": "21d8f58c54683d1ca814253b98bc4b1a1358e5374b2196ed53a3e88bd5958839",
-  "breakout_label_manifest_sha256": "b00bae8112c6a83c74eb4d98b82d9d7d40a1be7d86351da8d3117c65293edba7",
-  "breakout_detail_pages_removed": true
+  "breakout_label_manifest_sha256": "47e66baf5a89a04b8da3ab33ea852b2a6cd6e089805715fba8dbf56e7fcc05dd",
+  "breakout_detail_pages_removed": true,
+  "cover_photo": "images/rs485-controller/component-side.jpg",
+  "additional_photo_page": 14,
+  "product_photo_sha256": {
+    "component-side": "4f035490d19c30dc244d5ae7a86ac28032cd501f650d731b37896ad966a1d9b7",
+    "with-antenna": "4621a4dbc7f9ff9291e2300f30fd6b9222b7c12a3a42c7356945f001acdea7cc",
+    "ports": "df79c36a35263fc78495ea03a98ebd7465cfc23e3fcf7c797e4dc3995da7c628",
+    "label-side": "bac2fdb436ac51b936b8e7e5e85cd8868ffa825cff0dfaaba74aa2f1787f6f34"
+  }
 }

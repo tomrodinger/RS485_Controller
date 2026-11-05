@@ -31,9 +31,10 @@ INK = colors.HexColor('#203c39')
 GRAY = colors.HexColor('#586c69')
 LIGHT = colors.HexColor('#eef6f3')
 RULE = colors.HexColor('#d5e4df')
-DATE = '3 November 2026'
+DATE = '4 November 2026'
 VERSION = '1.0'
 ESPRESSIF_URL = 'https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf'
+PD_DATASHEET_URL = 'https://www.wch-ic.com/downloads/CH224DS1_PDF.html'
 STYLE = ParagraphStyle('body', fontName='Helvetica', fontSize=9.7, leading=14.6, textColor=INK)
 SMALL = ParagraphStyle('small', parent=STYLE, fontSize=8.2, leading=11.8, textColor=GRAY)
 SCHEMATIC = ROOT / 'assets/release-v1.0/controller-schematic.pdf'
@@ -96,7 +97,7 @@ class Sheet:
         self.c.drawImage(str(path), x + (width - dw) / 2, self.h - y - dh, dw, dh, mask='auto')
         return dh
 
-    def new(self, kicker, title, subtitle, size=A4, compact=False):
+    def new(self, kicker, title, subtitle, size=A4, compact=False, subtitle_style=SMALL):
         if self.page:
             self.c.showPage()
         self.w, self.h = size
@@ -113,9 +114,9 @@ class Sheet:
             self.line(M, 67, self.w - M, 67)
             self.text(kicker.upper(), M, 84, 8, GREEN, 'Helvetica-Bold')
             self.text(title, M, 103, 25, DARK, 'Helvetica-Bold')
-            self.para(subtitle, 139, style=SMALL)
+            self.para(subtitle, 139, style=subtitle_style)
         self.line(M, self.h - 44, self.w - M, self.h - 44)
-        self.text(f'RS485 Controller  |  PCB 0.5  |  DS v{VERSION}  |  {DATE}', M, self.h - 33, 7, GRAY)
+        self.text(f'RS485 Controller  |  PCB 0.5  |  Datasheet v{VERSION}  |  {DATE}', M, self.h - 33, 7, GRAY)
         self.text(f'{self.page:02}', self.w - M - 12, self.h - 33, 8, GREEN, 'Helvetica-Bold')
 
     def h2(self, value, y):
@@ -227,30 +228,29 @@ def build(output, technical_dir, allow_missing=False, connection_illustration=No
         s = Sheet(layout)
         cw = s.cw
 
-        s.new('Programmable motion control', 'RS485 Controller', 'ESP32-S3 development board for Gearotons servomotors and other RS485 devices')
-        s.text('Affordable and Simple All-in-One Motion Control', M, 172, 12, GREEN, 'Helvetica-Bold')
-        s.text('From Education to Innovation', M, 193, 10, GREEN)
-        s.image(REPO / 'images/rs485-controller/with-antenna.jpg', M, 220, 258, 225)
-        s.image(REPO / 'images/rs485-controller/component-side.jpg', M + 276, 220, 233, 225)
-        s.para('External antenna included. Cables, power supply and motors are separate system components.', 454, style=SMALL)
-        for x, value, label in [(M, '11.7 g', 'Including attached antenna'), (M + 173, '230400 baud', 'Example RS485 baud rate'), (M + 346, 'PCB 0.5', 'Hardware revision')]:
-            s.rect(x, 493, 163, 62)
-            s.text(value, x + 12, 505, 17, DARK, 'Helvetica-Bold')
-            s.text(label, x + 12, 531, 8, GRAY)
-        y = s.h2('A compact controller for shared-bus motion', 579)
-        y = s.para('Run motor-control logic directly on the ESP32-S3. The board combines native USB programming, a half-duplex RS485 interface, a USB-C PD power input and accessible GPIO pads in a compact open PCB.', y) + 15
+        cover_subtitle = ParagraphStyle('cover-subtitle', parent=STYLE, fontName='Helvetica-Bold', fontSize=11, leading=15, textColor=GREEN)
+        s.new('Programmable motion control', 'RS485 Controller',
+              'ESP32-S3 development board for Gearotons servomotors and other RS485 devices',
+              subtitle_style=cover_subtitle)
+        s.text('Affordable and Simple All-in-One Motion Control', M, 185, 12, GREEN, 'Helvetica-Bold')
+        s.text('From Education to Innovation', M, 206, 10, GREEN)
+        s.image(REPO / 'images/rs485-controller/component-side.jpg', M, 238, cw, 300)
+        s.para('External antenna included. Cables, power supply and motors are separate system components.', 550, style=SMALL)
+        y = s.h2('A compact controller for shared-bus motion', 584)
+        y = s.para('Run motor-control logic directly on the ESP32-S3-MINI-1U module. The board combines native USB programming, a half-duplex RS485 interface, a USB-C PD power input and accessible GPIO pads.', y) + 12
         for text in [
             '<b>Embedded control:</b> dual-core LX7 processor, up to 240 MHz; 2.4 GHz Wi-Fi and Bluetooth 5 LE capabilities depend on application firmware.',
             '<b>Simple wiring:</b> two parallel A/B/GND groups, automatic RS485 direction circuitry, reset and programming buttons.',
             '<b>Motor-power integration:</b> standard assembly requests 20 V USB-C PD, with a direct motor-power output at the screw terminal.',
+            '<b>Visible bus activity:</b> bright LEDs indicate transmission (red TX) and reception (green RX).',
         ]:
-            y = s.para(text, y) + 10
+            y = s.para(text, y) + 9
 
         s.new('Specifications', 'Electrical & power', 'Power inputs, onboard supply rails and RS485 interface specifications.')
         y = s.table(['Parameter', 'Specification / conditions'], [
             ('Processor / module', 'ESP32-S3-MINI-1U; dual-core Xtensa LX7, up to 240 MHz.'),
             ('Wireless hardware', '2.4 GHz Wi-Fi 802.11b/g/n and Bluetooth 5 LE; external antenna included. Wireless control requires suitable firmware.'),
-            ('Programming supply, J5', '5 V nominal USB input. Native ESP32-S3 USB data connection; motor power is supplied separately.'),
+            ('Programming supply, J5', '5 V nominal USB input and native ESP32-S3 USB data. J5 alone is sufficient to power and program the module; motor power is separate.'),
             ('PD power input, J3', 'Requests 20 V using CH221K and R27 = 200 kΩ. Actual voltage depends on the source and successful PD negotiation.'),
             ('Motor-power output, J1', 'Pin 1 = J3 VBUS rail (labelled +20 V); pin 2 = GND. Direct pass-through, not a separately regulated 20 V output.'),
             ('Logic / RS485 interface', '3.3 V logic; SP3485EN half-duplex differential transceiver. Controller, USB and motor grounds are common; no galvanic isolation.'),
@@ -258,7 +258,7 @@ def build(output, technical_dir, allow_missing=False, connection_illustration=No
             ('Bus loading / protection', 'R5 = 220 Ω across A/B. R1 = 560 Ω pulls A high; R3 = 560 Ω pulls B low. SM712 transient suppressor on the bus.'),
             ('Auxiliary power pins, J2', '3.3 V rail and J5-associated 5 V rail. Available external current is not specified. The 5 V rail is not generated from the PD input.'),
         ], [147, cw - 147], 177)
-        y = s.note('Verify motor power before connecting', 'Use a USB-C PD supply that explicitly offers 20 V and a suitable cable. Measure J1 before attaching motors; a non-PD or unsuccessful source may leave the rail at a lower voltage. J5 alone does not provide motor power at J1.', y + 20)
+        y = s.note('USB-C PD request and actual motor voltage', 'The CH221K requests 20 V from the USB-C power supply. If the source cannot supply 20 V and instead delivers 15 V or 12 V, Gearotons M17 motors can still operate. Below 12 V, the motors will likely not work correctly. Measure J1 before connecting motors and ensure the supply and cable can support the motor load. J5 alone does not provide motor power at J1.', y + 20)
         s.para('<b>Unspecified product ratings:</b> board current consumption, continuous motor-power pass-through current, maximum cable length, environmental limits and product-level ESD/EMC ratings. Component ratings do not define board-level limits.', y + 16, style=SMALL)
 
         s.new('Interfaces · physical locator', 'Power, programming & status', 'Locate connectors, switches and indicator LEDs before connecting or programming the controller.')
@@ -291,17 +291,17 @@ def build(output, technical_dir, allow_missing=False, connection_illustration=No
                   size=landscape(A3), compact=True)
             s.vector(connection_illustration, 88, s.h - 165, False)
             s.para('Computer: J5 USB-C PROG. Motor-power supply: J3 PD POWER IN. Connector mating faces are not shown; match actual labels.', s.h - 70, style=SMALL)
-        s.new('System wiring', 'Connect two servomotors', 'One 20 V-capable USB-C PD source can feed J3 and supply the motors through J1.')
+        s.new('System wiring', 'Connect two servomotors', 'The illustrated USB-C PD arrangement requests 20 V; the motor rail follows the actual supply voltage.')
         y = 177
         y = s.para('Use the following net-by-net connections for both motors. Connect the data bus along one route and distribute motor supply/return wiring for the combined motor current.', y) + 20
         y = s.table(['Net', 'Controller connection', 'Motor 1 and Motor 2'], [
-            ('+20 V', 'J1 pin 1', 'Each motor V+ / positive supply'),
+            ('V+', 'J1 pin 1 (actual J3 voltage)', 'Each motor V+ / positive supply'),
             ('GND', 'J1 pin 2 and J2 pin 1 or 4', 'Each motor GND / supply return'),
             ('A', 'J2 pin 2 or 5', 'A to A, onward along the bus'),
             ('B', 'J2 pin 3 or 6', 'B to B, onward along the bus'),
         ], [70, 183, cw - 253], y)
         steps = [
-            ('Check power while disconnected', 'With motors disconnected, connect a 20 V-capable PD source to J3 and measure J1. Check polarity, then turn the source off before wiring the motors.'),
+            ('Check power while disconnected', 'With motors disconnected, connect the USB-C PD source to J3 and measure J1. Check the actual voltage and polarity, then turn the source off before wiring the motors.'),
             ('Wire the common ground and motor supply', 'Connect both motor supply returns and controller GND. Motor returns must be sized for motor current; the data-ground lead must not be the only motor-current return.'),
             ('Connect the differential bus', 'Connect A to A and B to B. Route A/B as a twisted pair along one bus, keeping branches short. Give each motor a distinct alias before addressed motion commands.'),
             ('Power and test deliberately', 'Secure both motors before discovery or movement examples. The power supply, cable and distribution wiring must support the combined load.'),
@@ -309,7 +309,8 @@ def build(output, technical_dir, allow_missing=False, connection_illustration=No
         y += 22
         for number, (title, body) in enumerate(steps, 1):
             y = s.para(f'<b>{number}. {title}.</b> {body}', y) + 14
-        s.para('The M17 motor reference specifies 12–24 V operation; the controller standard PD request is 20 V. R5 already loads A/B with 220 Ω. Select additional end termination for the complete bus instead of adding resistors at every motor. No fixed motor-count guarantee is specified.', y, style=SMALL)
+        y = s.para('The M17 motor reference specifies 12–24 V operation. A 15 V or 12 V supply can run the motors even when 20 V is unavailable; below 12 V they will likely not work correctly. R5 already loads A/B with 220 Ω. Select additional end termination for the complete bus instead of adding resistors at every motor. No fixed motor-count guarantee is specified.', y, style=SMALL)
+        s.note('Using a separate motor power supply', 'Keep J5 USB-C PROG connected to power the controller. Connect a suitable external supply positive directly to each motor V+, and its negative to each motor GND. Also connect the external supply negative to controller GND (J2 pin 1 or 4, or J1 pin 2). This common-ground connection is required for RS485 communication. Leave J3 and J1 pin 1 unused in this arrangement.', y + 18)
 
         s.new('Mechanical integration', 'Detailed PCB dimensions', 'PCB revision 0.5. Nominal dimensions in millimetres; connector overhang and antenna excluded.')
         y = s.vector(assets['mechanical'], 176, 470, allow_missing)
@@ -320,19 +321,20 @@ def build(output, technical_dir, allow_missing=False, connection_illustration=No
               'Rear / label-side view (F.Cu). Breakout headers are not fitted; solder headers or wires to the required through-hole pads.',
               size=A3, compact=True)
         y = s.vector(assets['gpio-overview'], 95, s.h - 285, allow_missing)
-        y = s.para('<b>Signal legend:</b> Green: GPIO. Gray: GND. Amber: PD-control points. Blue labels: surface service pads. Dashed socket and module outlines locate components fitted on the opposite face.', y + 12, style=SMALL) + 12
-        y = s.para('<b>Shared functions:</b> GPIO4 / TX and GPIO5 / RX are connected to onboard RS485. GPIO43 / TX0 and GPIO44 / RX0 are UART0. GPIO0/3/45/46 are module strapping signals; GPIO0 is connected to PROG. Use 3.3 V logic and avoid disturbing boot, USB or RS485.', y, style=SMALL) + 12
-        y = s.para('<b>PD CFG, PD VDD and PD PG are not GPIO.</b> The gold rectangular service pads are surface pads, not through holes. Breakout holes are unpopulated; the fitted J2 RS485 header is separate and appears on the component-side locator.', y, style=SMALL) + 12
+        y = s.para('<b>Signal legend:</b> Green: GPIO. Gray: GND. Amber: PD-control points. Blue: RS485 and auxiliary contacts. Label colours indicate function; pads have a HASL finish. Dashed outlines locate components fitted on the opposite face.', y + 12, style=SMALL) + 6
+        y = s.para('<b>* PCB label aliases:</b> GPIO43 = TXD0 (UART0 transmit); GPIO44 = RXD0 (UART0 receive). The final character in TXD0/RXD0 is zero. These are the same physical pins, with functions selected by firmware. GPIO4 = RS485TX; GPIO5 = RS485RX. These logic signals are wired to the onboard RS485 circuitry; they are not the differential A/B bus and are not independent spare GPIO.', y, style=SMALL) + 8
+        y = s.para('<b>Shared functions:</b> GPIO0/3/45/46 are module strapping signals; GPIO0 is connected to PROG. Use 3.3 V logic and avoid disturbing boot, USB or RS485.', y, style=SMALL) + 8
+        y = s.para(f'<b>PD CFG, PD VDD and PD PG:</b> HASL-finished plated through-hole pads connected to the CH221K power-delivery chip, not GPIO. See the <link href="{PD_DATASHEET_URL}" color="#08765b"><u>CH221K datasheet</u></link> for pin functions and voltage configuration. Breakout headers are not fitted; J2 is separate.', y, style=SMALL) + 6
         s.para(f'<b>Module reference:</b> <link href="{ESPRESSIF_URL}" color="#08765b"><u>Official Espressif ESP32-S3-MINI-1 / MINI-1U datasheet (PDF)</u></link>.', y, style=SMALL)
 
         s.new('Bring-up', 'Getting started', 'Prepare the hardware and software, establish communication, then enable motion deliberately.')
         y = 180
         steps = [
             ('Prepare the hardware', 'Attach the included external antenna. With power off, check the motor polarity and A/B/GND connections. Secure the mechanism before running any movement example.'),
-            ('Use the programming port', 'Connect J5 USB-C PROG with a data-capable cable. J3 is the separate USB-C PD power input, not a programming port.'),
+            ('Use the programming port', 'For programming only, connect J5 USB-C PROG to a computer with a data-capable cable. This powers the ESP32-S3; no motor supply or J3 connection is needed.'),
             ('Install Arduino support', 'Install the Arduino ESP32 board package and “Servomotor by Gearotons” from Library Manager. Select an ESP32-S3 target; configure native USB CDC for the USB serial console as appropriate for the board package.'),
             ('Enter download mode if needed', 'Hold S2 PROG, press and release S1 RESET, then release PROG. Select the detected USB device and upload the application.'),
-            ('Verify motor power and identity', 'Check J1 voltage before connecting motors. Use the correct motor alias and ensure the mechanism can safely perform one full rotation before running the Arduino example.'),
+            ('Verify motor power and identity', 'For motion, use J3/J1 or a suitable separate motor supply. With a separate supply, connect its negative to controller GND as well as motor GND. Check voltage and polarity before connecting motors; use the intended alias and secure the mechanism for one full rotation.'),
         ]
         for number, (title, body) in enumerate(steps, 1):
             s.rect(M, y, 24, 24, fill=GREEN, radius=5)
@@ -365,10 +367,22 @@ def build(output, technical_dir, allow_missing=False, connection_illustration=No
         y = s.para('The following page shows the complete PCB revision 0.5 controller schematic, including power regulation, USB-C PD negotiation, native USB, RS485, controls and indicator circuitry.', y) + 18
         y = s.h2('Official module documentation', y)
         y = s.para(f'<link href="{ESPRESSIF_URL}" color="#08765b"><u>Espressif ESP32-S3-MINI-1 / ESP32-S3-MINI-1U datasheet</u></link><br/>Manufacturer reference for the module pin definitions, boot configuration, radio, electrical specifications and module mechanical details.', y) + 24
+        y = s.h2('Power-delivery chip documentation', y)
+        y = s.para(f'<link href="{PD_DATASHEET_URL}" color="#08765b"><u>WCH CH224-family datasheet — CH221K sections</u></link><br/>Refer to the CH221K pin descriptions and voltage-configuration table for PD CFG, PD VDD and PD PG. The standard 200 kΩ configuration requests 20 V from the USB-C power supply.', y) + 24
         y = s.h2('Software, tutorials and design files', y)
         y = s.para('<b>Controller source:</b> <link href="https://github.com/tomrodinger/RS485_Controller" color="#08765b"><u>github.com/tomrodinger/RS485_Controller</u></link><br/><b>Motor setup and protocol:</b> <link href="https://tutorial.gearotons.com" color="#08765b"><u>tutorial.gearotons.com</u></link><br/><b>Arduino library:</b> <link href="https://github.com/tomrodinger/Servomotor_Arduino_Library" color="#08765b"><u>github.com/tomrodinger/Servomotor_Arduino_Library</u></link><br/><b>Feedback:</b> <link href="https://tutorial.gearotons.com/feedback" color="#08765b"><u>tutorial.gearotons.com/feedback</u></link>', y) + 24
         s.new('Appendix · circuit schematic', 'Full controller schematic', 'RS485 Controller · PCB revision 0.5', size=landscape(A3), compact=True)
         s.vector(SCHEMATIC, 88, s.h - 143, False)
+
+        s.new('Product photography', 'More views of the controller', 'Included external antenna, USB-C and power connectors, and rear PCB labels.')
+        s.image(REPO / 'images/rs485-controller/with-antenna.jpg', M, 178, cw, 310)
+        s.para('Controller with the supplied external antenna connected.', 495, style=SMALL)
+        photo_width = (cw - 22) / 2
+        s.image(REPO / 'images/rs485-controller/ports.jpg', M, 529, photo_width, 202)
+        s.image(REPO / 'images/rs485-controller/label-side.jpg', M + photo_width + 22, 529, photo_width, 202)
+        s.para('USB-C sockets and motor-power terminal', 738, w=photo_width, style=SMALL)
+        s.para('Rear / label side', 738, x=M + photo_width + 22, w=photo_width, style=SMALL)
+        s.para('Mass: 11.7 g including the supplied external antenna.', 766, style=SMALL)
         s.save()
         compose_vectors(layout, output, s.figures, s.sections)
 
@@ -382,11 +396,15 @@ def build(output, technical_dir, allow_missing=False, connection_illustration=No
         'excluded_prior_ai_image': 'datasheet/assets/two-motor-connection-ai.png',
         'canonical_example_sha256': {entry['language']: entry['sha256'] for entry in provenance['examples']},
         'espressif_datasheet_link': ESPRESSIF_URL,
+        'power_delivery_datasheet_link': PD_DATASHEET_URL,
         'schematic_source_sha256': sha256(SCHEMATIC),
         'preserved_v0.1_sha256': sha256(ROOT / 'rs485_controller_datasheet_v0.1_review.pdf'),
         'technical_geometry_sha256': sha256(technical_dir / 'pcb-geometry.json') if (technical_dir / 'pcb-geometry.json').exists() else None,
         'breakout_label_manifest_sha256': sha256(technical_dir / 'breakout-labels.json'),
         'breakout_detail_pages_removed': True,
+        'cover_photo': 'images/rs485-controller/component-side.jpg',
+        'additional_photo_page': s.page,
+        'product_photo_sha256': {name: sha256(REPO / f'images/rs485-controller/{name}.jpg') for name in ['component-side', 'with-antenna', 'ports', 'label-side']},
     }
     (ROOT / 'review/build-v1.0.json').write_text(json.dumps(result, indent=2) + '\n')
     return result

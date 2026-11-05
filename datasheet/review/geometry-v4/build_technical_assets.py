@@ -3,12 +3,23 @@
 from pathlib import Path
 from html import escape
 import importlib.util, json, math
+from reportlab.pdfbase.pdfmetrics import stringWidth
 ROOT=Path(__file__).resolve().parents[3]
 spec=importlib.util.spec_from_file_location('geometry_core',ROOT/'datasheet/review/geometry-v2/build_technical_assets.py')
 g=importlib.util.module_from_spec(spec);spec.loader.exec_module(g)
 OUT=ROOT/'datasheet/assets/technical-v4';OUT.mkdir(exist_ok=True);g.OUT=OUT
 D=g.Drawing; G=g.G; F=g.F; W=g.W; H=g.H
 FUNCTIONS=['GND','A','B','GND','A','B','3.3V','5V']
+# PCB silkscreen aliases, tied to the same audited pad references as the GPIOs.
+PCB_ALIASES={'TP4':'TXD0','TP5':'RXD0','TP45':'RS485TX','TP46':'RS485RX'}
+
+class HaslBreakoutDrawing(D):
+    def rect(self,x,y,w,h,fill='white',stroke='none',r=0,sw=1,dash=None):
+        # The owner confirms HASL on the manufactured pads. Keep the audited
+        # pad geometry, while showing the finish consistently as silver-gray.
+        if fill in ('gold','#b9c9be'):
+            fill='#d4dad6';stroke='#718e7b'
+        super().rect(x,y,w,h,fill,stroke,r,sw,dash)
 
 def board(d,x,y,k,context=True):
     g.board(d,x,y,k,context=context,numbers=False)
@@ -84,7 +95,7 @@ def mechanical():
     d.export('mechanical-dimensions')
 
 def breakout():
-    d=D(1600,1850);ox,oy,k=260,170,30
+    d=HaslBreakoutDrawing(1600,1850);ox,oy,k=260,170,30
     g.board(d,ox,oy,k,face='label')
     # Reinforce the USB silhouettes without implying they are fitted on this face.
     for ref,title,subtitle in [('J5','J5 · USB-C PROG','Computer / programming'),('J3','J3 · PD POWER IN','Motor-power USB-C supply')]:
@@ -96,12 +107,18 @@ def breakout():
         d.text(x+w/2,y+h/2+45,'Computer' if ref=='J5' else 'Power supply',23,'muted',False,'middle')
     d.text(ox+24*k,oy+13*k,'ESP32-S3 module',25,'#829d8c',False,'middle')
     d.text(ox+24*k,oy+13*k+35,'on opposite face',22,'#829d8c',False,'middle')
-    labels=[]
+    labels=[];text_clearances=[]
+    def label_text(tx,ty,text,size,color,anchor):
+        # Interrupt only faint opposite-face outlines behind labels. The text
+        # itself has no fill tile, so the PCB/paper background remains visible.
+        width=stringWidth(text,'Helvetica-Bold',size)
+        left=tx-width/2 if anchor=='middle' else tx-width if anchor=='end' else tx
+        text_clearances.append((left-3,ty-size-3,left+width+3,ty+4))
+        d.text(tx,ty,text,size,color,True,anchor)
     for tp in G['test_pads']:
         u,v=tp['label_side_mm'];x=ox+u*k;y=oy+v*k
         color=g.C[tp['category']];d.circle(x,y,8,color,'white',2)
-        label=tp['label'];secondary=tp['reference']
-        if tp.get('shared_function'):secondary += ' / '+tp['shared_function'].replace('UART0 ','').replace('RS485 ','')
+        label=tp['label'];pcb_alias=PCB_ALIASES.get(tp['reference'])
         region=tp.get('region')
         if region=='A':
             above=v<3;tx=x;ty=y-57 if above else y+63;anchor='middle'
@@ -109,7 +126,6 @@ def breakout():
                 tx=x-43;ty=y+29;anchor='end'
                 d.line([(x-30,y),(tx+7,ty-7)],color,1.4)
             else:
-                if tp['reference']=='TP31':tx+=9
                 d.line([(x,y+(-30 if above else 30)),(tx,ty+(8 if above else -23))],color,1.4)
             size=18;sy=ty-27 if above else ty+20
         elif region=='B':
@@ -126,16 +142,17 @@ def breakout():
         else:
             tx=x+49;ty=y+6;anchor='start';size=25;sy=ty+26
             d.line([(x+23,y),(tx-9,y)],color,1.4)
-        if region in ('A','C') and anchor=='middle':
-            d.rect(tx-36,ty-20,72,27,'white','#d2e0d6',4,.6)
-        d.text(tx,ty,label,size,color,True,anchor)
-        if tp.get('shared_function'):
-            d.rect(tx-20,sy-12,40,16,'white',r=3)
-            d.text(tx,sy,tp['shared_function'].replace('UART0 ','')+'0' if region=='A' else tp['shared_function'].replace('RS485 ',''),13,'muted',False,anchor)
-        labels.append({'reference':tp['reference'],'signal':tp['label'],'shared_function':tp.get('shared_function'),'position_mm':[u,v],'marker_xy':[x,y],'label_xy':[tx,ty],'anchor':anchor,'through_hole':tp['through_hole']})
+        label_text(tx,ty,label,size,color,anchor)
+        if pcb_alias:
+            label_text(tx,sy,pcb_alias+'*',14,color,anchor)
+        labels.append({'reference':tp['reference'],'signal':tp['label'],'shared_function':tp.get('shared_function'),'pcb_alias':pcb_alias,'alias_xy':[tx,sy] if pcb_alias else None,'position_mm':[u,v],'marker_xy':[x,y],'label_xy':[tx,ty],'anchor':anchor,'through_hole':tp['through_hole'],'label_background':None})
+    clip='M 0 0 H 1600 V 1850 H 0 Z '
+    clip+=' '.join(f'M {x1} {y1} H {x2} V {y2} H {x1} Z' for x1,y1,x2,y2 in text_clearances)
+    d.add(f'<defs><clipPath id="context-outline-clearance"><path d="{clip}" clip-rule="evenodd"/></clipPath></defs>')
+    d.items=[f'<g clip-path="url(#context-outline-clearance)">{item}</g>' if 'stroke="#b3c5bb"' in item else item for item in d.items]
     d.text(65,1710,'REAR / LABEL SIDE (F.Cu) · looking toward the PCB',30,'ink',True)
     d.text(65,1752,'USB-C sockets and module are on the opposite face; dashed outlines locate them.',25,'muted')
-    d.text(65,1793,'Round holes: solder headers or wires here. Gold rectangular pads: surface service points.',24,'muted')
+    d.text(65,1793,'PD CFG / PD VDD / PD PG: HASL-finished plated through-hole pads for USB-C power delivery.',24,'muted')
     d.export('breakout-headers')
     (OUT/'breakout-labels.json').write_text(json.dumps(labels,indent=2)+'\n')
 

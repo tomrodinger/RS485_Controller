@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-04",
+  "document_version": "1.0",
+  "hardware_revision": "0.5",
+  "status": "Built and verified; prepared for owner-authorized commit and push to origin/main",
+  "base_commit": "29a758d20a9367261aee6a3d125c7eb982555263",
+  "prior_published_pdf_sha256": "4dfcba25a5ceacff20ad8305ac91da044ab4e0c2aef2f2011713c8bd2900cf45",
+  "pdf": "datasheet/rs485_controller_datasheet_v1.0.pdf",
+  "pdf_sha256": "42f08e750f1c0ad086d90d8fa704f87d13df0b1e064e52e3e3b6f62f9cabcdfe",
+  "pages": 14,
+  "changes": [
+    "Single detailed component-side photograph without antenna on the cover",
+    "ESP32-S3 subtitle enlarged to 11 pt bold green text",
+    "Cover weight, baud-rate and hardware-revision boxes removed",
+    "Bright red TX and green RX LEDs added to the cover feature list",
+    "Every footer expanded to Datasheet v1.0",
+    "Three additional product views appended on page 14",
+    "11.7 g including supplied external antenna retained as a small gallery note",
+    "All four product photographs have white backgrounds; transparent cutout masters for component-side, ports and label-side are composited onto pure white for JPEG/WebP derivatives",
+    "Breakout map labels show GPIO43 / TXD0, GPIO44 / RXD0, GPIO4 / RS485TX and GPIO5 / RS485RX with an explanatory asterisk note",
+    "All breakout pin labels are plain text without background boxes; faint component outlines are interrupted behind text",
+    "PD CFG, PD VDD and PD PG described as HASL-finished plated through-hole pads; gold/surface-pad claim removed and current map finish shown in silver-gray",
+    "CH221K manufacturer datasheet linked from the breakout map and resources page",
+    "20 V PD request, operation from a delivered 15 V or 12 V rail, and likely motor malfunction below 12 V explained",
+    "J5 alone documented as sufficient to power and program the ESP32-S3",
+    "Separate external motor-supply wiring documented with required common ground and positive supply rails kept separate"
+  ],
+  "photo_manifest": "images/rs485-controller/manifest.json",
+  "verification": "datasheet/review/verification-v1.0.json",
+  "renders": "datasheet/review/v1.0-pages/render-manifest.json",
+  "visual_review": "Affected pages 2, 6, 8, 9 and 12 inspected at full render size; established cover/photo changes retained.",
+  "public_registration_unchanged": true,
+  "earlier_review_pdfs_preserved": true,
+  "photo_prompts": [
+    "images/rs485-controller/with-antenna-background-prompt.txt",
+    "images/rs485-controller/component-side-background-prompt.txt",
+    "images/rs485-controller/ports-background-prompt.txt",
+    "images/rs485-controller/label-side-background-prompt.txt"
+  ],
+  "alias_sources": {
+    "pcb": "PCB/0.5/0.5.kicad_pcb",
+    "checked_geometry": "datasheet/assets/technical-v2/pcb-geometry.json",
+    "manufacturer": "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32s3/schematic-checklist.html"
+  },
+  "label_legibility": "datasheet/review/geometry-v4/label-legibility-check.json",
+  "power_and_pd_sources": {
+    "manufacturer_pdf": "datasheets/CH224K.pdf",
+    "manufacturer_pdf_sha256": "bc085c9d57a015e2de3802c76ab8a5b34bc92726c7cb8f88f2fcb855a7e438a4",
+    "manufacturer_sections": [
+      "4.2 CH221K pin description",
+      "5.3 CH221K voltage configuration"
+    ],
+    "manufacturer_public_link": "https://www.wch-ic.com/downloads/CH224DS1_PDF.html",
+    "pcb": "PCB/0.5/0.5.kicad_pcb",
+    "pcb_sha256": "74f0c14af491cdc2dd51b3f2ae992f859322efcabfb7be3f86f3d275b53dbb4a",
+    "pd_through_hole_pads": {
+      "TP47": {
+        "signal": "PD CFG",
+        "drill_mm": 0.9
+      },
+      "TP44": {
+        "signal": "PD VDD",
+        "drill_mm": 0.9
+      },
+      "TP43": {
+        "signal": "PD PG",
+        "drill_mm": 0.9
+      }
+    },
+    "manufactured_pad_finish": "HASL, owner-confirmed",
+    "motor_voltage_guidance": "Owner-provided: motors still work with a delivered 15 V or 12 V supply; likely incorrect operation below 12 V. Existing M17 reference specifies 12\u201324 V.",
+    "physical_bench_testing_performed": false,
+    "power_wiring": "J5 powers/programs controller. Separate supply powers motors directly with negative tied to controller GND; J3 and J1 positive unused in this arrangement."
+  },
+  "context_reset_checkpoint": "2026-11-05",
+  "handoff": "datasheet/README.md#context-reset-checkpoint--5-november-2026",
+  "reproduction_checked_on": "2026-11-05",
+  "reproduction_matches_previously_reviewed_pdf": true
+}

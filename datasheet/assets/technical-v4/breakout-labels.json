@@ -3,6 +3,8 @@
     "reference": "TP1",
     "signal": "GPIO1",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       26.14,
       25.120000000000005
@@ -16,12 +18,15 @@
       990.6000000000001
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP2",
     "signal": "GPIO2",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       26.14,
       22.58
@@ -35,12 +40,15 @@
       808.4
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP3",
     "signal": "GPIO3",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       23.6,
       25.120000000000005
@@ -54,12 +62,18 @@
       990.6000000000001
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP4",
     "signal": "GPIO43",
     "shared_function": "UART0 TX",
+    "pcb_alias": "TXD0",
+    "alias_xy": [
+      1055.3,
+      132.80000000000007
+    ],
     "position_mm": [
       26.509999999999998,
       1.5600000000000023
@@ -73,12 +87,18 @@
       159.80000000000007
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP5",
     "signal": "GPIO44",
     "shared_function": "UART0 RX",
+    "pcb_alias": "RXD0",
+    "alias_xy": [
+      1055.3,
+      375.99999999999983
+    ],
     "position_mm": [
       26.509999999999998,
       4.099999999999994
@@ -92,12 +112,15 @@
       355.99999999999983
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP6",
     "signal": "GPIO6",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       21.060000000000002,
       25.120000000000005
@@ -111,12 +134,15 @@
       990.6000000000001
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP7",
     "signal": "GND",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       31.71,
       44.876000000000005
@@ -130,12 +156,15 @@
       1522.2800000000002
     ],
     "anchor": "start",
-    "through_hole": false
+    "through_hole": false,
+    "label_background": null
   },
   {
     "reference": "TP8",
     "signal": "RS485 A",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       31.71,
       42.337425999999994
@@ -149,12 +178,15 @@
       1446.1227799999997
     ],
     "anchor": "start",
-    "through_hole": false
+    "through_hole": false,
+    "label_background": null
   },
   {
     "reference": "TP9",
     "signal": "RS485 B",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       31.71,
       39.798855
@@ -168,12 +200,15 @@
       1369.96565
     ],
     "anchor": "start",
-    "through_hole": false
+    "through_hole": false,
+    "label_background": null
   },
   {
     "reference": "TP10",
     "signal": "GND",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       31.71,
       37.26028400000001
@@ -187,12 +222,15 @@
       1293.8085200000005
     ],
     "anchor": "start",
-    "through_hole": false
+    "through_hole": false,
+    "label_background": null
   },
   {
     "reference": "TP11",
     "signal": "RS485 A",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       31.71,
       34.721712999999994
@@ -206,12 +244,15 @@
       1217.6513899999998
     ],
     "anchor": "start",
-    "through_hole": false
+    "through_hole": false,
+    "label_background": null
   },
   {
     "reference": "TP12",
     "signal": "RS485 B",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       31.71,
       32.183142000000004
@@ -225,12 +266,15 @@
       1141.4942600000002
     ],
     "anchor": "start",
-    "through_hole": false
+    "through_hole": false,
+    "label_background": null
   },
   {
     "reference": "TP13",
     "signal": "+3.3V",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       31.71,
       29.644571000000013
@@ -244,12 +288,15 @@
       1065.3371300000003
     ],
     "anchor": "start",
-    "through_hole": false
+    "through_hole": false,
+    "label_background": null
   },
   {
     "reference": "TP14",
     "signal": "+5V",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       31.71,
       27.105999999999995
@@ -263,12 +310,15 @@
       989.1799999999998
     ],
     "anchor": "start",
-    "through_hole": false
+    "through_hole": false,
+    "label_background": null
   },
   {
     "reference": "TP15",
     "signal": "GPIO7",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       18.520000000000003,
       25.120000000000005
@@ -282,12 +332,15 @@
       990.6000000000001
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP16",
     "signal": "GPIO8",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       18.520000000000003,
       22.586608
@@ -301,12 +354,15 @@
       808.5982399999999
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP17",
     "signal": "GPIO9",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       15.980000000000004,
       25.120000000000005
@@ -320,12 +376,15 @@
       990.6000000000001
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP18",
     "signal": "GPIO10",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       15.980000000000004,
       22.586608
@@ -339,12 +398,15 @@
       808.5982399999999
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP19",
     "signal": "GPIO11",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       13.440000000000005,
       25.120000000000005
@@ -358,12 +420,15 @@
       990.6000000000001
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP20",
     "signal": "GPIO12",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       13.440000000000005,
       22.586608
@@ -377,12 +442,15 @@
       808.5982399999999
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP21",
     "signal": "GPIO13",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       11.810000000000002,
       19.200000000000003
@@ -396,12 +464,15 @@
       749.0000000000001
     ],
     "anchor": "end",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP22",
     "signal": "GPIO14",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       14.350000000000001,
       19.200000000000003
@@ -415,12 +486,15 @@
       749.0000000000001
     ],
     "anchor": "start",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP23",
     "signal": "GPIO15",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       11.810000000000002,
       16.659999999999997
@@ -434,12 +508,15 @@
       672.8
     ],
     "anchor": "end",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP24",
     "signal": "GPIO16",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       14.350000000000001,
       16.659999999999997
@@ -453,12 +530,15 @@
       672.8
     ],
     "anchor": "start",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP25",
     "signal": "GPIO17",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       11.810000000000002,
       14.120000000000005
@@ -472,12 +552,15 @@
       596.6000000000001
     ],
     "anchor": "end",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP26",
     "signal": "GPIO18",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       14.350000000000001,
       14.120000000000005
@@ -491,12 +574,15 @@
       596.6000000000001
     ],
     "anchor": "start",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP27",
     "signal": "GPIO21",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       14.350000000000001,
       11.579999999999998
@@ -510,12 +596,15 @@
       520.4
     ],
     "anchor": "start",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP28",
     "signal": "GPIO26",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       11.810000000000002,
       11.579999999999998
@@ -529,12 +618,15 @@
       520.4
     ],
     "anchor": "end",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP29",
     "signal": "GPIO33",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       11.810000000000002,
       9.040000000000006
@@ -548,12 +640,15 @@
       444.20000000000016
     ],
     "anchor": "end",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP30",
     "signal": "GPIO34",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       14.350000000000001,
       6.5
@@ -567,12 +662,15 @@
       399.0
     ],
     "anchor": "start",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP31",
     "signal": "GPIO35",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       16.35,
       4.099999999999994
@@ -582,16 +680,19 @@
       292.99999999999983
     ],
     "label_xy": [
-      759.5,
+      750.5,
       355.99999999999983
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP32",
     "signal": "GPIO36",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       16.35,
       1.5600000000000023
@@ -605,12 +706,15 @@
       159.80000000000007
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP33",
     "signal": "GPIO37",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       18.89,
       1.5600000000000023
@@ -624,12 +728,15 @@
       159.80000000000007
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP34",
     "signal": "GPIO38",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       18.89,
       4.099999999999994
@@ -643,12 +750,15 @@
       355.99999999999983
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP35",
     "signal": "GPIO39",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       21.43,
       1.5600000000000023
@@ -662,12 +772,15 @@
       159.80000000000007
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP36",
     "signal": "GPIO40",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       21.43,
       4.099999999999994
@@ -681,12 +794,15 @@
       355.99999999999983
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP37",
     "signal": "GPIO41",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       23.97,
       1.5600000000000023
@@ -700,12 +816,15 @@
       159.80000000000007
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP38",
     "signal": "GPIO42",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       23.97,
       4.099999999999994
@@ -719,12 +838,15 @@
       355.99999999999983
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP39",
     "signal": "GPIO45",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       29.050000000000004,
       1.5600000000000023
@@ -738,12 +860,15 @@
       159.80000000000007
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP40",
     "signal": "GPIO46",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       29.050000000000004,
       4.099999999999994
@@ -757,12 +882,15 @@
       355.99999999999983
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP41",
     "signal": "GPIO47",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       14.350000000000001,
       9.040000000000006
@@ -776,12 +904,15 @@
       444.20000000000016
     ],
     "anchor": "start",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP42",
     "signal": "GPIO48",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       11.810000000000002,
       6.5
@@ -795,12 +926,15 @@
       368.0
     ],
     "anchor": "end",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP43",
     "signal": "PD_PG",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       12.137500000000003,
       35.25749999999999
@@ -814,12 +948,15 @@
       1276.725
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP44",
     "signal": "PD_VDD",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       13.61,
       28.939999999999998
@@ -833,12 +970,18 @@
       1087.1999999999998
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP45",
     "signal": "GPIO4",
     "shared_function": "RS485 TX",
+    "pcb_alias": "RS485TX",
+    "alias_xy": [
+      968.0,
+      781.5982399999999
+    ],
     "position_mm": [
       23.6,
       22.586608
@@ -852,12 +995,18 @@
       808.5982399999999
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP46",
     "signal": "GPIO5",
     "shared_function": "RS485 RX",
+    "pcb_alias": "RS485RX",
+    "alias_xy": [
+      891.8000000000001,
+      781.5982399999999
+    ],
     "position_mm": [
       21.060000000000002,
       22.586608
@@ -871,12 +1020,15 @@
       808.5982399999999
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP47",
     "signal": "PD_CFG",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       9.560000000000002,
       28.939999999999998
@@ -890,12 +1042,15 @@
       1087.1999999999998
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP48",
     "signal": "GND",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       13.810000000000002,
       1.5600000000000023
@@ -909,12 +1064,15 @@
       159.80000000000007
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP49",
     "signal": "GND",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       13.810000000000002,
       4.099999999999994
@@ -928,12 +1086,15 @@
       321.99999999999983
     ],
     "anchor": "end",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP50",
     "signal": "GND",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       31.589999999999996,
       4.099999999999994
@@ -947,12 +1108,15 @@
       355.99999999999983
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   },
   {
     "reference": "TP51",
     "signal": "GND",
     "shared_function": null,
+    "pcb_alias": null,
+    "alias_xy": null,
     "position_mm": [
       31.589999999999996,
       1.5600000000000023
@@ -966,6 +1130,7 @@
       159.80000000000007
     ],
     "anchor": "middle",
-    "through_hole": true
+    "through_hole": true,
+    "label_background": null
   }
 ]

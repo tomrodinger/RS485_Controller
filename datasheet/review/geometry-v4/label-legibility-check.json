@@ -1,6 +1,15 @@
 {
-  "checked_nonblank_text_runs": 113,
+  "checked_nonblank_text_runs": 115,
   "label_manifest_count": 51,
   "overlapping_text_runs": [],
-  "passed": true
+  "passed": true,
+  "breakout_pdf_sha256": "f8c8706fecf0b94e3167b40ded2bed6ec21529854d3b6f2c9ed91e97f801c1e1",
+  "pcb_aliases_checked": [
+    "GPIO43 / TXD0",
+    "GPIO44 / RXD0",
+    "GPIO4 / RS485TX",
+    "GPIO5 / RS485RX"
+  ],
+  "label_background_boxes": false,
+  "pad_finish": "HASL (owner-confirmed)"
 }
