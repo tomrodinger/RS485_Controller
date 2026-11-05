@@ -2,7 +2,7 @@
   "date": "2026-11-04",
   "document_version": "1.0",
   "hardware_revision": "0.5",
-  "status": "Built and verified; prepared for owner-authorized commit and push to origin/main",
+  "status": "Published to origin/main; public PDF downloads verified byte for byte",
   "base_commit": "29a758d20a9367261aee6a3d125c7eb982555263",
   "prior_published_pdf_sha256": "4dfcba25a5ceacff20ad8305ac91da044ab4e0c2aef2f2011713c8bd2900cf45",
   "pdf": "datasheet/rs485_controller_datasheet_v1.0.pdf",
@@ -75,5 +75,12 @@
   "context_reset_checkpoint": "2026-11-05",
   "handoff": "datasheet/README.md#context-reset-checkpoint--5-november-2026",
   "reproduction_checked_on": "2026-11-05",
-  "reproduction_matches_previously_reviewed_pdf": true
+  "reproduction_matches_previously_reviewed_pdf": true,
+  "published_on": "2026-11-05",
+  "publication_commit": "bfe9a90ec0ca8b57887a6d3fc370f0991e329458",
+  "public_url": "https://raw.githubusercontent.com/tomrodinger/RS485_Controller/main/datasheet/rs485_controller_datasheet_v1.0.pdf",
+  "immutable_public_url": "https://raw.githubusercontent.com/tomrodinger/RS485_Controller/bfe9a90ec0ca8b57887a6d3fc370f0991e329458/datasheet/rs485_controller_datasheet_v1.0.pdf",
+  "public_download_matches_release": true,
+  "public_main_download_matches_release": true,
+  "remaining_requested_product_work": []
 }
