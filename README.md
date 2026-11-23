@@ -8,6 +8,10 @@ A programmable ESP32-S3 board with a half-duplex RS485 interface for Gearotons s
 
 [RS485 Controller hardware 0.5 documentation](https://9o.at/products/rs2/0.5) includes the datasheet, schematic and product photographs. The QR code printed on the PCB resolves to this page. Its content is generated from [`PRODUCT_DATA.yaml`](PRODUCT_DATA.yaml), using the same system as the RS485 Adapter and M17 Servomotor.
 
+## Ready-made firmware
+
+[Install or download RS2 firmware](https://9o.at/products/rs2/0.5#firmware) for hardware 0.5. Choose the Wi-Fi motor tester for browser-based discovery, identification and a quarter-turn test, or the USB-to-RS485 bridge for a computer serial port. Both profiles were bench-tested on macOS with one M17. [Firmware source, build and wiring instructions](firmware/README.md).
+
 ## Datasheet
 
 [Download the RS485 Controller datasheet v1.0 (PDF)](datasheet/rs485_controller_datasheet_v1.0.pdf). Covers PCB revision 0.5, connector pinouts, two-motor wiring, mechanical dimensions, breakout headers, Arduino setup and the controller schematic.
