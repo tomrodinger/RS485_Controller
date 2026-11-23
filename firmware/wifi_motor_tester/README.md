@@ -1,11 +1,11 @@
-# RS2 Wi-Fi motor tester
+# RS485 controller Wi-Fi motor tester
 
-This bench firmware runs a local web page for discovering Gearotons motors, identifying a motor by its green LED, and testing a quarter revolution of an unloaded M17. Use RS2 hardware 0.5 with its antenna attached. The M17 needs its own appropriate motor power. Connect A to A, B to B, and common ground following the controller datasheet. Use one controller on the test bus. Keep motor power accessible.
+This bench firmware runs a local web page for discovering Gearotons motors, identifying a motor by its green LED, and testing a quarter revolution of an unloaded M17. Use RS485 controller hardware 0.5 with its antenna attached. The M17 needs its own appropriate motor power. Connect A to A, B to B, and common ground following the controller datasheet. Use one controller on the test bus. Keep motor power accessible.
 
 ## Connect
 
 1. Install the Wi-Fi tester image. Connect a data-capable USB cable to J5 **USB-C PROG**. Open the controller’s USB serial port at 115200. Press Enter to print the Wi-Fi name, password and address.
-2. On a phone or computer, join the displayed **Gearotons-RS2-…** network. The password is generated on the controller and saved in its settings. One client can connect at a time. If the phone reports no internet, choose to stay connected.
+2. On a phone or computer, join the displayed **RS485-controller-…** network. The password is generated on the controller and saved in its settings. One client can connect at a time. If the phone reports no internet, choose to stay connected.
 3. Open the printed HTTP address, normally **http://192.168.4.1/**. For later sessions you can use the saved Wi-Fi network directly. J5 only needs a computer when you want USB access or another firmware image.
 
 ## Test an individual motor

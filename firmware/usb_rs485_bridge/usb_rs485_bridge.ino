@@ -64,7 +64,7 @@ void setup() {
   host.setRxBufferSize(4096);
   host.enableReboot(false); // A serial program may toggle DTR/RTS or select 1200 baud.
   host.begin();
-  USB.productName("Gearotons RS2 RS485 Bridge");
+  USB.productName("Gearotons RS485 controller bridge");
   USB.begin();
 }
 

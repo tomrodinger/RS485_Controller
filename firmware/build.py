@@ -1,4 +1,4 @@
-"""Build and check both RS2 images with Arduino CLI, without opening a serial port."""
+"""Build and check both RS485 controller images with Arduino CLI, without opening a serial port."""
 
 import argparse
 import hashlib

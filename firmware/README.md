@@ -1,8 +1,8 @@
-# RS2 firmware for Gearotons RS485 Controller PCB 0.5
+# Firmware for the Gearotons RS485 controller (PCB 0.5)
 
 Each image is a complete, independently installable application. Install the USB bridge when a computer will issue motor commands. Install the Wi-Fi tester when you want to use a browser at the bench. Flashing switches between them.
 
-**Hardware tested on 23 November 2026** with an RS2, one physical M17 and a Mac. Both images verified after writing to flash. [Image checksums](images/SHA256SUMS)
+**Hardware tests for release 0.1.0** used the RS485 controller, one M17 and a Mac. Release 0.1.1 updates the displayed names, including the Wi-Fi network and USB bridge names. [Image checksums](images/SHA256SUMS)
 
 | Profile | Bench result |
 |---|---|
@@ -18,7 +18,11 @@ Physical Linux, Windows, phone, multi-motor, and cable unplug/replug tests remai
 
 ## Installing an image
 
-1. Start with an RS2 you can reprogram. The combined image replaces the existing application, bootloader, partition table and settings in the written region. Keep a copy of any custom firmware you need to restore. Disconnect motor power during flashing.
+Choose a firmware in the [RS485 controller browser installer](https://9o.at/products/rs2/0.5#firmware) to install directly from desktop Chrome or Edge.
+
+### Manual installation
+
+1. Start with an RS485 controller you can reprogram. The combined image replaces the existing application, bootloader, partition table and settings in the written region. Keep a copy of any custom firmware you need to restore. Disconnect motor power during flashing.
 2. Connect a USB data cable to **J5 PROG**. Hold **S2 PROG**, tap and release **S1 RESET**, then release **S2**. Use the download-mode serial port that appears. The port name can change when an installed application starts.
 3. Use Espressif's **esptool 5**. From the directory containing the images, substitute the actual port name and your selected file. For example, with the board on COM5:
 
@@ -27,7 +31,7 @@ Physical Linux, Windows, phone, multi-motor, and cable unplug/replug tests remai
    ```
 
    For the tester, use `rs2-wifi-motor-tester.bin` at the same address. On macOS or Linux substitute the actual `/dev/cu.usbmodem…` or `/dev/ttyACM…` port. Wait for esptool's verification, then tap S1 RESET if needed. [Espressif installation instructions](https://docs.espressif.com/projects/esptool/en/latest/esp32s3/installation.html) · [Writing and verifying flash](https://docs.espressif.com/projects/esptool/en/latest/esp32s3/esptool/basic-commands.html)
-4. For motor tests, follow the [RS2 wiring and power documentation](https://9o.at/products/rs2/0.5). Connect matching A/B and a common ground. Use a suitable motor supply. J5 powers the controller logic. Fit the supplied antenna before using Wi-Fi.
+4. For motor tests, follow the [RS485 controller wiring and power documentation](https://9o.at/products/rs2/0.5). Connect matching A/B and a common ground. Use a suitable motor supply. J5 powers the controller logic. Fit the supplied antenna before using Wi-Fi.
 
 ## Building from source
 

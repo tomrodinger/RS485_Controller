@@ -1,4 +1,4 @@
-// Gearotons RS2 hardware 0.5, ESP32-S3. All motor actions originate in a form POST.
+// Gearotons RS485 controller hardware 0.5, ESP32-S3. All motor actions originate in a form POST.
 #include <Arduino.h>
 #include <WiFi.h>
 #include <WebServer.h>
@@ -149,9 +149,9 @@ void showPage() {
   String page;
   page.reserve(3000 + 640 * motorCount);
   page = F("<!doctype html><html lang='en'><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>"
-           "<title>RS2 motor tester</title><style>body{font:17px system-ui;max-width:44rem;margin:2rem auto;padding:0 1rem}"
+           "<title>RS485 controller motor tester</title><style>body{font:17px system-ui;max-width:44rem;margin:2rem auto;padding:0 1rem}"
            "button{font:inherit;padding:.5rem .8rem}section{padding:.65rem 0;border-top:1px solid #aaa}form{margin:.65rem 0}"
-           "label{display:block;margin:.6rem 0}code{overflow-wrap:anywhere}</style><h1>RS2 motor tester</h1>");
+           "label{display:block;margin:.6rem 0}code{overflow-wrap:anywhere}</style><h1>RS485 controller motor tester</h1>");
   page += "<p role='status'>" + notice + "</p>";
   formStart(page, "/scan");
   page += F("<button>Detect motors</button></form><p>Use an unloaded, secured M17 on a dedicated bench bus. "
@@ -198,13 +198,13 @@ void handleAction() {
 
 void printAccess() {
   if (apReady) Serial.printf("Wi-Fi: %s\nPassword: %s\nOpen http://%s/\n", ssid.c_str(), password.c_str(), address.c_str());
-  else Serial.println("RS2 tester could not start its protected access point. Check the USB console and restart.");
+  else Serial.println("RS485 controller motor tester could not start its protected access point. Check the USB console and restart.");
 }
 
 void setup() {
   Serial.begin(115200);
   bus();
-  ssid = "Gearotons-RS2-" + hexId(ESP.getEfuseMac()).substring(4);
+  ssid = "RS485-controller-" + hexId(ESP.getEfuseMac()).substring(4);
   Preferences settings;
   if (!settings.begin("rs2-bench", false)) return;
   password = settings.getString("wifi-key", "");

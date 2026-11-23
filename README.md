@@ -10,7 +10,7 @@ A programmable ESP32-S3 board with a half-duplex RS485 interface for Gearotons s
 
 ## Ready-made firmware
 
-[Install or download RS2 firmware](https://9o.at/products/rs2/0.5#firmware) for hardware 0.5. Choose the Wi-Fi motor tester for browser-based discovery, identification and a quarter-turn test, or the USB-to-RS485 bridge for a computer serial port. Both profiles were bench-tested on macOS with one M17. [Firmware source, build and wiring instructions](firmware/README.md).
+[Install or download RS485 controller firmware](https://9o.at/products/rs2/0.5#firmware) for hardware 0.5. Choose the Wi-Fi motor tester for browser-based discovery, identification and a quarter-turn test, or the USB-to-RS485 bridge for a computer serial port. Both profiles were bench-tested in release 0.1.0 on macOS with one M17. [Firmware source, build and wiring instructions](firmware/README.md).
 
 ## Datasheet
 
