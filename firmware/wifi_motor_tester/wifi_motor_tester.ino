@@ -22,7 +22,11 @@ Servomotor& bus() {
 
 detectDevicesResponse motors[MAX_MOTORS];
 size_t motorCount = 0;
-String ssid, token, address;
+String ssid, address;
+// Each rendered page can submit one action. Other open tabs keep their own token.
+constexpr size_t PAGE_SLOTS = 16;
+String pageTokens[PAGE_SLOTS];
+size_t nextPageSlot = 0;
 String notice = "Choose Detect motors to scan the bus.";
 bool apReady = false;
 
@@ -36,6 +40,25 @@ String randomToken() {
   uint64_t bits[2];
   esp_fill_random(bits, sizeof(bits));
   return hexId(bits[0]) + hexId(bits[1]);
+}
+
+String issuePageToken() {
+  size_t slot = nextPageSlot;
+  for (size_t n = 0; n < PAGE_SLOTS; ++n) {
+    size_t candidate = (nextPageSlot + n) % PAGE_SLOTS;
+    if (pageTokens[candidate].isEmpty()) { slot = candidate; break; }
+  }
+  nextPageSlot = (slot + 1) % PAGE_SLOTS;
+  pageTokens[slot] = randomToken();
+  return pageTokens[slot];
+}
+
+bool consumePageToken(const String& submitted) {
+  if (submitted.isEmpty()) return false;
+  for (String& issued : pageTokens) {
+    if (issued == submitted) { issued = ""; return true; }
+  }
+  return false;
 }
 
 void remember(detectDevicesResponse reply, bool& overflow) {
@@ -151,6 +174,12 @@ String resetMotor(uint64_t id) {
 
 void serveSessionScript() {
   server.send_P(200, "application/javascript", PSTR(R"JS(
+let submitting = false;
+window.addEventListener('pageshow', () => { submitting = false; });
+document.addEventListener('submit', event => {
+  if (submitting) event.preventDefault();
+  else submitting = true;
+});
 for (const box of document.querySelectorAll('input[name="clear"]')) {
   const key = 'shaft-clear:' + document.body.dataset.controller + ':' + box.form.elements.id.value;
   try { box.checked = sessionStorage.getItem(key) === 'yes'; } catch {}
@@ -164,7 +193,7 @@ for (const box of document.querySelectorAll('input[name="clear"]')) {
 )JS"));
 }
 
-void formStart(String& page, const char* action) {
+void formStart(String& page, const char* action, const String& token) {
   page += "<form method='post' action='";
   page += action;
   page += "'><input type='hidden' name='token' value='" + token + "'>";
@@ -175,6 +204,7 @@ void showPage() {
     server.send(400, "text/plain", "Use the board IP address.");
     return;
   }
+  const String token = issuePageToken();
   String page;
   page.reserve(2400);
   server.sendHeader("Cache-Control", "no-store");
@@ -188,8 +218,10 @@ void showPage() {
            "label{display:block;margin:.6rem 0}code{overflow-wrap:anywhere}button{margin:.15rem}</style>"
            "<script src='/session.js' defer></script><body data-controller='");
   page += ssid + "'><img src='/gearotons.png' width='187' height='50' alt='Gearotons'><h1>RS485 controller motor tester</h1>";
+  if (server.arg("refresh") == "1")
+    page += F("<p role='alert'>This page was already used or expired. The repeated or expired request was skipped. The controls below are ready.</p>");
   page += "<p role='status'>" + notice + "</p>";
-  formStart(page, "/scan");
+  formStart(page, "/scan", token);
   page += F("<button>Detect motors</button></form><p>Use an unloaded, secured M17 on a dedicated bench bus. "
             "Keep motor power within reach. The turn test releases holding torque afterward.</p>");
   server.sendContent(page);
@@ -197,11 +229,11 @@ void showPage() {
     const String uid = hexId(motors[i].uniqueId);
     const String field = "<input type='hidden' name='id' value='" + uid + "'>";
     page = "<section><h2>Motor <code>" + uid + "</code></h2><p>Alias " + String(motors[i].alias) + "</p>";
-    formStart(page, "/identify");
+    formStart(page, "/identify", token);
     page += field + "<button>Blink motor LED</button></form>";
-    formStart(page, "/reset");
+    formStart(page, "/reset", token);
     page += field + "<button>Reset motor</button></form>";
-    formStart(page, "/turn");
+    formStart(page, "/turn", token);
     page += field + "<label><input type='checkbox' required name='clear' value='yes' autocomplete='off'> Shaft is unloaded and clear</label>"
                     "<button name='direction' value='positive'>Turn +90&deg;</button> "
                     "<button name='direction' value='negative'>Turn &minus;90&deg;</button></form></section>";
@@ -212,13 +244,17 @@ void showPage() {
 }
 
 void handleAction() {
-  if ((server.hostHeader() != address && server.hostHeader() != address + ":80") ||
-      server.arg("token") != token || token.isEmpty()) {
-    server.send(403, "text/plain", "Reload the tester page and try again.");
+  if (server.hostHeader() != address && server.hostHeader() != address + ":80") {
+    server.send(403, "text/plain", "Use the board IP address.");
     return;
   }
-  // Forms from old pages and replayed clicks cannot repeat a motion.
-  token = randomToken();
+  if (!consumePageToken(server.arg("token"))) {
+    // A duplicate may follow a successful move. Show the previous result and
+    // fresh controls without issuing another command or replacing the result.
+    server.sendHeader("Location", "/?refresh=1");
+    server.send(303, "text/plain", "");
+    return;
+  }
   if (server.uri() == "/scan") scan();
   else {
     size_t i = 0;
@@ -259,7 +295,6 @@ void setup() {
     return;
   }
   address = WiFi.softAPIP().toString();
-  token = randomToken();
   server.on("/", HTTP_GET, showPage);
   server.on("/session.js", HTTP_GET, serveSessionScript);
   server.on("/gearotons.png", HTTP_GET, []() {
