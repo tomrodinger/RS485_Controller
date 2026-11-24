@@ -24,7 +24,7 @@
       tutorial: https://github.com/tomrodinger/RS485_Controller#programming
       github: https://github.com/tomrodinger/RS485_Controller/tree/main/PCB/0.5
       controller_firmware:
-        version: "0.1.1"
+        version: "0.1.2"
         installer: https://9o.at/products/rs2/0.5#firmware
-        source: https://github.com/tomrodinger/RS485_Controller/tree/rs2-fw-0.1.1/firmware
+        source: https://github.com/tomrodinger/RS485_Controller/tree/rs2-fw-0.1.2/firmware
       firmwares: []  # Reserved for motor-protocol upgrade images.

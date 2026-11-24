@@ -4,9 +4,9 @@ This bench firmware runs a local web page for discovering Gearotons motors, iden
 
 ## Connect
 
-1. Install the Wi-Fi tester image. Connect a data-capable USB cable to J5 **USB-C PROG**. Open the controller’s USB serial port at 115200. Press Enter to print the Wi-Fi name, password and address.
-2. On a phone or computer, join the displayed **RS485-controller-…** network. The password is generated on the controller and saved in its settings. One client can connect at a time. If the phone reports no internet, choose to stay connected.
-3. Open the printed HTTP address, normally **http://192.168.4.1/**. For later sessions you can use the saved Wi-Fi network directly. J5 only needs a computer when you want USB access or another firmware image.
+1. Install the Wi-Fi motor tester and start the controller.
+2. On your phone or computer, join **RS485-controller-…**. This is an open Wi-Fi network; leave the password blank. One client can connect at a time. If prompted about internet access, choose to stay connected.
+3. Open **http://192.168.4.1/**. If your device remembers the older password-protected network, forget that saved network and join again.
 
 ## Test an individual motor
 

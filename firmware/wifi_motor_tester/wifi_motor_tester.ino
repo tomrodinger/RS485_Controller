@@ -5,7 +5,6 @@
 #include <Preferences.h>
 #include <Servomotor.h>
 #include <esp_random.h>
-#include <bootloader_random.h>
 #include <math.h>
 
 constexpr size_t MAX_MOTORS = 48;
@@ -22,7 +21,7 @@ Servomotor& bus() {
 
 detectDevicesResponse motors[MAX_MOTORS];
 size_t motorCount = 0;
-String ssid, password, token, address;
+String ssid, token, address;
 String notice = "Choose Detect motors to scan the bus.";
 bool apReady = false;
 
@@ -197,8 +196,8 @@ void handleAction() {
 }
 
 void printAccess() {
-  if (apReady) Serial.printf("Wi-Fi: %s\nPassword: %s\nOpen http://%s/\n", ssid.c_str(), password.c_str(), address.c_str());
-  else Serial.println("RS485 controller motor tester could not start its protected access point. Check the USB console and restart.");
+  if (apReady) Serial.printf("Wi-Fi: %s\nOpen network (no password)\nOpen http://%s/\n", ssid.c_str(), address.c_str());
+  else Serial.println("RS485 controller motor tester could not start its access point. Check the USB console and restart.");
 }
 
 void setup() {
@@ -206,19 +205,13 @@ void setup() {
   bus();
   ssid = "RS485-controller-" + hexId(ESP.getEfuseMac()).substring(4);
   Preferences settings;
-  if (!settings.begin("rs2-bench", false)) return;
-  password = settings.getString("wifi-key", "");
-  if (password.isEmpty()) {
-    // Seed the password from hardware entropy while the radio is still off.
-    bootloader_random_enable();
-    password = randomToken().substring(0, 16);
-    bootloader_random_disable();
-    if (!settings.putString("wifi-key", password)) { settings.end(); return; }
+  // Remove the key saved by password-protected versions when upgrading.
+  if (settings.begin("rs2-bench", false)) {
+    if (settings.isKey("wifi-key")) settings.remove("wifi-key");
+    settings.end();
   }
-  settings.end();
-  if (password.length() != 16) return;
   WiFi.persistent(false);
-  if (!WiFi.softAP(ssid.c_str(), password.c_str(), 1, 0, 1)) {
+  if (!WiFi.softAP(ssid.c_str(), nullptr, 1, 0, 1)) {
     WiFi.mode(WIFI_OFF);
     return;
   }

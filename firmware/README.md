@@ -2,7 +2,7 @@
 
 Each image is a complete, independently installable application. Install the USB bridge when a computer will issue motor commands. Install the Wi-Fi tester when you want to use a browser at the bench. Flashing switches between them.
 
-**Hardware tests for release 0.1.0** used the RS485 controller, one M17 and a Mac. Release 0.1.1 updates the displayed names, including the Wi-Fi network and USB bridge names. [Image checksums](images/SHA256SUMS)
+**Hardware tests for release 0.1.0** used the RS485 controller, one M17 and a Mac. Release 0.1.2 makes the Wi-Fi tester network open. Release 0.1.1 updates the displayed names, including the Wi-Fi network and USB bridge names. [Image checksums](images/SHA256SUMS)
 
 | Profile | Bench result |
 |---|---|
@@ -14,7 +14,7 @@ Physical Linux, Windows, phone, multi-motor, and cable unplug/replug tests remai
 | Image | What to do after flashing |
 |---|---|
 | [USB to RS485 bridge](images/rs2-usb-rs485-bridge.bin) | Plug J5 PROG into the computer and open the new serial port at 230400 8N1 for the M17. [Bridge settings and host port names](usb_rs485_bridge/README.md) |
-| [Wi-Fi motor tester](images/rs2-wifi-motor-tester.bin) | Read the board's Wi-Fi connection details over J5, join the board's network from a phone or computer, and open the local page. [Tester controls and setup](wifi_motor_tester/README.md) |
+| [Wi-Fi motor tester](images/rs2-wifi-motor-tester.bin) | Join the open **RS485-controller-…** Wi-Fi network from a phone or computer and open **http://192.168.4.1/**. [Tester controls and setup](wifi_motor_tester/README.md) |
 
 ## Installing an image
 
