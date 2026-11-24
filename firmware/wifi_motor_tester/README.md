@@ -1,6 +1,6 @@
 # RS485 controller Wi-Fi motor tester
 
-This bench firmware runs a local web page for discovering Gearotons motors, identifying a motor by its green LED, and testing a quarter revolution of an unloaded M17. Use RS485 controller hardware 0.5 with its antenna attached. The M17 needs its own appropriate motor power. Connect A to A, B to B, and common ground following the controller datasheet. Use one controller on the test bus. Keep motor power accessible.
+This bench firmware runs a local web page for discovering Gearotons motors, identifying a motor by its green LED, and resetting individual motors and testing a quarter revolution in either direction on an unloaded M17. Use RS485 controller hardware 0.5 with its antenna attached. The M17 needs its own appropriate motor power. Connect A to A, B to B, and common ground following the controller datasheet. Use one controller on the test bus. Keep motor power accessible.
 
 ## Connect
 
@@ -12,7 +12,8 @@ This bench firmware runs a local web page for discovering Gearotons motors, iden
 
 - **Detect motors** collects three passes of broadcast replies and lists each unique hardware ID and reported alias. Detection takes several seconds. A scan sends no motion commands and does not reset motors or reassign aliases.
 - **Blink motor LED** flashes the selected motor’s green LED. All individual commands use its 64-bit hardware ID, including when multiple motors report the same alias.
-- **Turn 90° and release** requires a clear, secured, unloaded shaft with the power stage off. Tick the confirmation for that motor and press the button. The tester verifies the M17 identity, checks its status, queue and position, enters closed-loop control, then requests a quarter turn over 1.5 seconds. It checks the Hall position change (within 0.05 turn) and requests a motor stop and release. The shaft can move freely afterward. Wait for the page result before repeating. A lost Wi-Fi connection does not cancel an accepted test.
+- **Reset motor** reboots the selected motor. The tester waits for the motor to restart and checks for a reply from the same hardware ID.
+- **Turn +90° / Turn −90°** requires a clear, secured, unloaded shaft with the power stage off. Check the box for that motor, then choose a direction. The box stays checked through rescans and page reloads in the same browser tab. Uncheck it at any time. The tester verifies the M17 identity, checks its status, queue and position, enters closed-loop control, then requests a quarter turn over 1.5 seconds. It checks the Hall position change (within 0.05 turn) and requests a motor stop and release. The shaft can move freely afterward. Wait for the page result before repeating. A lost Wi-Fi connection does not cancel an accepted test.
 - **Motor release unconfirmed** means you should turn off the motor supply and inspect wiring and power before continuing. Browser controls are not a physical emergency stop. Use physical power removal if motion must stop immediately. Keep loaded axes and other controllers off this test bus.
 
 A missing device may be unpowered, disconnected, in a fault state, or obscured by overlapping discovery responses. Check power, common ground and A/B, then run detection again. The motor must answer the M17 protocol at 230400 baud with a compatible application installed before the turn test will run. No motion is requested at startup.

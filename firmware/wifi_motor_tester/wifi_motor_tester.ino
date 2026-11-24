@@ -6,6 +6,7 @@
 #include <Servomotor.h>
 #include <esp_random.h>
 #include <math.h>
+#include "GearotonsLogo.h"
 
 constexpr size_t MAX_MOTORS = 48;
 constexpr uint16_t BUSY_OR_BOOT = 0x79;  // bootloader, calibration, homing, transition, busy
@@ -71,7 +72,7 @@ void scan() {
   if (overflow) notice += " Device list full. Connect fewer motors.";
 }
 
-String testTurn(uint64_t id) {
+String testTurn(uint64_t id, int direction) {
   // A fresh UID round trip prevents stale scan rows from selecting a new motor.
   auto info = bus().getProductInfo(id);
   if (bus().getError() || info.uniqueId != id) return "Cannot verify the selected motor.";
@@ -110,7 +111,8 @@ String testTurn(uint64_t id) {
     } while (millis() - started < 600);
   }
   if (ok) {
-    bus().trapezoidMoveRaw(id, specs.countsPerRotation / 4, specs.updateFrequency * MOVE_MS / 1000);
+    const int32_t displacement = direction * static_cast<int32_t>(specs.countsPerRotation / 4);
+    bus().trapezoidMoveRaw(id, displacement, specs.updateFrequency * MOVE_MS / 1000);
     ok = bus().getError() == COMMUNICATION_SUCCESS;
   }
   if (ok) {
@@ -121,7 +123,7 @@ String testTurn(uint64_t id) {
   if (ok) {
     auto after = bus().getComprehensivePositionRaw(id);
     const double turns = ((double)after.hallSensorPosition - before.hallSensorPosition) / specs.countsPerRotation;
-    ok = !bus().getError() && fabs(turns - 0.25) < 0.05;
+    ok = !bus().getError() && fabs(turns - direction * 0.25) < 0.05;
   }
   // Even a missing command acknowledgement can mean the motor acted.
   // Never retry a move; request release/queue clear on all energizing paths.
@@ -131,7 +133,35 @@ String testTurn(uint64_t id) {
   if (bus().getError() || (status.statusFlags & OUTPUT_ENABLED))
     return "Cannot confirm driver outputs are off. Switch off bench motor power.";
   if (!ok || status.fatalErrorCode) return "Turn test did not verify. Driver outputs are off.";
-  return "Quarter-turn verified by the Hall sensor. Driver outputs are off.";
+  return direction > 0 ? "+90 degree turn verified. Driver outputs are off." : "-90 degree turn verified. Driver outputs are off.";
+}
+
+String resetMotor(uint64_t id) {
+  bus().systemReset(id);
+  const bool acknowledged = bus().getError() == COMMUNICATION_SUCCESS;
+  // Stay silent even if the acknowledgement was lost: the motor may be booting.
+  delay(1500);
+  if (!acknowledged) return "Reset acknowledgement missed. Detect motors to check this device.";
+  auto info = bus().getProductInfo(id);
+  if (bus().getError() || info.uniqueId != id) return "Reset acknowledged. Motor has not yet answered after reboot.";
+  auto status = bus().getStatus(id);
+  if (bus().getError() || (status.statusFlags & 1)) return "Reset acknowledged. Motor application not yet ready.";
+  return "Motor reset and responding again.";
+}
+
+void serveSessionScript() {
+  server.send_P(200, "application/javascript", PSTR(R"JS(
+for (const box of document.querySelectorAll('input[name="clear"]')) {
+  const key = 'shaft-clear:' + document.body.dataset.controller + ':' + box.form.elements.id.value;
+  try { box.checked = sessionStorage.getItem(key) === 'yes'; } catch {}
+  box.addEventListener('change', () => {
+    try {
+      if (box.checked) sessionStorage.setItem(key, 'yes');
+      else sessionStorage.removeItem(key);
+    } catch {}
+  });
+}
+)JS"));
 }
 
 void formStart(String& page, const char* action) {
@@ -146,30 +176,39 @@ void showPage() {
     return;
   }
   String page;
-  page.reserve(3000 + 640 * motorCount);
+  page.reserve(2400);
+  server.sendHeader("Cache-Control", "no-store");
+  server.sendHeader("X-Frame-Options", "DENY");
+  server.sendHeader("Content-Security-Policy", "default-src 'none'; img-src 'self'; script-src 'self'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'none'; base-uri 'none'");
+  server.setContentLength(CONTENT_LENGTH_UNKNOWN);
+  server.send(200, "text/html; charset=utf-8", "");
   page = F("<!doctype html><html lang='en'><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>"
            "<title>RS485 controller motor tester</title><style>body{font:17px system-ui;max-width:44rem;margin:2rem auto;padding:0 1rem}"
            "button{font:inherit;padding:.5rem .8rem}section{padding:.65rem 0;border-top:1px solid #aaa}form{margin:.65rem 0}"
-           "label{display:block;margin:.6rem 0}code{overflow-wrap:anywhere}</style><h1>RS485 controller motor tester</h1>");
+           "label{display:block;margin:.6rem 0}code{overflow-wrap:anywhere}button{margin:.15rem}</style>"
+           "<script src='/session.js' defer></script><body data-controller='");
+  page += ssid + "'><img src='/gearotons.png' width='187' height='50' alt='Gearotons'><h1>RS485 controller motor tester</h1>";
   page += "<p role='status'>" + notice + "</p>";
   formStart(page, "/scan");
   page += F("<button>Detect motors</button></form><p>Use an unloaded, secured M17 on a dedicated bench bus. "
             "Keep motor power within reach. The turn test releases holding torque afterward.</p>");
+  server.sendContent(page);
   for (size_t i = 0; i < motorCount; ++i) {
     const String uid = hexId(motors[i].uniqueId);
     const String field = "<input type='hidden' name='id' value='" + uid + "'>";
-    page += "<section><h2>Motor <code>" + uid + "</code></h2><p>Alias " + String(motors[i].alias) + "</p>";
+    page = "<section><h2>Motor <code>" + uid + "</code></h2><p>Alias " + String(motors[i].alias) + "</p>";
     formStart(page, "/identify");
     page += field + "<button>Blink motor LED</button></form>";
+    formStart(page, "/reset");
+    page += field + "<button>Reset motor</button></form>";
     formStart(page, "/turn");
-    page += field + "<label><input type='checkbox' required name='clear' value='yes'> Shaft is unloaded and clear</label>"
-                    "<button>Turn 90&deg; and release</button></form></section>";
+    page += field + "<label><input type='checkbox' required name='clear' value='yes' autocomplete='off'> Shaft is unloaded and clear</label>"
+                    "<button name='direction' value='positive'>Turn +90&deg;</button> "
+                    "<button name='direction' value='negative'>Turn &minus;90&deg;</button></form></section>";
+    server.sendContent(page);
   }
-  page += "</html>";
-  server.sendHeader("Cache-Control", "no-store");
-  server.sendHeader("X-Frame-Options", "DENY");
-  server.sendHeader("Content-Security-Policy", "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'none'; base-uri 'none'");
-  server.send(200, "text/html; charset=utf-8", page);
+  server.sendContent("</body></html>");
+  server.sendContent("");
 }
 
 void handleAction() {
@@ -188,8 +227,12 @@ void handleAction() {
     else if (server.uri() == "/identify") {
       bus().identify(motors[i].uniqueId);
       notice = bus().getError() ? "Motor did not acknowledge identification." : "The selected motor acknowledged its LED blink.";
-    } else if (server.arg("clear") == "yes") notice = testTurn(motors[i].uniqueId);
-    else notice = "Confirm the shaft is unloaded and clear before starting.";
+    } else if (server.uri() == "/reset") notice = resetMotor(motors[i].uniqueId);
+    else if (server.arg("clear") != "yes") notice = "Confirm the shaft is unloaded and clear before starting.";
+    else if (server.arg("direction") == "positive") notice = testTurn(motors[i].uniqueId, 1);
+    else if (server.arg("direction") == "negative") notice = testTurn(motors[i].uniqueId, -1);
+    else notice = "Choose a turn direction.";
+    if (i < motorCount) notice = "Motor " + hexId(motors[i].uniqueId) + ": " + notice;
   }
   server.sendHeader("Location", "/");
   server.send(303, "text/plain", "");
@@ -218,6 +261,11 @@ void setup() {
   address = WiFi.softAPIP().toString();
   token = randomToken();
   server.on("/", HTTP_GET, showPage);
+  server.on("/session.js", HTTP_GET, serveSessionScript);
+  server.on("/gearotons.png", HTTP_GET, []() {
+    server.send_P(200, "image/png", reinterpret_cast<const char*>(gearotonsLogo), sizeof(gearotonsLogo));
+  });
+  server.on("/reset", HTTP_POST, handleAction);
   server.on("/scan", HTTP_POST, handleAction);
   server.on("/identify", HTTP_POST, handleAction);
   server.on("/turn", HTTP_POST, handleAction);
